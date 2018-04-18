@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:id="@id/root_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v4.widget.NestedScrollView android:id="@id/root_view" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:orientation="vertical" android:background="@color/ghost_grey" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include layout="@layout/bill_payment_success_header" />
+            <include android:id="@id/layout_pln_success" android:visibility="gone" layout="@layout/fragment_pln_payment_success" />
+            <include android:id="@id/layout_bill_success" android:visibility="gone" layout="@layout/view_bill_payment_success" />
+            <include android:id="@id/layout_detail_bill_payment" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/space_x2" layout="@layout/view_bill_detail" />
+            <TextView android:textColor="@color/colorPrimary" android:id="@id/txt_bill_success_info" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/space_x2" android:layout_marginBottom="@dimen/space_x4" style="@style/TextAppearance.Body.Regular" />
+            <Button android:id="@id/btn_done" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_margin="@dimen/space_x4" android:text="@string/action_done" style="@style/Widget.Button.Primary" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

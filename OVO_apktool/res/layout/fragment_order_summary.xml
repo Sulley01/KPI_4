@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View android:layout_width="fill_parent" android:layout_height="@dimen/space_x7" />
+            <include layout="@layout/layout_payment_header" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/space_x4">
+                <TextView android:gravity="center" android:id="@id/txt_money_amount" android:background="@color/ghost_grey" android:padding="@dimen/space_half" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/space_half" style="@style/TextAppearance.Display.Regular" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/space_x4" android:layout_marginTop="@dimen/space_x2" android:layout_marginRight="@dimen/space_x4">
+                    <TextView android:layout_gravity="left" android:id="@id/txt_title_payment_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space" android:text="@string/title_payment_method" style="@style/TextAppearance.Display.Regular" />
+                    <AutoCompleteTextView android:id="@id/txt_payment_type" android:paddingBottom="@dimen/space" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/title_payment_method" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                        <include android:visibility="gone" layout="@layout/layout_payment_split" />
+                        <include android:visibility="gone" layout="@layout/layout_payment_error" />
+                        <TextView android:textColor="@color/dusk" android:gravity="center" android:layout_gravity="center" android:id="@id/txt_payment_timeout_info" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="@dimen/space_x3" android:layout_marginBottom="@dimen/space_x3" android:text="@string/payment_timeout" />
+                    </LinearLayout>
+                    <Button android:id="@id/btn_pay" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginTop="@dimen/space" android:text="@string/pay" style="@style/Widget.Button.Primary" />
+                    <Button android:id="@id/btn_top_up" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginTop="@dimen/space" android:text="@string/action_topup" style="@style/Widget.Button.Primary" />
+                    <Button android:id="@id/btn_cancel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginTop="@dimen/space_x1_half" android:text="@string/action_cancel" style="@style/Widget.Button.Tertiary" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

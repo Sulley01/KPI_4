@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/toolbar_white_search" />
+        <android.support.design.widget.TabLayout android:id="@id/view_tab_deals_promo" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="@dimen/stroke_width" app:tabIndicatorHeight="2.0dip" app:tabMode="fixed" app:tabTextAppearance="@style/TextAppearance.Display.Regular" app:tabSelectedTextColor="@color/turquoise" />
+        <android.support.v4.view.ViewPager android:id="@id/view_pager_deals_promo" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

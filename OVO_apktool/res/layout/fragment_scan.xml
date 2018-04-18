@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ll_content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/content_frame" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textColor="@color/white" android:gravity="center|top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x4" android:text="@string/desc_scan" android:layout_centerHorizontal="true" android:layout_marginStart="@dimen/space_x4" android:layout_marginEnd="@dimen/space_x4" style="@style/TextAppearance.Body.Regular" />
+    <View android:id="@id/mid_line" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <Button android:gravity="center" android:layout_gravity="center" android:id="@id/btn_flash" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x4" android:text="@string/msg_flashlight" android:drawableTop="@drawable/btn_flash_selector" android:layout_alignParentBottom="true" android:layout_toStartOf="@id/mid_line" style="@style/Widget.Button.Transparent" />
+    <Button android:gravity="center" android:layout_gravity="center" android:id="@id/btn_help" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x4" android:text="@string/msg_trouble_scanning" android:drawableTop="@drawable/btn_trouble_scanning" android:layout_alignParentBottom="true" android:layout_toEndOf="@id/mid_line" style="@style/Widget.Button.Transparent" />
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/card_layout" android:layout_width="fill_parent" android:layout_height="@dimen/space_x6"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/view_mall" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/space_x2">
+        <TextView android:textColor="@color/charcoal" android:ellipsize="end" android:id="@id/txt_title_mall" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" style="@style/TextAppearance.Body.Regular" />
+    </RelativeLayout>
+    <View android:background="@color/light_grey" android:layout_width="fill_parent" android:layout_height="@dimen/stroke_width" android:layout_alignParentBottom="true" />
+</RelativeLayout>

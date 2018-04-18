@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <padding android:left="0.0dip" android:top="0.0dip" android:right="1.0dip" android:bottom="1.0dip" />
+                    <solid android:color="@color/light_grey_alpha_00" />
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <padding android:left="1.0dip" android:top="1.0dip" android:right="1.0dip" android:bottom="1.0dip" />
+                    <solid android:color="@color/light_grey_alpha_10" />
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <padding android:left="1.0dip" android:top="1.0dip" android:right="1.0dip" android:bottom="1.0dip" />
+                    <solid android:color="@color/light_grey_alpha_20" />
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <padding android:left="1.0dip" android:top="1.0dip" android:right="1.0dip" android:bottom="1.0dip" />
+                    <solid android:color="@color/light_grey_alpha_30" />
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <padding android:left="0.0dip" android:top="0.0dip" android:right="1.0dip" android:bottom="1.0dip" />
+                    <solid android:color="@color/light_grey_alpha_50" />
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="@android:color/white" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_pressed="true">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <padding android:left="0.0dip" android:top="0.0dip" android:right="1.0dip" android:bottom="1.0dip" />
+                    <solid android:color="@color/light_grey_alpha_00" />
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <padding android:left="1.0dip" android:top="1.0dip" android:right="1.0dip" android:bottom="1.0dip" />
+                    <solid android:color="@color/light_grey_alpha_10" />
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <padding android:left="1.0dip" android:top="1.0dip" android:right="1.0dip" android:bottom="1.0dip" />
+                    <solid android:color="@color/light_grey_alpha_20" />
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <padding android:left="1.0dip" android:top="1.0dip" android:right="1.0dip" android:bottom="1.0dip" />
+                    <solid android:color="@color/light_grey_alpha_30" />
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <padding android:left="0.0dip" android:top="0.0dip" android:right="1.0dip" android:bottom="1.0dip" />
+                    <solid android:color="@color/light_grey_alpha_50" />
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <padding android:left="0.0dip" android:top="0.0dip" android:right="1.0dip" android:bottom="1.0dip" />
+                    <solid android:color="@color/light_grey_alpha_73" />
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="oval">
+                    <padding android:left="0.0dip" android:top="0.0dip" android:right="1.0dip" android:bottom="1.0dip" />
+                    <solid android:color="@color/light_grey_alpha_66" />
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="@android:color/white" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

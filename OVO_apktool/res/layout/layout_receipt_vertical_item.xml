@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/space_x4" android:paddingRight="@dimen/space_x4" android:paddingBottom="@dimen/space_x1_half" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.design.widget.TextInputLayout android:id="@id/field_receipt_type" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_half">
+        <EditText android:enabled="false" android:id="@id/edit_receipt_item" android:paddingTop="@dimen/space" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="false" android:maxLength="@integer/editTextMaxLength200" style="@style/Widget.EditText" />
+    </android.support.design.widget.TextInputLayout>
+</LinearLayout>

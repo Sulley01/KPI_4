@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ovo.id.loyalty.libs.cropimage.CropImageView android:id="@id/crop_image" android:background="@drawable/crop__texture" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="horizontal" android:background="#33000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:textColor="@color/white" android:id="@id/btn_cancel" android:layout_width="0.0dip" android:layout_height="@dimen/button_height" android:text="@string/action_cancel" android:layout_weight="1.0" style="@style/Widget.Button.Tertiary" />
+        <View android:background="@color/white" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/space" android:layout_marginBottom="@dimen/space" />
+        <Button android:textColor="@color/white" android:id="@id/btn_done" android:layout_width="0.0dip" android:layout_height="@dimen/button_height" android:text="@string/action_done" android:layout_weight="1.0" style="@style/Widget.Button.Tertiary" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="barcode_margin_bottom_subtitle">20.0dip</dimen>
+    <dimen name="barcode_margin_bottom_title">16.0dip</dimen>
+    <dimen name="barcode_margin_dialog">40.0dip</dimen>
+    <dimen name="barcode_text_size_barcode">16.0sp</dimen>
+    <dimen name="barcode_text_size_subtitle">12.0sp</dimen>
+    <dimen name="barcode_text_size_swipe">12.0sp</dimen>
+    <dimen name="barcode_text_size_title">14.0sp</dimen>
+    <item type="dimen" name="card_margin">@dimen/space_x4</item>
+    <item type="dimen" name="deals_title_margin">@dimen/space_x6</item>
+    <dimen name="fab_text_size">10.0sp</dimen>
+    <item type="dimen" name="icon_lock_size">@dimen/space_x3</item>
+    <dimen name="minus_margins">-40.0dip</dimen>
+    <dimen name="text_size_calendar">10.0sp</dimen>
+</resources>

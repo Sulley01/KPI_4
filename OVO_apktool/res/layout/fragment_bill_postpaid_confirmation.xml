@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/space_x4" android:paddingTop="@dimen/space_x2" android:paddingRight="@dimen/space_x4" android:paddingBottom="@dimen/space_x2" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:id="@id/label_customer_id" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_half" android:text="@string/customer_id" style="@style/TextAppearance.Display.Regular" />
+        <TextView android:id="@id/text_customer_id" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x3" style="@style/TextAppearance.H5.Regular" />
+        <TextView android:id="@id/label_customer_mobile_number" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_half" android:text="@string/hint_mobile_number" style="@style/TextAppearance.Display.Regular" />
+        <TextView android:id="@id/text_phone_number" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x3" style="@style/TextAppearance.H5.Regular" />
+        <TextView android:id="@id/label_customer_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_half" android:text="@string/msg_customer_name" style="@style/TextAppearance.Display.Regular" />
+        <TextView android:id="@id/text_customer_name" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x3" style="@style/TextAppearance.H5.Regular" />
+        <TextView android:id="@id/label_period" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_half" android:text="@string/title_period" style="@style/TextAppearance.Display.Regular" />
+        <TextView android:id="@id/text_period" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x3" android:maxLines="2" android:maxLength="@integer/editTextMaxPeriodLength" style="@style/TextAppearance.H5.Regular" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_payment_method" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x3">
+            <TextView android:textColor="@color/dusk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/msg_payment_method" style="@style/TextAppearance.Body.Regular" />
+            <TextView android:textColor="@color/charcoal" android:textColorHint="@color/charcoal" android:ellipsize="end" android:id="@id/field_payment_method" android:background="@drawable/background_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ovo_cash" android:maxLines="1" android:drawableEnd="@drawable/ic_expand" />
+            <TextView android:textColor="@color/dark_gray" android:id="@id/txt_available_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_half" android:layout_marginBottom="@dimen/space_x2" style="@style/TextAppearance.Display.Regular" />
+        </LinearLayout>
+        <include layout="@layout/view_bill_detail" />
+        <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <Button android:enabled="false" android:id="@id/btn_next" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginTop="@dimen/space_x4" android:text="@string/action_next" style="@style/Widget.Button.Primary" />
+    </LinearLayout>
+</ScrollView>

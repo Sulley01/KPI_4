@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/FragmentTopLevelContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@color/purple" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x3" android:text="@string/error_no_internet_connection" style="@style/TextAppearance.H4.Bold.Purple" />
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x2" app:srcCompat="@drawable/ic_art_connection_error" />
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x2" android:text="@string/error_offline_connection_footer" />
+    <Button android:id="@id/btn_close" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginTop="@dimen/space_x2" android:layout_marginBottom="@dimen/space_x3" android:text="@string/action_close" />
+</LinearLayout>

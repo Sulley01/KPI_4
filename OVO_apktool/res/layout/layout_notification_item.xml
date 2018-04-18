@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/ll_notification" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/front_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:id="@id/txt_notification_item_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/space_x2" style="@style/TextAppearance.Body.Regular" />
+        <View android:id="@id/view_line" android:background="@color/light_grey" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/txt_notification_item_msg" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rear_right_view" android:background="@color/magenta" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/image_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_trash" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/space_x2" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</FrameLayout>

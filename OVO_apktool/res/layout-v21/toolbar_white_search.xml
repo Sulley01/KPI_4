@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar android:theme="@style/AppTheme.ThemeOverlay.ActionBar.Dusk" android:id="@id/toolbar_search" android:background="@drawable/bg_separator_recycler_view" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:elevation="0.0dip" app:elevation="0.0dip" app:popupTheme="@style/AppTheme.ThemeOverlay.Light" app:titleTextAppearance="@style/TextAppearance.Toolbar.White"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <EditText android:textColor="@color/charcoal" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/txt_search" android:background="@null" android:focusable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="@dimen/space_x2" android:hint="@string/enter_name_email_or_mobile" android:maxLines="1" android:maxLength="@integer/editTextMaxLength200" android:digits="@string/digits_email_phone_name" android:layout_weight="1.0" android:layout_marginEnd="@dimen/space_x2" style="@style/TextAppearance.H5.Regular" />
+        <ImageButton android:layout_gravity="center" android:id="@id/btn_clear" android:background="@null" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/space_x2" android:src="@drawable/ic_clear" android:layout_marginEnd="@dimen/space_x2" />
+    </LinearLayout>
+</android.support.v7.widget.Toolbar>

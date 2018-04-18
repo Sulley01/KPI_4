@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/ghost_grey" android:layout_width="fill_parent" android:layout_height="@dimen/space_x19" />
+    <RelativeLayout android:gravity="center" android:background="@drawable/shadow_border_rectangle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_x6" android:layout_marginTop="@dimen/space_x4" android:layout_marginRight="@dimen/space_x6" android:layout_marginBottom="@dimen/space_x2" android:layout_centerHorizontal="true">
+        <ovo.id.loyalty.widgets.CardImageView android:id="@id/img_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/ovo_card_empty_state" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_x2" android:layout_marginTop="@dimen/space_x2" android:layout_marginRight="@dimen/space_x2">
+            <ImageView android:id="@id/img_logo_ovo" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="@dimen/space_x4" android:layout_marginBottom="@dimen/space_x3" android:src="@drawable/logo_ovo" />
+            <TextView android:textColor="@color/white" android:id="@id/txt_card_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space" style="@style/TextAppearance.H5.Regular" />
+            <TextView android:textColor="@color/white" android:id="@id/txt_card_holder_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" android:textAllCaps="true" style="@style/TextAppearance.Display.Bold" />
+        </LinearLayout>
+        <ImageView android:id="@id/img_logo" android:layout_width="wrap_content" android:layout_height="@dimen/space_x4" android:layout_marginTop="@dimen/space_x2" android:layout_marginRight="@dimen/space_x2" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

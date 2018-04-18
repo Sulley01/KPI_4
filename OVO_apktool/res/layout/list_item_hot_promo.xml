@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_promo" android:layout_width="@dimen/space_x35" android:layout_height="@dimen/space_x14" android:layout_marginLeft="@dimen/space_half" android:layout_marginTop="@dimen/space" android:layout_marginRight="@dimen/space_half"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img_promo_background" android:layout_width="fill_parent" android:layout_height="@dimen/space_x15" android:layout_marginLeft="-16.0dip" android:layout_marginRight="-16.0dip" android:src="@drawable/banner_default_pattern" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+    <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/space_x7_half" android:layout_marginTop="@dimen/space_x7_half">
+        <TextView android:textColor="@color/charcoal" android:ellipsize="end" android:id="@id/txt_merchant_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_x3" android:layout_marginTop="@dimen/space" android:layout_marginRight="@dimen/space_x3" android:maxLines="1" android:textAllCaps="true" style="@style/TextAppearance.Display.Bold" />
+        <TextView android:textColor="@color/charcoal" android:ellipsize="end" android:id="@id/txt_promo_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_x3" android:layout_marginTop="@dimen/space_quarter" android:layout_marginRight="@dimen/space_x3" android:maxLines="1" android:layout_below="@id/txt_merchant_name" style="@style/TextAppearance.Display.Regular" />
+    </RelativeLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="@dimen/space_x15" android:src="@drawable/big_ticket_card" android:scaleType="fitXY" android:adjustViewBounds="true" />
+</RelativeLayout>

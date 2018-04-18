@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/layout_transaction_detail" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/transaction_detail_header" />
+            <include android:visibility="gone" layout="@layout/transaction_detail_circle_header" />
+            <LinearLayout android:orientation="vertical" android:id="@id/view_status_message" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_x2" android:layout_marginRight="@dimen/space_x2">
+                <TextView android:textSize="@dimen/body_text_size" android:textColor="@color/magenta" android:gravity="fill" android:id="@id/txt_status_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x4" android:text="@string/msg_already_registered" android:lines="2" style="@style/TextAppearance.Display.Bold" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/view_details" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_x2" android:layout_marginRight="@dimen/space_x2">
+                <TextView android:textColor="@color/purple" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x4" android:text="@string/msg_bill_details" style="@style/TextAppearance.H5.Bold" />
+                <android.support.design.widget.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x2" android:layout_marginBottom="@dimen/space_x2">
+                    <EditText android:enabled="false" android:gravity="fill" android:id="@id/txt_reff_number" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/title_ref_number" android:maxLines="3" style="@style/Widget.EditText.ReffNo.Multiline" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2">
+                    <EditText android:enabled="false" android:id="@id/txt_date" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/title_date_time" style="@style/Widget.EditText" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout android:id="@id/view_from" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" android:hint="@string/title_from">
+                    <EditText android:enabled="false" android:id="@id/txt_from" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="false" android:maxLength="@integer/editTextMaxLengthDropdown" style="@style/Widget.EditText" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout android:id="@id/view_to" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2">
+                    <EditText android:enabled="false" android:id="@id/txt_to" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/title_to" android:singleLine="false" android:maxLength="@integer/editTextMaxLengthDropdown" android:lineSpacingExtra="@dimen/space_quarter" style="@style/Widget.EditText" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout android:id="@id/view_amount" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2">
+                    <EditText android:enabled="false" android:id="@id/txt_amount" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/msg_amount" style="@style/Widget.EditText" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout android:id="@id/view_message" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2">
+                    <EditText android:enabled="false" android:id="@id/txt_message" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/title_message" style="@style/Widget.EditText" />
+                </android.support.design.widget.TextInputLayout>
+                <include android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x2" layout="@layout/view_price_detail" />
+            </LinearLayout>
+            <include android:id="@id/rl_history_detail_cam" android:visibility="gone" layout="@layout/transaction_detail_cam" />
+            <LinearLayout android:orientation="vertical" android:id="@id/view_bolt_detail" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_x2" android:layout_marginRight="@dimen/space_x2">
+                <android.support.design.widget.TextInputLayout android:id="@id/view_bolt_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" android:hint="@string/msg_bolt_number">
+                    <EditText android:enabled="false" android:id="@id/txt_bolt_number" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Widget.EditText" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout android:id="@id/view_customer_name" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2">
+                    <EditText android:enabled="false" android:id="@id/txt_customer_name" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/label_customer_name" style="@style/Widget.EditText" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout android:id="@id/view_period" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2">
+                    <EditText android:enabled="false" android:id="@id/txt_period" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/title_period" style="@style/Widget.EditText" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2">
+                    <EditText android:enabled="false" android:id="@id/txt_payment_method" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/msg_payment_method" style="@style/Widget.EditText" />
+                </android.support.design.widget.TextInputLayout>
+                <RelativeLayout android:id="@id/field_stroom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2">
+                    <TextView android:id="@id/txt_label_stroom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_half" android:text="@string/msg_stroom_token" android:labelFor="@id/edit_stroom" style="@style/TextAppearance.Display.Regular" />
+                    <TextView android:textColor="@color/turquoise" android:gravity="end" android:id="@id/txt_label_copy" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/msg_copy" android:layout_toEndOf="@id/txt_label_stroom" style="@style/TextAppearance.Display.Regular" />
+                    <EditText android:enabled="false" android:id="@id/edit_stroom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/txt_label_stroom" style="@style/Widget.EditText" />
+                </RelativeLayout>
+                <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x2" layout="@layout/view_bill_detail" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/view_activity" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_x2" android:layout_marginRight="@dimen/space_x2">
+                <TextView android:textColor="@color/purple" android:id="@id/txt_title_activity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x4" android:text="@string/title_activity" style="@style/TextAppearance.H5.Bold" />
+                <android.support.v7.widget.RecyclerView android:id="@id/list_collection" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:id="@id/view_white_overlay" android:background="@color/white_alpha_50" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/rl_button" />
+        <RelativeLayout android:gravity="bottom" android:id="@id/rl_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x4" android:layout_marginBottom="@dimen/space_x2" android:layout_below="@id/layout_content" android:layout_alignParentBottom="true">
+            <LinearLayout android:orientation="vertical" android:id="@id/view_pending_progress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <me.zhanghai.android.materialprogressbar.MaterialProgressBar android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/txt_resend_loading_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_resend_link" style="@style/TextAppearance.H4.Bold.Purple" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/view_pending_outgoing" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:enabled="false" android:id="@id/btn_resend_link" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginLeft="@dimen/space_x4" android:layout_marginRight="@dimen/space_x4" android:text="@string/action_resend_link" style="@style/Widget.Button.Primary" />
+                <Button android:id="@id/btn_cancel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginLeft="@dimen/space_x4" android:layout_marginRight="@dimen/space_x4" android:text="@string/action_cancel_transfer" style="@style/Widget.Button.Tertiary" />
+                <Button android:textColor="@color/turquoise" android:id="@id/btn_budget_details" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/space_x5" android:layout_marginLeft="@dimen/space_x4" android:layout_marginRight="@dimen/space_x4" android:layout_marginBottom="@dimen/space_x2" android:text="@string/msg_see_budget_details" style="@style/Widget.Button.Secondary" />
+                <Button android:textColor="@color/turquoise" android:id="@id/btn_edit" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/space_x5" android:layout_marginLeft="@dimen/space_x4" android:layout_marginRight="@dimen/space_x4" android:layout_marginBottom="@dimen/space_x4" android:text="@string/action_edit" style="@style/Widget.Button.Tertiary" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

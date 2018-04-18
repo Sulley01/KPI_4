@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/space_x4" android:layout_marginRight="@dimen/space_x4"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_failed_pin" />
+        <TextView android:id="@id/txt_error_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x2" android:text="@string/err_topup_failed" style="@style/TextAppearance.H5.Bold" />
+        <TextView android:textColor="@color/dusk" android:gravity="center" android:id="@id/txt_error_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_half" android:text="@string/err_credit_card_not_valid" style="@style/TextAppearance.Body.Regular" />
+        <TextView android:textColor="@color/dusk" android:gravity="center" android:id="@id/txt_error_code" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x2" style="@style/TextAppearance.Body.Regular" />
+    </LinearLayout>
+    <Button android:id="@id/btn_close" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginBottom="@dimen/space_x4" android:text="@string/action_try_again" style="@style/Widget.Button.Primary" />
+</LinearLayout>

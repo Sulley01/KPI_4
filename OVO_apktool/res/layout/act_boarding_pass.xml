@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/toolbar" />
+    <ScrollView android:id="@id/view_detail" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/space_x3" android:paddingBottom="@dimen/space_x4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/space_x2" android:paddingEnd="@dimen/space_x2">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_detail" style="@style/TextAppearance.H5.Bold.Purple" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x2" android:text="@string/msg_boarding_pass_information" style="@style/TextAppearance.H5.Regular.Dusk" />
+            <android.support.design.widget.TextInputLayout android:id="@id/input_booking_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x2">
+                <android.support.design.widget.TextInputEditText android:id="@id/txt_booking_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hint_booking_number" android:maxLength="@integer/editTextMaxBookingNumber" android:digits="@string/digits_alphabet_with_slash" android:inputType="textCapCharacters" style="@style/TextAppearance.H5.Regular" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout android:id="@id/input_passenger_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x2">
+                <android.support.design.widget.TextInputEditText android:id="@id/txt_passenger_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hint_passenger_name" android:maxLength="@integer/editTextMaxLengthPassengerName" android:inputType="textCapCharacters" style="@style/TextAppearance.H5.Regular" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout android:id="@id/input_flight_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x2">
+                <android.support.design.widget.TextInputEditText android:id="@id/txt_flight_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hint_flight_number" android:maxLength="@integer/editTextMaxFlightNumber" android:inputType="textCapCharacters" style="@style/TextAppearance.H5.Regular" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout android:id="@id/input_seat_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x2">
+                <android.support.design.widget.TextInputEditText android:id="@id/txt_seat_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hint_seat_number" android:maxLength="@integer/editTextMaxSeatNumber" android:digits="@string/digits_alphanumeric_no_space" android:inputType="textCapCharacters" style="@style/TextAppearance.H5.Regular" />
+            </android.support.design.widget.TextInputLayout>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x2" android:hint="@string/hint_departure_date" style="@style/TextAppearance.Display.Regular" />
+            <TextView android:id="@id/txt_departure_date" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AppTheme.TextView.Editable" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x2" android:hint="@string/hint_flight_origin" style="@style/TextAppearance.Display.Regular" />
+            <TextView android:id="@id/txt_flight_origin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/hint_choose" style="@style/AppTheme.TextView.Editable" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x2" android:hint="@string/hint_flight_destination" style="@style/TextAppearance.Display.Regular" />
+            <TextView android:textAppearance="@style/TextAppearance.H5.Regular" android:id="@id/txt_flight_destination" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/hint_choose" style="@style/AppTheme.TextView.Editable" />
+            <Button android:enabled="false" android:id="@id/btn_continue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x5" android:text="@string/action_continue" />
+            <Button android:id="@id/btn_cancel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space" android:text="@string/action_cancel" style="@style/Widget.Button.Tertiary" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

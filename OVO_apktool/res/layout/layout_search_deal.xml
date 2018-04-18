@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <EditText android:textColor="@color/charcoal" android:textColorHint="@color/dusk" android:id="@id/et_search_deals" android:background="@drawable/background_edit_text_ghost_grey" android:padding="@dimen/space_x2" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" android:hint="@string/hint_search_deals_and_merchant" android:maxLines="1" android:lines="1" android:scrollHorizontally="true" android:drawableRight="@drawable/ic_search_dark" style="@style/TextAppearance.H5.Regular" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <android.support.v7.widget.RecyclerView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <me.zhanghai.android.materialprogressbar.MaterialProgressBar android:id="@id/progress_loading" android:layout_width="@dimen/space_x7" android:layout_height="@dimen/space_x7" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

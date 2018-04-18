@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/ll_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/FragmentTopLevelContainer">
+        <LinearLayout android:orientation="vertical" android:id="@id/pin_container" android:paddingBottom="@dimen/space_x4" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:gravity="center" android:id="@id/txt_title" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/title_enter_email_code" style="@style/AppTheme.Text.Purple.Title" />
+            <TextView android:gravity="center" android:id="@id/txt_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x3" android:text="@string/msg_we_sent_sms" android:layout_marginStart="@dimen/space" android:layout_marginEnd="@dimen/space" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.oneb4nk.ovolibrary.android.widget.PinEntryEditText android:textSize="@dimen/h3_text_size" android:id="@id/pin_entry" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cursorVisible="false" android:maxLength="4" android:digits="\ 1234567890" android:inputType="number" android:textIsSelectable="false" app:animationType="popIn" />
+                <TextView android:textColor="@color/dusk" android:gravity="center" android:id="@id/txt_error" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x4" android:text="@string/title_ovo_is_secured_with_bank_grade" android:layout_below="@id/pin_entry" style="@style/AppTheme.Text.Error" />
+                <FrameLayout android:id="@id/view_progress" android:background="@color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <me.zhanghai.android.materialprogressbar.MaterialProgressBar android:layout_gravity="center" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginTop="-48.0dip" android:indeterminate="true" />
+                </FrameLayout>
+            </RelativeLayout>
+            <Button android:layout_gravity="center_horizontal" android:id="@id/btn_resend_sms" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space" android:text="@string/action_sms_not_received" android:textAllCaps="false" style="@style/Widget.Button.Tertiary" />
+            <RelativeLayout android:id="@id/layout_resend_call" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:layout_gravity="center_horizontal" android:id="@id/btn_resend_sms_login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space" android:text="@string/action_resend_code" android:layout_alignParentLeft="true" android:textAllCaps="false" style="@style/Widget.Button.Tertiary" />
+                <Button android:layout_gravity="center_horizontal" android:id="@id/btn_call_me" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space" android:text="@string/action_call_me" android:layout_alignParentRight="true" style="@style/Widget.Button.Tertiary" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/view_error" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/msg_sorry" style="@style/AppTheme.Text.Purple.Title" />
+            <TextView android:gravity="center_horizontal" android:autoLink="email" android:id="@id/txt_error_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x3" android:text="@string/msg_sms_not_working" />
+            <android.support.v4.widget.Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <Button android:id="@id/btn_try_again" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginBottom="@dimen/default_margins" android:text="@string/action_try_again" style="@style/Widget.Button.Primary" />
+        </LinearLayout>
+        <include android:visibility="gone" layout="@layout/fragment_fragment_loading" />
+    </RelativeLayout>
+</ScrollView>

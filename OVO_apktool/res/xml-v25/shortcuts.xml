@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut android:icon="@drawable/app_shortcut_ic_transfer" android:enabled="true" android:shortcutId="transfer" android:shortcutShortLabel="@string/shortcut_title_transfer" android:shortcutLongLabel="@string/shortcut_title_transfer" android:shortcutDisabledMessage="@string/shortcut_title_transfer">
+        <intent android:targetPackage="ovo.id" android:action="android.intent.action.VIEW" android:targetClass="ovo.id.loyalty.activity.ActMain" />
+        <intent android:targetPackage="ovo.id" android:action="android.intent.action.VIEW" android:targetClass="ovo.id.loyalty.activity.ActTransfer" />
+    </shortcut>
+    <shortcut android:icon="@drawable/app_shortcut_ic_deals" android:enabled="true" android:shortcutId="deals" android:shortcutShortLabel="@string/shortcut_title_deals" android:shortcutLongLabel="@string/shortcut_title_deals" android:shortcutDisabledMessage="@string/shortcut_title_deals">
+        <intent android:targetPackage="ovo.id" android:action="android.intent.action.VIEW" android:targetClass="ovo.id.loyalty.activity.ActMain" />
+        <intent android:targetPackage="ovo.id" android:action="android.intent.action.VIEW" android:targetClass="ovo.id.loyalty.activity.ActDealAndPromo" />
+    </shortcut>
+    <shortcut android:icon="@drawable/app_shortcut_ic_scan" android:enabled="true" android:shortcutId="scan" android:shortcutShortLabel="@string/shortcut_title_scan" android:shortcutLongLabel="@string/shortcut_title_scan" android:shortcutDisabledMessage="@string/shortcut_title_scan">
+        <intent android:targetPackage="ovo.id" android:action="android.intent.action.VIEW" android:targetClass="ovo.id.loyalty.activity.ActMain" />
+        <intent android:targetPackage="ovo.id" android:action="android.intent.action.VIEW" android:targetClass="ovo.id.loyalty.activity.ActQrScanner" />
+    </shortcut>
+</shortcuts>

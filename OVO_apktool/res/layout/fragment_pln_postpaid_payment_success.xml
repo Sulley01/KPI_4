@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_transaction_bill_success" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/space_x2" android:layout_marginTop="@dimen/space_x2">
+        <android.support.design.widget.TextInputLayout android:id="@id/field_ref_id" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x1_half">
+            <EditText android:enabled="false" android:id="@id/edit_ref_num_postpaid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/title_ref_number" style="@style/Widget.EditText" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout android:id="@id/field_ref_pln_postpaid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x1_half">
+            <EditText android:enabled="false" android:id="@id/edit_ref_num_pln_postpaid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/title_pln_ref_number" style="@style/Widget.EditText" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout android:id="@id/field_time_date" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x1_half">
+            <EditText android:enabled="false" android:id="@id/edit_time_date_postpaid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/title_date_time" style="@style/Widget.EditText" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout android:id="@id/field_cust_name_postpaid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x1_half">
+            <EditText android:enabled="false" android:id="@id/edit_cust_name_postpaid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/msg_customer_name" android:maxLength="@integer/editTextMaxLengthFullName" style="@style/Widget.EditText" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout android:id="@id/field_stand_meter" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x1_half">
+            <EditText android:enabled="false" android:id="@id/edit_stand_meter" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/msg_stand_meter" style="@style/Widget.EditText" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout android:id="@id/field_period" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x1_half">
+            <EditText android:enabled="false" android:id="@id/edit_period" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/title_period" android:singleLine="false" android:maxLength="@integer/editTextMaxPeriodLength" style="@style/Widget.EditText" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout android:id="@id/field_payment_method" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space">
+            <EditText android:enabled="false" android:id="@id/edit_payment_method_postpaid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/msg_payment_method" style="@style/Widget.EditText" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+</RelativeLayout>

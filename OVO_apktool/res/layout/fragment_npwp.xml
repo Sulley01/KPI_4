@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/linear_content_npwp" android:background="@color/white" android:paddingTop="@dimen/space_x2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" android:hint="@string/hint_bring_have_npwp">
+        <AutoCompleteTextView android:id="@id/edit_have_npwp" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/hint_choose" android:drawableRight="@drawable/ic_expand" style="@style/Widget.EditText" />
+    </android.support.design.widget.TextInputLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/linear_have_npwp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" android:hint="@string/hint_npwp_number">
+            <android.support.design.widget.TextInputEditText android:id="@id/edit_npwp_number" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLength="@integer/npwpMaxLength" style="@style/Widget.EditText.Numbers" />
+        </android.support.design.widget.TextInputLayout>
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/image_camera" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space" android:scaleType="fitCenter" android:minWidth="@dimen/space_x30" android:minHeight="@dimen/space_x19" app:srcCompat="@drawable/ic_camera_box" />
+        <TextView android:textColor="@color/dusk" android:layout_gravity="center_horizontal" android:id="@id/text_take_picture" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x7" android:text="@string/msg_take_picture" style="@style/TextAppearance.Body.Regular" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/linear_not_have_npwp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" android:hint="@string/hint_reasons">
+            <AutoCompleteTextView android:id="@id/edit_reason" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/hint_choose" android:maxLength="@integer/editTextMaxLength200" android:drawableRight="@drawable/ic_expand" style="@style/Widget.EditText" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+    <Button android:enabled="false" android:textColor="@color/button_tertiary_text" android:id="@id/btn_next" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginTop="@dimen/space_x2" android:text="@string/action_next_in" style="@style/Widget.Button.Secondary" />
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="left" android:orientation="horizontal" android:background="@color/purple" android:paddingTop="@dimen/space_x1_half" android:paddingBottom="@dimen/space_x1_half" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_gravity="left" android:id="@id/rl_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_x2" android:layout_marginRight="@dimen/space">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/image_user" android:background="@drawable/default_avatar_not_found" android:layout_width="60.0dip" android:layout_height="60.0dip" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/image_level" android:background="@drawable/ic_ovo_user" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="-20.0dip" android:layout_toRightOf="@id/image_user" android:layout_alignBottom="@id/image_user" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/ll_user_data" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <TextView android:textColor="@color/white" android:id="@id/txt_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_half" style="@style/TextAppearance.H5.Regular" />
+            <TextView android:textColor="@color/white" android:id="@id/txt_phone_number_1" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextAppearance.H5.Regular" />
+        </LinearLayout>
+        <TextView android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/txt_phone_number_2" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextAppearance.H3.Regular" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/space_x4">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space" android:text="@string/title_from" style="@style/TextAppearance.Display.Regular" />
+        <TextView android:id="@id/text_account_from" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ovo_cash" style="@style/TextAppearance.H5.Regular" />
+        <TextView android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x4" android:layout_marginBottom="@dimen/space" android:text="@string/msg_amount" style="@style/TextAppearance.Display.Regular" />
+        <ovo.id.loyalty.widgets.PrefixEditText android:id="@id/txt_money_amount" android:tag="Rp" android:background="@drawable/background_edit_text_error" android:paddingBottom="@dimen/space" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLength="@integer/editTextMaxLengthTransferAmount" android:digits="@string/digits_numbers" android:inputType="number" android:textIsSelectable="false" style="@style/TextAppearance.H5.Regular" />
+        <TextView android:textColor="@color/dark_gray" android:id="@id/txt_available_balance" android:nextFocusDown="@id/txt_transfer_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_half" android:text="@string/msg_remaining_balance" android:layout_below="@id/txt_money_amount" style="@style/TextAppearance.Display.Regular" />
+        <android.support.design.widget.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x5" app:hintEnabled="true" app:errorEnabled="true">
+            <EditText android:id="@id/txt_transfer_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hint_transfer_message" android:digits="@string/digits_alphanumeric" android:drawablePadding="@dimen/space" android:inputType="text" style="@style/Widget.EditText" />
+        </android.support.design.widget.TextInputLayout>
+        <TextView android:textColor="@color/purple" android:id="@id/txt_not_ovo_user" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_full_not_an_ovo_user" style="@style/TextAppearance.Display.Regular" />
+        <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <Button android:enabled="false" android:id="@id/btn_next" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:text="@string/action_process_transfer" style="@style/Widget.Button.Primary" />
+    </LinearLayout>
+</LinearLayout>

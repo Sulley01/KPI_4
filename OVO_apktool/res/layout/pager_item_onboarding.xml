@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/bg_white_onboarding" android:padding="@dimen/space_x2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/space_x3_half" android:layout_marginRight="@dimen/space_x3_half">
+        <TextView android:textColor="@color/dark_purple" android:gravity="center" android:id="@id/txt_title_onboarding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space" android:text="" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/TextAppearance.H5.Bold" />
+        <ImageView android:id="@id/img_onboard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x3" android:layout_above="@id/txt_title_onboarding" android:layout_centerHorizontal="true" />
+        <TextView android:textColor="@color/dusk" android:gravity="center" android:id="@id/txt_sub_title_onboarding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/txt_title_onboarding" android:layout_centerHorizontal="true" style="@style/TextAppearance.Display.Regular" />
+        <Button android:id="@id/btn_get_started" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginBottom="@dimen/space_x2" android:text="@string/action_get_started" android:layout_alignParentBottom="true" />
+        <TextView android:textColor="@color/dusk" android:gravity="center" android:id="@id/txt_swipe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" android:text="@string/action_swipe_to_learn_more" android:drawableLeft="@drawable/ic_swipeleft" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/TextAppearance.Body.Regular" />
+    </RelativeLayout>
+</LinearLayout>

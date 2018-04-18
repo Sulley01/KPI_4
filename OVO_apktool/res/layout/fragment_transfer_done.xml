@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="@dimen/space_x4" android:paddingTop="@dimen/space_x9" android:paddingRight="@dimen/space_x4" android:paddingBottom="@dimen/space_x4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" android:src="@drawable/ic_success_pin_copy" />
+    <TextView android:textColor="@color/dusk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x3" android:text="@string/msg_send_transfer_success" style="@style/TextAppearance.H5.Bold" />
+    <ImageView android:id="@id/image_user" android:background="@drawable/ic_default_avatar" android:layout_width="80.0dip" android:layout_height="80.0dip" android:scaleType="centerCrop" />
+    <TextView android:id="@id/txt_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space" android:layout_marginBottom="@dimen/space" style="@style/TextAppearance.H5.Regular" />
+    <TextView android:textColor="@color/dusk" android:id="@id/txt_key" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" style="@style/TextAppearance.H5.Regular" />
+    <TextView android:id="@id/txt_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" style="@style/TextAppearance.H3.Regular" />
+    <TextView android:id="@id/txt_message" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginTop="@dimen/space" android:layout_marginBottom="@dimen/space" android:layout_weight="1.0" style="@style/TextAppearance.H5.Regular" />
+    <Button android:id="@id/btn_done" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:text="@string/action_done" style="@style/Widget.Button.Primary" />
+</LinearLayout>

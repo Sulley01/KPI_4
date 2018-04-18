@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/space_x2" android:paddingBottom="@dimen/space_x2" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioButton android:id="@id/radio_check" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_half" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:ellipsize="end" android:id="@id/txt_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:maxLength="@integer/editTextMaxLength" style="@style/TextAppearance.H5.Regular" />
+        <TextView android:ellipsize="end" android:id="@id/txt_bank" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:scrollHorizontally="true" android:maxLength="@integer/editTextMaxLength" style="@style/TextAppearance.H5.Regular" />
+        <TextView android:ellipsize="end" android:id="@id/txt_mobile" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:scrollHorizontally="true" android:maxLength="@integer/editTextMaxLength" style="@style/TextAppearance.H5.Regular" />
+    </LinearLayout>
+    <TextView android:textColor="@color/purple" android:id="@id/txt_main_account" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/msg_main_account" style="@style/TextAppearance.Display.Regular" />
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:id="@id/view_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v4.widget.SwipeRefreshLayout android:id="@id/srl_deals" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <android.support.v7.widget.RecyclerView android:id="@id/rv_deals" android:background="@color/white" android:paddingTop="@dimen/space" android:paddingBottom="@dimen/space_x1_half" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+        <include android:visibility="gone" layout="@layout/view_deal_retry" />
+        <LinearLayout android:orientation="vertical" android:id="@id/view_empty_deal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/vector_ic_deals_gray" />
+            <TextView android:textColor="@color/dusk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_deal_not_found" style="@style/TextAppearance.Body.Regular" />
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

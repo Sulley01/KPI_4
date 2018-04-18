@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/light_grey" android:paddingLeft="@dimen/space_x2" android:paddingTop="@dimen/space_x2_half" android:paddingRight="@dimen/space_x2" android:paddingBottom="@dimen/space_x2_half" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.RecyclerView android:id="@id/rv_invest_menu" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

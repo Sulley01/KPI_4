@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <padding android:left="0.0dip" android:top="0.0dip" android:right="1.0dip" android:bottom="1.0dip" />
+            <solid android:color="#00cccccc" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <padding android:left="0.0dip" android:top="0.0dip" android:right="1.0dip" android:bottom="1.0dip" />
+            <solid android:color="#10cccccc" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <padding android:left="0.0dip" android:top="0.0dip" android:right="1.0dip" android:bottom="1.0dip" />
+            <solid android:color="#20cccccc" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <padding android:left="0.0dip" android:top="0.0dip" android:right="1.0dip" android:bottom="1.0dip" />
+            <solid android:color="#30cccccc" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <padding android:left="0.0dip" android:top="0.0dip" android:right="1.0dip" android:bottom="1.0dip" />
+            <solid android:color="#50cccccc" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <padding android:left="0.0dip" android:top="0.0dip" android:right="1.0dip" android:bottom="1.0dip" />
+            <solid android:color="#73cccccc" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <padding android:left="0.0dip" android:top="0.0dip" android:right="1.0dip" android:bottom="1.0dip" />
+            <solid android:color="#66cccccc" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@android:color/white" />
+        </shape>
+    </item>
+</layer-list>

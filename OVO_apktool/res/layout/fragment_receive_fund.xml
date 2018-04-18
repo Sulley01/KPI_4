@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/ll_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/layout_incoming_fund_header" layout="@layout/layout_incoming_fund_header" />
+        <TextView android:layout_gravity="left" android:id="@id/txt_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_x4" android:layout_marginTop="@dimen/space_x3" android:layout_marginRight="@dimen/space_x4" android:text="@string/msg_move_to" android:layout_below="@id/layout_incoming_fund_header" style="@style/TextAppearance.Display.Regular" />
+        <AutoCompleteTextView android:id="@id/txt_payment_type" android:paddingBottom="@dimen/space" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_x4" android:layout_marginRight="@dimen/space_x4" android:layout_marginBottom="@dimen/space_half" android:text="@string/msg_topup_select_account" android:layout_below="@id/txt_text" />
+        <TextView android:textColor="@color/magenta" android:id="@id/txt_available_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_x4" android:layout_marginRight="@dimen/space_x4" android:layout_marginBottom="@dimen/space_x4" android:layout_below="@id/txt_payment_type" style="@style/TextAppearance.Display.Regular" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_alert" android:paddingLeft="@dimen/space_x4" android:paddingRight="@dimen/space_x4" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/txt_available_balance">
+            <TextView android:textColor="@color/charcoal" android:layout_gravity="center" android:id="@id/txt_maximum_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_half" android:text="@string/error_maximum_balance_premiere" style="@style/TextAppearance.H5.Regular" />
+            <TextView android:textColor="@color/dusk" android:layout_gravity="center" android:id="@id/txt_move_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_move_funds" style="@style/TextAppearance.Body.Regular" />
+        </LinearLayout>
+        <android.support.v4.widget.Space android:id="@id/view_space" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:layout_below="@id/ll_alert" />
+        <Button android:id="@id/btn_pay" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginLeft="@dimen/space_x4" android:layout_marginRight="@dimen/space_x4" android:layout_marginBottom="@dimen/space_x2" android:text="@string/action_confirm" android:layout_alignParentBottom="true" style="@style/Widget.Button.Primary" />
+    </RelativeLayout>
+</ScrollView>

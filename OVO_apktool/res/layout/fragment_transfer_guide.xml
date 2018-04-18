@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/space_x4" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x1_half" android:layout_marginBottom="@dimen/space_x4" android:text="@string/msg_send_money_easy" android:drawableTop="@drawable/graphicart_ob_04" android:drawablePadding="@dimen/space" style="@style/TextAppearance.H4.Bold.Purple" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x3" android:text="@string/msg_transfer_guide_1" android:minLines="2" android:drawableLeft="@drawable/ic_user" android:drawablePadding="@dimen/space_x2" style="@style/TextAppearance.Display.Regular" />
+        <TextView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x3" android:text="@string/msg_transfer_guide_2" android:minLines="2" android:drawableLeft="@drawable/ic_art_timer" android:drawablePadding="@dimen/space_x2" style="@style/TextAppearance.Display.Regular" />
+        <TextView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x3" android:text="@string/msg_transfer_guide_3" android:minLines="2" android:drawableLeft="@drawable/ic_blocked_card" android:drawablePadding="@dimen/space_x2" style="@style/TextAppearance.Display.Regular" />
+        <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <Button android:id="@id/b_start" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:text="@string/action_get_started" style="@style/Widget.Button.Primary" />
+    </LinearLayout>
+</ScrollView>

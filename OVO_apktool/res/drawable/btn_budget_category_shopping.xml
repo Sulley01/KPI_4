@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <layer-list>
+            <item>
+                <shape android:shape="oval">
+                    <solid android:color="@color/white" />
+                    <stroke android:width="1.0dip" android:color="@color/light_grey" />
+                </shape>
+            </item>
+            <item android:drawable="@drawable/ic_shopping_copy_2" android:left="@dimen/space" android:top="@dimen/space" android:right="@dimen/space" android:bottom="@dimen/space" />
+        </layer-list>
+    </item>
+    <item android:state_selected="true" android:state_pressed="true">
+        <layer-list>
+            <item>
+                <shape android:shape="oval">
+                    <solid android:color="@color/turquoise" />
+                </shape>
+            </item>
+            <item android:drawable="@drawable/ic_shopping_white" android:left="@dimen/space" android:top="@dimen/space" android:right="@dimen/space" android:bottom="@dimen/space" />
+        </layer-list>
+    </item>
+    <item android:state_selected="false" android:state_pressed="true">
+        <layer-list>
+            <item>
+                <shape android:shape="oval">
+                    <solid android:color="@color/turquoise" />
+                </shape>
+            </item>
+            <item android:drawable="@drawable/ic_shopping_white" android:left="@dimen/space" android:top="@dimen/space" android:right="@dimen/space" android:bottom="@dimen/space" />
+        </layer-list>
+    </item>
+    <item android:state_selected="true" android:state_pressed="false">
+        <layer-list>
+            <item>
+                <shape android:shape="oval">
+                    <solid android:color="@color/turquoise" />
+                </shape>
+            </item>
+            <item android:drawable="@drawable/ic_shopping_white" android:left="@dimen/space" android:top="@dimen/space" android:right="@dimen/space" android:bottom="@dimen/space" />
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item>
+                <shape android:shape="oval">
+                    <solid android:color="@color/white" />
+                    <stroke android:width="1.0dip" android:color="@color/light_grey" />
+                </shape>
+            </item>
+            <item android:drawable="@drawable/ic_shopping" android:left="@dimen/space" android:top="@dimen/space" android:right="@dimen/space" android:bottom="@dimen/space" />
+        </layer-list>
+    </item>
+</selector>

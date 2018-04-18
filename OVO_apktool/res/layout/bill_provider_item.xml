@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/view_provider" android:paddingLeft="@dimen/space_x2" android:paddingTop="@dimen/space_x2" android:paddingRight="@dimen/space_x2" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/txt_provider_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toEndOf="@id/img_provider" style="@style/TextAppearance.H5.Regular" />
+    <View android:background="@color/light_grey" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/space_x2" android:layout_below="@id/img_provider" android:layout_alignStart="@id/txt_provider_name" />
+    <ImageView android:id="@id/img_provider" android:background="@drawable/bg_circle_light_grey" android:layout_width="@dimen/space_x5" android:layout_height="@dimen/space_x5" android:layout_marginRight="@dimen/space_x2" android:scaleType="fitCenter" android:layout_alignParentTop="true" android:layout_alignParentStart="true" app:srcCompat="@drawable/vector_logo_ovo" />
+</RelativeLayout>

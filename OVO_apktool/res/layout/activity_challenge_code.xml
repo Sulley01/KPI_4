@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_challange_code" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x9_half" android:text="@string/msg_request_upgrade_account" style="@style/TextAppearance.H4.Bold.Purple" />
+    <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space" android:text="@string/msg_ovo_banker_now_about_code" style="@style/TextAppearance.Body.Regular" />
+    <ovo.id.loyalty.widgets.LetterSpacingTextView android:id="@id/txt_challenge_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x8" style="@style/TextAppearance.H3.Regular" />
+    <View android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <Button android:id="@id/btn_term_condition" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space" android:text="@string/menu_terms_conditions" android:textAllCaps="false" style="@style/Widget.Button.Tertiary" />
+    <Button android:layout_gravity="bottom" android:id="@id/btn_done" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_margin="@dimen/space_x4" android:text="@string/action_done" style="@style/Widget.Button.Primary" />
+</LinearLayout>

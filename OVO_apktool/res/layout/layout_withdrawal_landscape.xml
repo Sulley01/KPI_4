@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/view_withdrawal" android:background="@color/ghost_grey" android:paddingLeft="@dimen/space_x2" android:paddingTop="@dimen/space_x3" android:paddingRight="@dimen/space_x2" android:paddingBottom="@dimen/space_x3" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space" android:text="@string/title_withdrawal_code" style="@style/TextAppearance.H5.Bold.Purple" />
+    <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_withdrawal_code" style="@style/TextAppearance.Body.Regular" />
+    <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ovo.id.loyalty.widgets.CircularSpentView android:id="@id/img_circular_counter" android:layout_width="@dimen/space_x8" android:layout_height="@dimen/space_x8" android:layout_margin="@dimen/space_x2" />
+        <TextView android:gravity="center" android:id="@id/txt_counter" android:layout_width="@dimen/space_x8" android:layout_height="@dimen/space_x8" android:layout_margin="@dimen/space_x2" android:text="30" />
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/bg_white_stroke_grey" android:padding="@dimen/space" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/space">
+        <ImageView android:id="@id/img_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" app:srcCompat="@drawable/ic_close" />
+        <ImageView android:id="@id/img_barcode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_half" android:layout_marginBottom="@dimen/space_x2" android:layout_above="@id/txt_barcode" android:layout_below="@id/img_close" android:layout_centerHorizontal="true" />
+        <TextView android:id="@id/txt_barcode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/TextAppearance.H4.Regular" />
+    </RelativeLayout>
+</LinearLayout>

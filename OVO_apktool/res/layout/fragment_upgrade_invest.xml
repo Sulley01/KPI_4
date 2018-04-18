@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="@dimen/space_x2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/image_upgrade" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space" app:srcCompat="@drawable/vector_ic_graphic_art_banker" />
+    <TextView android:textColor="@color/charcoal" android:id="@id/text_info_upgrade" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_x4" android:layout_marginRight="@dimen/space_x4" android:layout_marginBottom="@dimen/space_x4" android:text="Hello, we will ask you some question to collect your additional information for the investment data" android:layout_below="@id/image_upgrade" android:textAlignment="center" style="@style/TextAppearance.H5.Regular" />
+    <include android:id="@id/view_content_upgrade" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/text_info_upgrade" layout="@layout/layout_content_upgrade" />
+    <View android:id="@id/view_divider" android:background="@color/light_grey" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/view_content_upgrade" />
+    <Button android:enabled="false" android:id="@id/button_submit" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginLeft="@dimen/space_x4" android:layout_marginTop="@dimen/space_x5" android:layout_marginRight="@dimen/space_x4" android:layout_marginBottom="@dimen/space_x4" android:text="Submit" android:layout_below="@id/view_divider" style="@style/Widget.Button.Primary" />
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="dimen" name="card_margin">@dimen/space_x5</item>
+    <item type="dimen" name="deals_title_margin">@dimen/space_x5</item>
+    <dimen name="fab_text_size">14.0sp</dimen>
+    <item type="dimen" name="icon_lock_size">@dimen/space_x4</item>
+    <dimen name="minus_margins">-64.0dip</dimen>
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView android:id="@id/view_footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/space_x2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/btn_confirm" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:text="@string/title_confirm" style="@style/Widget.Button.Primary" />
+            <Button android:id="@id/btn_cancel" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginTop="@dimen/space" android:text="@string/action_cancel" style="@style/Widget.Button.Tertiary" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/view_footer">
+        <ovo.id.loyalty.widgets.BookingRelativeLayout android:background="@color/purple" android:paddingTop="?actionBarSize" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/default_merchant_background" android:layout_alignBottom="@id/ll_top_content" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_top_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/img_airline" android:layout_width="@dimen/space_x6" android:layout_height="@dimen/space_x6" android:layout_marginTop="@dimen/space_x4" android:layout_marginBottom="@dimen/space" app:srcCompat="@drawable/ic_logo" />
+                <TextView android:id="@id/txt_airline_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x4" android:textAllCaps="true" style="@style/TextAppearance.H5.Bold.White" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:background="#80432575" android:paddingTop="@dimen/space_x1_half" android:paddingBottom="@dimen/space_x1_half" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_booking_number" style="@style/TextAppearance.Display.Regular.White" />
+                    <TextView android:textColor="@color/white" android:id="@id/txt_booking_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAllCaps="true" style="@style/TextAppearance.H3.Bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </ovo.id.loyalty.widgets.BookingRelativeLayout>
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+            <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/space_x4" android:paddingTop="@dimen/space_x3" android:paddingRight="@dimen/space_x4" android:paddingBottom="@dimen/space_x4" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space">
+                    <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/title_details" android:layout_weight="1.0" style="@style/TextAppearance.H5.Bold.Purple" />
+                    <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_half">
+                    <TextView android:text="@string/msg_passenger" style="@style/TextBoardingContent" />
+                    <TextView android:id="@id/txt_passenger_name" style="@style/TextBoardingValue" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_half">
+                    <TextView android:text="@string/msg_flight_number" style="@style/TextBoardingContent" />
+                    <TextView android:id="@id/txt_flight_number" style="@style/TextBoardingValue" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_half">
+                    <TextView android:text="@string/hint_seat_number" style="@style/TextBoardingContent" />
+                    <TextView android:id="@id/txt_seat_number" style="@style/TextBoardingValue" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_half">
+                    <TextView android:text="@string/msg_flight_date" style="@style/TextBoardingContent" />
+                    <TextView android:id="@id/txt_flight_date" style="@style/TextBoardingValue" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_half">
+                    <TextView android:text="@string/msg_flight_origin" style="@style/TextBoardingContent" />
+                    <TextView android:id="@id/txt_flight_origin" style="@style/TextBoardingValue" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:text="@string/msg_flight_destination" style="@style/TextBoardingContent" />
+                    <TextView android:id="@id/txt_flight_destination" style="@style/TextBoardingValue" />
+                </LinearLayout>
+                <TextView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x2" android:text="@string/msg_sync_id" android:drawablePadding="@dimen/space" android:drawableStart="@drawable/icon_boarding_pass_info" style="@style/TextBoardingContent.Purple" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <include layout="@layout/toolbar" />
+</RelativeLayout>

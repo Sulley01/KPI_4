@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/view_balance" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/iv_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_alignTop="@id/ll_header" android:layout_alignBottom="@id/ll_header" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_header" android:layout_width="fill_parent" android:layout_height="@dimen/space_x14">
+                    <TextView android:id="@id/tv_nominal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space" android:text="@string/nominal" style="@style/TextAppearance.Display.Regular" />
+                    <RelativeLayout android:id="@id/rl_et_amount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_x4" android:layout_marginRight="@dimen/space_x4">
+                        <ovo.id.loyalty.widgets.PrefixEditText android:id="@id/et_amount" android:tag="Rp" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/space_x4" android:maxLength="@integer/editTextMaxLengthTransferAmount" android:digits="@string/digits_numbers" android:layout_centerInParent="true" android:inputType="number" android:imeOptions="actionDone" android:textIsSelectable="false" style="@style/TextAppearance.H3.Regular" />
+                    </RelativeLayout>
+                    <TextView android:textColor="@color/magenta" android:id="@id/tv_amount_error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space" style="@style/TextAppearance.Display.Regular" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RadioGroup android:orientation="horizontal" android:id="@id/rg_scan_options" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_x4" android:layout_marginTop="@dimen/space_x2" android:layout_marginRight="@dimen/space_x4">
+                <RadioButton android:textAppearance="@style/TextAppearance.Body.Regular" android:gravity="center" android:id="@id/rb_antar_ovo" android:layout_width="0.0dip" android:layout_height="wrap_content" android:checked="true" android:button="@null" android:text="@string/msg_antar_ovo" android:drawableTop="@drawable/selector_radio_btn" android:drawablePadding="@dimen/space" android:layout_weight="1.0" />
+                <RadioButton android:textAppearance="@style/TextAppearance.Body.Regular" android:gravity="center" android:id="@id/rb_scan" android:layout_width="0.0dip" android:layout_height="wrap_content" android:button="@null" android:text="@string/btn_scan" android:drawableTop="@drawable/selector_radio_btn" android:drawablePadding="@dimen/space" android:layout_weight="1.0" />
+                <RadioButton android:textAppearance="@style/TextAppearance.Body.Regular" android:gravity="center" android:id="@id/rb_bank_account" android:layout_width="0.0dip" android:layout_height="wrap_content" android:button="@null" android:text="@string/transfer_tab_other_bank" android:drawableTop="@drawable/selector_radio_btn" android:drawablePadding="@dimen/space" android:layout_weight="1.0" />
+            </RadioGroup>
+            <include layout="@layout/view_transfer_antar_ovo" />
+            <include layout="@layout/view_transfer_rekening_bank" />
+            <include layout="@layout/view_transfer_scan" />
+            <include layout="@layout/fragment_upgrade_user" />
+            <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <RelativeLayout android:id="@id/rl_btn_event" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:enabled="false" android:id="@id/b_transfer_event" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/space_x5" android:layout_marginLeft="@dimen/space_x4" android:layout_marginTop="@dimen/space_x4" android:layout_marginRight="@dimen/space_x4" android:layout_marginBottom="@dimen/space" android:alpha="0.5" style="@style/Widget.Button.Primary" />
+            </RelativeLayout>
+            <Button android:enabled="false" android:id="@id/b_transfer" android:layout_width="fill_parent" android:layout_height="@dimen/space_x5" android:layout_marginLeft="@dimen/space_x4" android:layout_marginRight="@dimen/space_x4" android:layout_marginBottom="@dimen/space_x4" android:text="@string/action_transfer_and_invite" style="@style/Widget.Button.Primary" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

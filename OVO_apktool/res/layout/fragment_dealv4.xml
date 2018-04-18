@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <EditText android:textColor="@color/charcoal" android:textColorHint="@color/dusk" android:id="@id/et_search_deals" android:background="@drawable/background_edit_text_ghost_grey" android:padding="@dimen/space_x2" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hint_search_deals_and_merchant" android:maxLines="1" android:lines="1" android:scrollHorizontally="true" android:drawableEnd="@drawable/ic_search_dark" style="@style/TextAppearance.H5.Regular" />
+    <android.support.v4.widget.SwipeRefreshLayout android:id="@id/view_swipe_refresh" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <android.support.v4.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include android:visibility="gone" layout="@layout/view_deal_retry" />
+                <LinearLayout android:orientation="vertical" android:id="@id/view_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/view_tap_refresh" android:paddingTop="@dimen/space_x5" android:paddingBottom="@dimen/space_x5" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+                            <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_fail_to_load" />
+                            <Button android:layout_gravity="center" android:id="@id/btn_try_again" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_try_again" android:drawablePadding="@dimen/space" android:textAllCaps="false" style="@style/Widget.Button.Tertiary" />
+                        </LinearLayout>
+                        <ovo.id.loyalty.widgets.HotDealViewPager android:id="@id/vp_deals_banner" android:visibility="gone" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="@dimen/deals_banner_height" />
+                        <me.zhanghai.android.materialprogressbar.MaterialProgressBar android:id="@id/progress_loading_hot_deal" android:layout_width="@dimen/space_x7" android:layout_height="@dimen/space_x7" android:layout_marginTop="@dimen/space_x4" android:layout_marginBottom="@dimen/space_x4" android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="horizontal" android:background="@color/jet_black_alpha_21" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x2" android:baselineAligned="false" android:weightSum="3.0" android:layout_marginStart="@dimen/space_x2" android:layout_marginEnd="@dimen/space_x2">
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/view_near_me" android:background="@color/white" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:foreground="?selectableItemBackground" android:layout_weight="1.0" android:layout_marginEnd="@dimen/stroke_width">
+                            <ImageView android:layout_width="@dimen/deals_shortcut_button_width" android:layout_height="@dimen/deals_shortcut_button_height" app:srcCompat="@drawable/ic_art_near_me" />
+                            <TextView android:textSize="@dimen/h4_line_spacing" android:textColor="@color/jet_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space" android:text="@string/title_near_me_deals_promo" style="@style/TextAppearance.H5.Bold" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/view_deals_promo" android:background="@color/white" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:foreground="?selectableItemBackground" android:layout_weight="1.0" android:layout_marginEnd="@dimen/stroke_width">
+                            <ImageView android:layout_width="@dimen/deals_shortcut_button_width" android:layout_height="@dimen/deals_shortcut_button_height" app:srcCompat="@drawable/ic_art_deals_promo" />
+                            <TextView android:textSize="@dimen/h4_line_spacing" android:textColor="@color/jet_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space" android:text="@string/title_deals_promo" style="@style/TextAppearance.H5.Bold" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/view_my_voucher" android:background="@color/white" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:foreground="?selectableItemBackground" android:layout_weight="1.0">
+                            <ImageView android:layout_width="@dimen/deals_shortcut_button_width" android:layout_height="@dimen/deals_shortcut_button_height" app:srcCompat="@drawable/ic_art_my_vouchers" />
+                            <TextView android:textSize="@dimen/h4_line_spacing" android:textColor="@color/jet_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space" android:text="@string/title_my_vouchers" style="@style/TextAppearance.H5.Bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:background="@color/jet_black_alpha_21" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x2_half" android:baselineAligned="false" android:weightSum="3.0" android:layout_marginStart="@dimen/space_x2" android:layout_marginEnd="@dimen/space_x2">
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/view_mall" android:background="@color/white" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:foreground="?selectableItemBackground" android:layout_weight="1.0" android:layout_marginEnd="@dimen/stroke_width">
+                            <ImageView android:layout_width="@dimen/deals_shortcut_button_width" android:layout_height="@dimen/deals_shortcut_button_height" app:srcCompat="@drawable/ic_art_mall" />
+                            <TextView android:textSize="@dimen/h4_line_spacing" android:textColor="@color/jet_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space" android:text="@string/title_mall" style="@style/TextAppearance.H5.Bold" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/view_merchant" android:background="@color/white" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:foreground="?selectableItemBackground" android:layout_weight="1.0" android:layout_marginEnd="@dimen/stroke_width">
+                            <ImageView android:layout_width="@dimen/deals_shortcut_button_width" android:layout_height="@dimen/deals_shortcut_button_height" app:srcCompat="@drawable/ic_art_merchants" />
+                            <TextView android:textSize="@dimen/h4_line_spacing" android:textColor="@color/jet_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space" android:text="@string/title_merchants_deals_promo" style="@style/TextAppearance.H5.Bold" />
+                        </LinearLayout>
+                        <View android:background="@color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                    </LinearLayout>
+                    <TextView android:textSize="@dimen/body_text_size" android:id="@id/txt_category_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x4" android:text="@string/title_category" android:layout_marginStart="@dimen/space_x2" style="@style/TextAppearance.H5.Bold" />
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x2">
+                        <android.support.v7.widget.RecyclerView android:id="@id/view_list_category" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <me.zhanghai.android.materialprogressbar.MaterialProgressBar android:id="@id/progress_loading" android:layout_width="@dimen/space_x7" android:layout_height="@dimen/space_x7" android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

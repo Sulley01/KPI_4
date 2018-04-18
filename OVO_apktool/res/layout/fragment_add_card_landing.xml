@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/btn_add_credit_card" android:padding="@dimen/space_x2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_x2" android:src="@drawable/ic_add_creditcard" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textColor="@color/turquoise" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_half" android:text="@string/title_add_credit_card" style="@style/TextAppearance.H5.Regular" />
+            <TextView android:textColor="@color/dusk" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/desc_add_credit_card" style="@style/TextAppearance.Display.Regular" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textColor="@color/dusk" android:background="@color/pale_grey" android:paddingLeft="@dimen/space_x2" android:paddingTop="@dimen/space" android:paddingBottom="@dimen/space" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/title_ovo_merchant_partner" android:textAllCaps="true" style="@style/TextAppearance.Display.Bold" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <android.support.v7.widget.RecyclerView android:id="@id/rv_merchant" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_not_found" android:paddingLeft="@dimen/space_x4" android:paddingTop="@dimen/space_x5" android:paddingRight="@dimen/space_x4" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x3" android:src="@drawable/icon_search_not_found" />
+            <TextView android:textColor="@color/dusk" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/desc_merchant_not_found" style="@style/TextAppearance.Body.Regular" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

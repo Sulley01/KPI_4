@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/ghost_grey" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_alignTop="@id/layout_detail_header" android:layout_alignBottom="@id/layout_detail_header" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_detail_header" android:padding="@dimen/space_x2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/img_merchant" android:layout_width="38.0dip" android:layout_height="38.0dip" android:layout_marginRight="@dimen/space_x2" android:src="@drawable/ic_default_avatar" />
+            <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/layout_box" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/img_merchant">
+                <TextView android:id="@id/txt_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_half" style="@style/TextAppearance.Body.Bold" />
+                <TextView android:id="@id/txt_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/txt_title" android:layout_alignStart="@id/txt_title" style="@style/TextAppearance.Display.Regular" />
+                <TextView android:textColor="@color/greeny" android:id="@id/txt_transaction_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/txt_title" android:layout_alignParentEnd="true" style="@style/TextAppearance.Body.Regular" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:id="@id/view_divider" android:background="@color/light_grey" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/space" android:layout_marginBottom="@dimen/space" />
+        <RelativeLayout android:id="@id/layout_detail_sub_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_x9">
+            <TextView android:id="@id/txt_pending" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_quarter" style="@style/TextAppearance.Display.Regular" />
+            <TextView android:id="@id/txt_collected" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/txt_pending" style="@style/TextAppearance.Display.Regular" />
+            <TextView android:textColor="@color/purple" android:id="@id/txt_ovo_used" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_quarter" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" style="@style/TextAppearance.Body.Regular" />
+            <TextView android:textColor="@color/purple" android:id="@id/txt_ovo_earn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/txt_ovo_used" android:layout_alignParentEnd="true" style="@style/TextAppearance.Body.Regular" />
+        </RelativeLayout>
+        <View android:id="@id/v_space" android:layout_width="fill_parent" android:layout_height="@dimen/space_x5" />
+    </LinearLayout>
+</RelativeLayout>

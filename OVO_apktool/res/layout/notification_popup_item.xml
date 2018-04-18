@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/view_notification_item" android:background="@color/turquoise" android:paddingLeft="@dimen/space_x2" android:paddingRight="@dimen/space_x2" android:layout_width="fill_parent" android:layout_height="47.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/img_notif" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_notif_default" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textColor="@color/white" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/txt_notification_msg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/space_x1_half" android:maxLines="2" android:layout_centerVertical="true" android:layout_toEndOf="@id/img_notif" style="@style/TextAppearance.Body.Regular" />
+</RelativeLayout>

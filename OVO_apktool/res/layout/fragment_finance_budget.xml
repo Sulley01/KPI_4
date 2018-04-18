@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:padding="@dimen/space_x2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@color/colorPrimary" android:id="@id/txt_title_budget" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x8" android:text="@string/msg_title_budget_not_set" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" style="@style/TextAppearance.H4.Bold" />
+    <TextView android:textColor="@color/charcoal" android:id="@id/txt_subtitle_budget" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x2" android:text="@string/msg_subtitle_set_budget" android:layout_below="@id/txt_title_budget" android:layout_centerHorizontal="true" style="@style/TextAppearance.Body.Regular" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x3" android:layout_below="@id/txt_subtitle_budget" android:layout_centerHorizontal="true" app:srcCompat="@drawable/vector_graphic_art_budget_finance" />
+    <Button android:enabled="true" android:id="@id/btn_set_budget" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginLeft="@dimen/space_x5" android:layout_marginRight="@dimen/space_x5" android:layout_marginBottom="@dimen/space_x4" android:text="@string/msg_set_budget" android:layout_alignParentBottom="true" style="@style/Widget.Button.Primary" />
+</RelativeLayout>

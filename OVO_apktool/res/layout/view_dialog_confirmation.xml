@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/space_x3" android:paddingTop="@dimen/space_x3" android:paddingRight="@dimen/space_x3" android:paddingBottom="@dimen/space" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x3" android:layout_marginBottom="@dimen/space_x3" style="@style/TextAppearance.H5.Bold.Purple" />
+    <TextView android:id="@id/text_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x3" style="@style/TextAppearance.Body.Regular" />
+    <Button android:id="@id/btn_ok" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" style="@style/Widget.Button.Primary" />
+</LinearLayout>

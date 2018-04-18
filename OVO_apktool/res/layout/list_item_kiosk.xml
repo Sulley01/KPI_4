@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img_check" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_x2" android:src="@drawable/ic_tick_mark" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:id="@id/txt_kiosk_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_x2" android:layout_marginTop="@dimen/space_x2" style="@style/TextAppearance.H5.Regular" />
+    <TextView android:id="@id/txt_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_x2" android:layout_marginTop="@dimen/space" android:layout_below="@id/txt_kiosk_name" style="@style/TextAppearance.Display.Regular" />
+    <TextView android:id="@id/txt_hours" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_x2" android:layout_marginTop="@dimen/space" android:layout_marginBottom="@dimen/space_x2" android:layout_below="@id/txt_address" />
+</RelativeLayout>

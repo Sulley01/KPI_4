@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_deal_filter" android:background="@drawable/button_white_shadow" android:padding="@dimen/space" android:layout_width="@dimen/space_x13" android:layout_height="@dimen/space_x10" android:layout_marginLeft="@dimen/space_half" android:layout_marginTop="@dimen/space" android:layout_marginRight="@dimen/space_half" android:layout_marginBottom="@dimen/space" android:minWidth="@dimen/space_x12" android:minHeight="@dimen/space_x10" android:layout_centerInParent="true" android:stateListAnimator="@animator/button_elevation" style="@style/Base.Widget.AppCompat.Button">
+        <ImageView android:id="@id/img_icon" android:layout_width="@dimen/space_x4" android:layout_height="@dimen/space_x4" />
+        <TextView android:textColor="@color/charcoal" android:ellipsize="end" android:gravity="center" android:id="@id/txt_deal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_quarter" android:text="@string/title_near_me" android:maxLines="1" android:textAllCaps="false" style="@style/TextAppearance.Disclaimer.Regular" />
+    </LinearLayout>
+</RelativeLayout>

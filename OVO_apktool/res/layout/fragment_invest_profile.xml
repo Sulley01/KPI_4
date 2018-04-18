@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_x4" android:layout_marginTop="@dimen/space_x2_half" android:layout_marginBottom="@dimen/space_x2" android:text="@string/customer_sid" style="@style/TextAppearance.H5.Bold.Purple" />
+    <TextView android:id="@id/txt_customer_sid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_x4" android:layout_marginBottom="@dimen/space_x2" style="@style/TextAppearance.H5.Regular" />
+    <View android:background="@color/light_grey" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/space_x4" android:paddingTop="@dimen/space_x2" android:paddingRight="@dimen/space_x4" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space" android:text="@string/title_bank_reference" style="@style/TextAppearance.H5.Bold.Purple" />
+        <ImageView android:id="@id/img_tooltip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_exclamation" />
+    </LinearLayout>
+    <TextView android:id="@id/txt_account_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_x4" android:layout_marginTop="@dimen/space_x2" android:layout_marginBottom="@dimen/space_half" style="@style/TextAppearance.H5.Regular" />
+    <TextView android:id="@id/txt_account_bank_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_x4" android:layout_marginBottom="@dimen/space_half" style="@style/TextAppearance.H5.Regular" />
+    <TextView android:id="@id/txt_account_bank_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_x4" android:layout_marginBottom="@dimen/space_half" style="@style/TextAppearance.H5.Regular" />
+    <android.support.v7.widget.RecyclerView android:id="@id/rv_bank" android:paddingLeft="@dimen/space_x4" android:paddingRight="@dimen/space_x4" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <Button android:textColor="@color/turquoise" android:id="@id/btn_add_bank_account" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginLeft="@dimen/space_x4" android:layout_marginTop="@dimen/space_x5" android:layout_marginRight="@dimen/space_x4" android:text="@string/title_add_bank_account" style="@style/Widget.Button.Secondary" />
+</LinearLayout>

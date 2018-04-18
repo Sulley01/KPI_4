@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/toolbar" />
+        <TextView android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_margins" android:layout_marginTop="@dimen/default_margins" android:layout_marginRight="@dimen/default_margins" android:text="@string/msg_sorry" style="@style/AppTheme.Text.Purple.Title" />
+        <TextView android:gravity="center_horizontal" android:autoLink="email" android:id="@id/txt_error_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_margins" android:layout_marginRight="@dimen/default_margins" android:layout_marginBottom="@dimen/space_x3" android:text="@string/msg_sms_not_working" />
+        <android.support.v4.widget.Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <Button android:id="@id/btn_try_again" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginLeft="@dimen/default_margins" android:layout_marginRight="@dimen/default_margins" android:layout_marginBottom="@dimen/default_margins" android:text="@string/action_try_again" style="@style/Widget.Button.Primary" />
+    </LinearLayout>
+</ScrollView>

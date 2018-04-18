@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center|left" android:id="@id/view_merchant" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img_merchant" android:background="@drawable/img_oval_merchant" android:padding="@dimen/space_quarter" android:layout_width="@dimen/space_x5" android:layout_height="@dimen/space_x5" android:layout_marginLeft="@dimen/space_x2" android:layout_marginTop="@dimen/space" android:layout_marginRight="@dimen/space_x2" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <TextView android:gravity="center" android:id="@id/txt_merchant_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/img_merchant" android:layout_alignBottom="@id/img_merchant" android:layout_toEndOf="@id/img_merchant" />
+    <View android:id="@id/view_divider" android:background="@color/light_grey" android:layout_width="fill_parent" android:layout_height="@dimen/stroke_width" android:layout_marginBottom="@dimen/space" android:layout_below="@id/img_merchant" android:layout_toEndOf="@id/img_merchant" />
+</RelativeLayout>

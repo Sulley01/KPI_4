@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_invest_balance" android:background="@drawable/bg_primary_rounded" android:paddingTop="@dimen/space" android:paddingBottom="@dimen/space" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/white" android:id="@id/text_invest" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space" android:text="@string/title_ovo_invest" android:layout_centerHorizontal="true" android:textAllCaps="true" style="@style/TextAppearance.Display.Regular" />
+    <TextView android:textColor="@color/white" android:id="@id/txt_invest_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/text_invest" android:layout_centerHorizontal="true" style="@style/TextAppearance.H5.Bold" />
+    <TextView android:textColor="@color/white" android:id="@id/text_currency_invest" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_quarter" android:text="Rp" android:layout_toLeftOf="@id/txt_invest_balance" android:layout_below="@id/text_invest" style="@style/TextAppearance.Display.Regular" />
+</RelativeLayout>

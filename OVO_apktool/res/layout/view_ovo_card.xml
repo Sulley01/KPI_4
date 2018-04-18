@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/ghost_grey" android:layout_width="fill_parent" android:layout_height="@dimen/space_x19" />
+    <RelativeLayout android:id="@id/rl_image" android:background="@drawable/shadow_border_rectangle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_x6" android:layout_marginTop="@dimen/space_x4" android:layout_marginRight="@dimen/space_x6" android:layout_marginBottom="@dimen/space_x2" android:layout_centerHorizontal="true">
+        <ovo.id.loyalty.widgets.CardImageView android:id="@id/img_bg" android:background="@drawable/bg_rounded_blue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/ovo_card" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/space_x2" android:paddingRight="@dimen/space_x2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <TextView android:textColor="@color/white" android:id="@id/txt_card_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space" style="@style/TextAppearance.H5.Regular" />
+            <TextView android:textColor="@color/white" android:id="@id/txt_card_holder_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAllCaps="true" style="@style/TextAppearance.Display.Bold" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

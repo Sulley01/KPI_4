@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+            <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/space_x4" android:paddingTop="@dimen/space_x4" android:paddingRight="@dimen/space_x4" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/space_x4">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space" android:text="@string/title_from" style="@style/TextAppearance.Display.Regular" />
+                <TextView android:id="@id/text_account_from" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ovo_cash" style="@style/TextAppearance.H5.Regular" />
+                <TextView android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x3_half" android:layout_marginBottom="@dimen/space" android:text="@string/title_to" style="@style/TextAppearance.Display.Regular" />
+                <AutoCompleteTextView android:id="@id/view_bank_name" android:paddingBottom="@dimen/space" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/title_select_bank" />
+                <android.support.design.widget.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x3_half" android:layout_marginBottom="@dimen/space">
+                    <EditText android:id="@id/edit_account_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hint_account_number" android:digits="\ 0123456789" android:inputType="number" style="@style/Widget.EditText" />
+                </android.support.design.widget.TextInputLayout>
+                <TextView android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x3_half" android:layout_marginBottom="@dimen/space" android:text="@string/msg_amount" style="@style/TextAppearance.Display.Regular" />
+                <ovo.id.loyalty.widgets.PrefixEditText android:id="@id/txt_money_amount" android:tag="Rp" android:background="@drawable/background_edit_text_error" android:paddingBottom="@dimen/space" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLength="@integer/editTextMaxLengthTransferAmount" android:digits="@string/digits_numbers" android:inputType="number" android:textIsSelectable="false" style="@style/TextAppearance.H5.Regular" />
+                <TextView android:textColor="@color/dark_gray" android:id="@id/txt_available_balance" android:nextFocusDown="@id/txt_transfer_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_half" android:text="@string/msg_remaining_balance" android:layout_below="@id/txt_money_amount" style="@style/TextAppearance.Display.Regular" />
+                <android.support.design.widget.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x3_half" android:layout_marginBottom="@dimen/space_x2">
+                    <EditText android:id="@id/edit_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hint_transfer_message" style="@style/Widget.EditText" />
+                </android.support.design.widget.TextInputLayout>
+                <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                <Button android:enabled="false" android:id="@id/btn_done" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginTop="@dimen/space_x1_half" android:layout_marginBottom="@dimen/space_x2_half" android:text="@string/action_process_transfer" style="@style/Widget.Button.Primary" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/rl_loading" android:background="@color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.5">
+        <me.zhanghai.android.materialprogressbar.MaterialProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

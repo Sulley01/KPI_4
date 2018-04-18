@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:paddingLeft="@dimen/space_x4" android:paddingTop="@dimen/space_x2_half" android:paddingRight="@dimen/space_x4" android:paddingBottom="@dimen/space_x3" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/txt_title_registered" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" android:text="@string/title_already_registered" android:layout_alignParentTop="true" style="@style/TextAppearance.H5.Bold.Purple" />
+    <TextView android:id="@id/txt_detail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/msg_already_registered" android:layout_below="@id/txt_title_registered" style="@style/TextAppearance.Body.Regular" />
+    <Button android:id="@id/btn_sign_in" android:layout_width="fill_parent" android:layout_height="@dimen/space_x5" android:text="@string/action_sign_in" android:layout_alignParentBottom="true" />
+    <View android:id="@id/view_loading" android:background="@color/white_alpha_50" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <me.zhanghai.android.materialprogressbar.MaterialProgressBar android:id="@id/progress_loading" android:background="@color/white_alpha_50" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="@dimen/space_x22" android:layout_centerHorizontal="true" />
+</RelativeLayout>

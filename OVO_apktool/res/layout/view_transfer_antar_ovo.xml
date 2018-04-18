@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_antar_ovo" android:paddingLeft="@dimen/space_x4" android:paddingTop="@dimen/space_x3" android:paddingRight="@dimen/space_x4" android:paddingBottom="@dimen/space_x3" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Button android:textColor="@color/turquoise" android:layout_gravity="center" android:id="@id/b_rescan" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x2" android:layout_marginBottom="@dimen/space_x3" android:text="@string/msg_ulangi_scan" android:drawableLeft="@drawable/ic_scan" android:drawablePadding="@dimen/space_half" android:textAllCaps="false" style="@style/Widget.Button.Tertiary" />
+    <android.support.design.widget.TextInputLayout android:id="@id/til_receiver" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" app:errorEnabled="true">
+        <EditText android:id="@id/et_receiver" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hint_receiver" android:maxLength="@integer/editTextMaxLengthMobile" android:digits="@string/digits_mobile" android:drawableRight="@drawable/ic_contact_list" android:inputType="number" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout android:id="@id/til_message_ovo" android:layout_width="fill_parent" android:layout_height="wrap_content" app:errorEnabled="true">
+        <EditText android:id="@id/et_message_ovo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hint_transfer_message" android:inputType="text" />
+    </android.support.design.widget.TextInputLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/background_pattern" android:paddingTop="@dimen/space_x2" android:layout_width="fill_parent" android:layout_height="@dimen/space_x25"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img_merchant" android:layout_width="@dimen/space_x6" android:layout_height="@dimen/space_x6" android:layout_marginBottom="@dimen/space" android:scaleType="centerCrop" />
+    <TextView android:id="@id/txt_title_merchant" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_x2" android:layout_marginRight="@dimen/space_x2" style="@style/TextAppearance.H5.Bold.White" />
+    <TextView android:id="@id/txt_subtitle_merchant" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_x2" android:layout_marginRight="@dimen/space_x2" android:layout_marginBottom="@dimen/space_x2" style="@style/TextAppearance.Display.Regular.White" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/dark_purple_alpha_50" android:padding="@dimen/space" android:layout_width="fill_parent" android:layout_height="@dimen/space_x9_half">
+        <TextView android:id="@id/txt_title_total_payment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_total_payment" style="@style/TextAppearance.Display.Regular.White" />
+        <TextView android:textColor="@color/white" android:id="@id/txt_total_payment" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextAppearance.H3.Regular" />
+    </LinearLayout>
+</LinearLayout>

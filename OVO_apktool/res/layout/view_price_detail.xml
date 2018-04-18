@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/view_price_detail" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/purple" android:id="@id/txt_price_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space" android:text="@string/msg_bill_price_details" style="@style/TextAppearance.H5.Bold" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/view_price" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/dusk" android:ellipsize="end" android:id="@id/txt_title_nominal_price" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space" android:text="@string/msg_amount" android:maxLines="2" android:layout_weight="1.0" />
+        <TextView android:gravity="end" android:id="@id/txt_nominal_price" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/view_trasaction_fee" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/dusk" android:ellipsize="end" android:id="@id/txt_title_transaction_fee" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space" android:text="@string/msg_transaction_fee" android:maxLines="2" android:layout_weight="1.0" />
+        <TextView android:gravity="end" android:id="@id/txt_transaction_fee" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View android:id="@id/view_line" android:background="@color/light_grey" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="@dimen/space" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/view_total_price" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:ellipsize="end" android:id="@id/txt_title_total_price_detail" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space" android:maxLines="2" android:layout_weight="1.0" style="@style/TextAppearance.H5.Bold" />
+        <TextView android:gravity="end" android:id="@id/txt_total_price_detail" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/TextAppearance.H5.Bold" />
+    </LinearLayout>
+</LinearLayout>

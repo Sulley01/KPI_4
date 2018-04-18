@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ll_content" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:textColor="@color/charcoal" android:textColorHint="@color/dusk" android:id="@id/search_deals_by_tag" android:background="@drawable/background_edit_text_ghost_grey" android:padding="@dimen/space_x2" android:focusable="false" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hint_search" android:maxLines="1" android:lines="1" android:scrollHorizontally="true" android:drawableEnd="@drawable/ic_search_dark" style="@style/TextAppearance.H5.Regular" />
+    <android.support.v7.widget.RecyclerView android:id="@id/rv_search_deals_result" android:paddingBottom="@dimen/space" android:focusable="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/search_deals_by_tag" />
+    <me.zhanghai.android.materialprogressbar.MaterialProgressBar android:id="@id/pb_search_deal" android:focusable="false" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <include android:id="@id/layout_empty_deal" android:visibility="gone" layout="@layout/fragment_empty_search_deal_by_category" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/view_ftue" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/img_ftue" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" app:srcCompat="@drawable/vector_ic_slice_area_home_1" />
+    <Button android:textColor="@color/turquoise" android:id="@id/btn_skip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/action_skip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" style="@style/Widget.AppCompat.Button.Borderless" />
+    <Button android:textColor="@color/turquoise" android:id="@id/btn_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/action_next" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/Widget.AppCompat.Button.Borderless" />
+</RelativeLayout>

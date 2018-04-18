@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_x2" android:layout_marginTop="@dimen/space_x2" android:layout_marginRight="@dimen/space_x2" style="@android:style/Theme.Holo.Light.Dialog"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/space_x2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/title_calendar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x2" android:text="@string/title_departure_date" android:layout_marginStart="@dimen/space_x2" style="@style/TextAppearance.H4.Bold.Purple" />
+        <DatePicker android:theme="@android:style/Theme.Holo.Light.Dialog" android:id="@id/dp_departure" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x2" android:spinnersShown="true" android:calendarViewShown="false" />
+        <LinearLayout android:layout_gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x2">
+            <Button android:textStyle="bold" android:textColor="@color/light_dusk" android:id="@id/btn_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/action_cancel" style="@style/Widget.Button.Tertiary" />
+            <Button android:textStyle="bold" android:id="@id/btn_done" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/action_done" style="@style/Widget.Button.Tertiary" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

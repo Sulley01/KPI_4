@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:id="@id/ll_content" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/toolbar" />
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <include layout="@layout/layout_payment_summary_header" />
+                <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/space_x4" android:paddingTop="@dimen/space_x3" android:paddingRight="@dimen/space_x4" android:paddingBottom="@dimen/space_x3" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space" android:text="@string/title_details" style="@style/TextAppearance.H5.Bold.Purple" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_half">
+                        <TextView android:textColor="@color/dusk" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/title_entry_date" android:layout_weight="1.0" style="@style/TextAppearance.Body.Regular" />
+                        <TextView android:gravity="right" android:id="@id/txt_entry_date" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_half">
+                        <TextView android:textColor="@color/dusk" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/title_entry_time" android:layout_weight="1.0" style="@style/TextAppearance.Body.Regular" />
+                        <TextView android:gravity="right" android:id="@id/txt_entry_time" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2">
+                        <TextView android:textColor="@color/dusk" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/title_duration" android:layout_weight="1.0" style="@style/TextAppearance.Body.Bold" />
+                        <TextView android:gravity="right" android:id="@id/txt_duration" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/TextAppearance.Body.Bold" />
+                    </LinearLayout>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_payment_method" style="@style/TextAppearance.Display.Regular" />
+                    <AutoCompleteTextView android:id="@id/txt_payment_type" android:paddingBottom="@dimen/space" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_half" android:text="@string/title_payment_method" />
+                    <TextView android:textColor="@color/dark_gray" android:id="@id/txt_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x3" android:text="@string/title_payment_method" style="@style/TextAppearance.Display.Regular" />
+                    <TextView android:textColor="@color/dusk" android:gravity="center" android:id="@id/txt_payment_timeout_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x4" style="@style/TextAppearance.Body.Regular" />
+                    <android.support.v4.widget.Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                    <Button android:enabled="false" android:id="@id/btn_pay" android:layout_width="fill_parent" android:layout_height="@dimen/space_x5" android:layout_marginBottom="@dimen/space" android:text="@string/pay" style="@style/Widget.Button.Primary" />
+                    <Button android:id="@id/btn_cancel" android:layout_width="fill_parent" android:layout_height="@dimen/space_x5" android:text="@string/action_cancel" style="@style/Widget.Button.Tertiary" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

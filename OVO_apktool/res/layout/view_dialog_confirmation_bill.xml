@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/space_x3" android:paddingRight="@dimen/space_x3" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/colorPrimary" android:id="@id/txt_title_confirm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x3" android:layout_marginBottom="@dimen/space_x4" android:text="@string/title_confirm_payment" style="@style/TextAppearance.H5.Bold" />
+        <ImageView android:id="@id/img_provider_bill" android:background="@drawable/bg_circle_light_grey" android:layout_width="@dimen/space_x5" android:layout_height="@dimen/space_x5" android:layout_marginRight="@dimen/space" android:layout_marginBottom="@dimen/space_x2" android:scaleType="fitCenter" android:layout_below="@id/txt_title_confirm" android:layout_alignParentStart="true" />
+        <TextView android:id="@id/txt_mobile_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/txt_provider_name" android:layout_toEndOf="@id/img_provider_bill" style="@style/TextAppearance.Display.Regular" />
+        <TextView android:id="@id/txt_provider_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/txt_title_confirm" android:layout_toEndOf="@id/img_provider_bill" style="@style/TextAppearance.H5.Regular" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_bill_pln_postpaid" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/label_cust_name_postpaid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space" android:text="@string/msg_customer_name" style="@style/TextAppearance.Display.Regular" />
+        <TextView android:id="@id/txt_cust_name_postpaid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x3" style="@style/TextAppearance.H5.Regular" />
+        <TextView android:id="@id/label_period" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space" android:text="@string/title_period" style="@style/TextAppearance.Display.Regular" />
+        <TextView android:id="@id/txt_period" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x3" android:maxLines="2" android:maxLength="@integer/editTextMaxPeriodLength" style="@style/TextAppearance.H5.Regular" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_bill_pln" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/txt_cust_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space" android:text="@string/customer_id" style="@style/TextAppearance.Display.Regular" />
+        <TextView android:id="@id/txt_cust_id_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x3" style="@style/TextAppearance.H5.Regular" />
+        <TextView android:id="@id/txt_cust_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space" android:text="@string/msg_customer_name" style="@style/TextAppearance.Display.Regular" />
+        <TextView android:id="@id/txt_cust_name_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x3" style="@style/TextAppearance.H5.Regular" />
+        <TextView android:id="@id/txt_fare" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space" android:text="@string/msg_fare_electrical_power" style="@style/TextAppearance.Display.Regular" />
+        <TextView android:id="@id/txt_fare_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x3" style="@style/TextAppearance.H5.Regular" />
+    </LinearLayout>
+    <TextView android:id="@id/label_cust_name_telco" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space" android:text="@string/msg_customer_name" style="@style/TextAppearance.Display.Regular" />
+    <TextView android:id="@id/txt_cust_name_telco" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x3" style="@style/TextAppearance.H5.Regular" />
+    <TextView android:id="@id/label_payment_method" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space" android:text="@string/msg_payment_method" style="@style/TextAppearance.Display.Regular" />
+    <TextView android:id="@id/txt_payment_method" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x3" style="@style/TextAppearance.H5.Regular" />
+    <include android:id="@id/layout_detail" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/view_bill_detail" />
+    <Button android:id="@id/btn_confirm" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginTop="@dimen/space_x3" android:layout_marginBottom="@dimen/space_x3" android:text="@string/action_confirm" style="@style/Widget.Button.Primary" />
+</LinearLayout>

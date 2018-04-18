@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@color/light_grey" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <FrameLayout android:id="@id/frame_container_npwp" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/linear_employment_data" android:background="@color/ghost_grey" android:padding="@dimen/space_x2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/image_hint_step_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space" app:srcCompat="@drawable/vector_show" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_step_3" android:layout_weight="1.0" style="@style/TextAppearance.H5.Bold" />
+        <ImageView android:id="@id/image_complete_employement" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_success_pin" />
+    </LinearLayout>
+    <View android:background="@color/light_grey" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <FrameLayout android:id="@id/frame_container_employement_data" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/linear_contact_info" android:background="@color/ghost_grey" android:padding="@dimen/space_x2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/image_hint_step_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space" app:srcCompat="@drawable/vector_show" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_step_4" android:layout_weight="1.0" style="@style/TextAppearance.H5.Bold" />
+        <ImageView android:id="@id/image_complete_contact" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_success_pin" />
+    </LinearLayout>
+    <View android:background="@color/light_grey" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <FrameLayout android:id="@id/frame_container_contact_info" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/linear_risk_profile" android:background="@color/ghost_grey" android:padding="@dimen/space_x2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/imagehint_step_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space" app:srcCompat="@drawable/vector_show" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_step_5" android:layout_weight="1.0" style="@style/TextAppearance.H5.Bold" />
+        <ImageView android:id="@id/image_complete_risk_profile" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_success_pin" />
+    </LinearLayout>
+    <View android:background="@color/light_grey" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <FrameLayout android:id="@id/frame_container_invest_risk_profile" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

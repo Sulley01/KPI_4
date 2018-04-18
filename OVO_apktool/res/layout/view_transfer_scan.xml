@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_scan" android:paddingLeft="@dimen/space_x4" android:paddingTop="@dimen/space_x3" android:paddingRight="@dimen/space_x4" android:paddingBottom="@dimen/space_x3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/purple" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" android:text="@string/desc_scan_transfer" style="@style/TextAppearance.Body.Regular" />
+    <FrameLayout android:id="@id/fl_scanner" android:layout_width="fill_parent" android:layout_height="@dimen/space_x20" />
+    <TextView android:textColor="@color/magenta" android:id="@id/tv_scan_error" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x2" android:text="@string/error_wrong_qr" style="@style/TextAppearance.Body.Regular" />
+    <ImageView android:id="@id/iv_torch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x2" android:src="@drawable/selector_torch_btn" />
+</LinearLayout>

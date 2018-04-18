@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/ll_content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/toolbar" />
+    <android.support.v7.widget.RecyclerView android:id="@id/rv_search_deals_result" android:background="@color/light_grey" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar" />
+    <me.zhanghai.android.materialprogressbar.MaterialProgressBar android:id="@id/pb_search_deal" android:focusable="false" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <RelativeLayout android:id="@id/view_no_deal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:id="@id/txt_msg_no_deals" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x2" android:text="@string/msg_no_deal" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/graphic_art_search" android:layout_above="@id/txt_msg_no_deals" android:layout_centerHorizontal="true" style="@style/TextAppearance.Body.Regular" />
+    </RelativeLayout>
+</RelativeLayout>

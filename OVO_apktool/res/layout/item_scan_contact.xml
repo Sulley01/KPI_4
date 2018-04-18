@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_scan_to_transfer" android:paddingLeft="@dimen/space_x2" android:paddingTop="@dimen/space_x2" android:paddingRight="@dimen/space_x2" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/img_scan" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_x2" android:layout_alignParentTop="true" app:srcCompat="@drawable/ic_scan_ic_circle" />
+    <TextView android:textColor="@color/turquoise" android:gravity="center" android:id="@id/txt_scan_to_transfer" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_scan_to_transfer" android:layout_toRightOf="@id/img_scan" android:layout_alignTop="@id/img_scan" android:layout_alignBottom="@id/img_scan" android:layout_alignParentTop="true" style="@style/TextAppearance.H5.Regular" />
+    <View android:background="@color/light_grey" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="@dimen/space_x2" android:layout_below="@id/txt_scan_to_transfer" />
+</RelativeLayout>

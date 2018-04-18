@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/toolbar" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <android.support.v4.view.ViewPager android:id="@id/vp_card" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/ll_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x1_half" android:layout_marginBottom="@dimen/space_x1_half" />
+            <TextView android:layout_gravity="center_horizontal" android:id="@id/txt_ovo_level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x2" android:layout_marginBottom="@dimen/space_x2" style="@style/TextAppearance.Body.Bold.Purple" />
+            <TextView android:id="@id/txt_ovo_privileges" android:padding="@dimen/space_x2" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/TextAppearance.Body.Regular" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

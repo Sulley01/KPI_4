@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="@dimen/space_x4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img_failed" android:layout_width="@dimen/space_x7_half" android:layout_height="@dimen/space_x7_half" android:src="@drawable/ic_failed_pin" android:layout_above="@id/txt_title_transaction_failed" android:layout_centerHorizontal="true" />
+    <TextView android:textColor="@color/dark_gray" android:id="@id/txt_title_transaction_failed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x2" android:text="@string/title_failed_transaction" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/TextAppearance.H3.Regular" />
+    <TextView android:textColor="@color/dusk" android:id="@id/txt_subtitle_failed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/txt_title_transaction_failed" android:layout_centerHorizontal="true" style="@style/TextAppearance.Body.Regular" />
+    <android.support.v4.widget.Space android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/btn_done" android:layout_below="@id/txt_subtitle_failed" />
+    <Button android:id="@id/btn_done" android:layout_width="fill_parent" android:layout_height="@dimen/space_x5" android:text="@string/action_try_again" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/view_top_up_atm" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x4" android:layout_marginBottom="@dimen/space_x3" android:text="@string/title_instruction" style="@style/TextAppearance.H5.Bold" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <View android:background="@drawable/bg_purple_oval" android:layout_width="@dimen/bullet_size" android:layout_height="@dimen/bullet_size" />
+            <View android:layout_gravity="center_horizontal" android:background="@color/turquoise" android:layout_width="2.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_half" android:layout_marginBottom="@dimen/space_half" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/space_x2">
+            <TextView android:textColor="@color/charcoal" android:id="@id/txt_atm_bersama" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" android:text="@string/msg_choose_atm" style="@style/TextAppearance.Body.Regular" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x3">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_half" android:src="@drawable/ic_atm_bersama" android:contentDescription="@null" android:layout_marginEnd="@dimen/space_half" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_atm_prima" android:contentDescription="@null" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <View android:background="@drawable/bg_purple_oval" android:layout_width="@dimen/bullet_size" android:layout_height="@dimen/bullet_size" />
+            <View android:layout_gravity="center_horizontal" android:background="@color/turquoise" android:layout_width="2.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_half" android:layout_marginBottom="@dimen/space_half" />
+        </LinearLayout>
+        <TextView android:textColor="@color/charcoal" android:id="@id/txt_menu_transfer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x4" android:text="@string/msg_choose_menu_transfer" android:layout_marginStart="@dimen/space_x2" style="@style/TextAppearance.Body.Regular" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <View android:background="@drawable/bg_purple_oval" android:layout_width="@dimen/bullet_size" android:layout_height="@dimen/bullet_size" />
+            <View android:layout_gravity="center_horizontal" android:background="@color/turquoise" android:layout_width="2.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_half" android:layout_marginBottom="@dimen/space_half" />
+        </LinearLayout>
+        <TextView android:textColor="@color/charcoal" android:id="@id/txt_choose_nobu_bank" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x4" android:text="@string/msg_choose_nobu_national_bank" android:layout_marginStart="@dimen/space_x2" style="@style/TextAppearance.Body.Regular" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <View android:background="@drawable/bg_purple_oval" android:layout_width="@dimen/bullet_size" android:layout_height="@dimen/bullet_size" />
+            <View android:layout_gravity="center_horizontal" android:background="@color/turquoise" android:layout_width="2.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_half" android:layout_marginBottom="@dimen/space_half" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/charcoal" android:id="@id/txt_enter_nobu_account_atm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" android:text="@string/msg_enter_nobu_bank_code" android:layout_marginStart="@dimen/space_x2" style="@style/TextAppearance.Body.Regular" />
+            <TextView android:textColor="@color/charcoal" android:id="@id/txt_account_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x1_half" android:text="@string/msg_topup_atm_number" android:maxLines="2" android:layout_marginStart="@dimen/space_x2" style="@style/TextAppearance.H4.Bold" />
+            <TextView android:textSize="@dimen/h5_text_size" android:textColor="@color/button_tertiary_text" android:id="@id/btn_copy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" android:text="@string/action_copy_to_clipboard" android:maxLines="1" android:layout_marginStart="@dimen/space_x2" style="@style/TextAppearance.Body.Regular" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@drawable/bg_purple_oval" android:layout_width="@dimen/bullet_size" android:layout_height="@dimen/bullet_size" />
+        <TextView android:textColor="@color/charcoal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x4" android:text="@string/msg_enter_desired_topup" android:layout_marginStart="@dimen/space_x2" style="@style/TextAppearance.Body.Regular" />
+    </LinearLayout>
+    <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <Button android:id="@id/btn_top_up_done" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginBottom="@dimen/space_x4" android:text="@string/action_done" style="@style/Widget.Button.Primary" />
+</LinearLayout>

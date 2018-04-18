@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/ll_content" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:id="@id/view_card" android:background="@drawable/credit_card" android:paddingLeft="@dimen/space_x3" android:paddingTop="@dimen/space_x3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x5" android:layout_centerInParent="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/img_card_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x4" android:src="@drawable/logo_bca" />
+            <TextView android:textColor="@color/white" android:id="@id/txt_card_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/card_margin" android:lineSpacingExtra="0.0dip" style="@style/TextAppearance.H5.Regular" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_quarter" android:text="@string/expired" android:lineSpacingExtra="0.0dip" android:textAllCaps="true" style="@style/TextAppearance.Tiny.Bold" />
+                    <TextView android:textColor="@color/white" android:id="@id/txt_expired" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="0.0dip" android:textAllCaps="true" style="@style/TextAppearance.Display.Bold" />
+                </LinearLayout>
+                <ImageView android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_half" android:src="@drawable/logo_visa" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <Button android:textAppearance="@style/TextAppearance.Body.Regular" android:textColor="@color/magenta" android:id="@id/btn_remove" android:layout_width="wrap_content" android:layout_height="@dimen/space_x6" android:layout_marginTop="@dimen/space_quarter" android:text="@string/action_remove" android:layout_below="@id/view_card" android:layout_centerHorizontal="true" style="@style/Widget.Button.Tertiary" />
+</RelativeLayout>

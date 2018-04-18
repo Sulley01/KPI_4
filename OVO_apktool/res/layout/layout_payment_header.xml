@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/purple" android:layout_width="fill_parent" android:layout_height="@dimen/gif_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/img_deal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/default_merchant_background" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/space_x22">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/img_icon_merchant" android:layout_width="@dimen/space_x8" android:layout_height="@dimen/space_x8" android:layout_marginTop="@dimen/space_x2" android:scaleType="centerCrop" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+        <TextView android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/txt_merchant_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_half" android:layout_marginBottom="@dimen/space_x2_half" android:drawablePadding="@dimen/space" android:layout_toRightOf="@id/img_logo" android:layout_below="@id/img_icon_merchant" android:layout_centerHorizontal="true" />
+        <TextView android:textColor="@color/white" android:id="@id/txt_receive_fund" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x7" android:text="@string/msg_header_receive_fund" android:layout_centerHorizontal="true" style="@style/TextAppearance.H4.Regular" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/crop__selector_focused" android:layout_width="fill_parent" android:layout_height="@dimen/total_order_amount_title_height" android:layout_alignParentBottom="true">
+        <TextView android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/txt_title_order_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space" android:layout_marginBottom="@dimen/space_half" android:text="@string/msg_payment_total_order" style="@style/TextAppearance.Body.Regular" />
+        <TextView android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/txt_total_order_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space" android:text="" style="@style/TextAppearance.H4.Regular" />
+    </LinearLayout>
+</RelativeLayout>

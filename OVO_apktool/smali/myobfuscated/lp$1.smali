@@ -1,0 +1,48 @@
+.class final Lmyobfuscated/lp$1;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lmyobfuscated/mm$a;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lmyobfuscated/lp;->a()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lmyobfuscated/lp;
+
+
+# direct methods
+.method constructor <init>(Lmyobfuscated/lp;)V
+    .locals 0
+
+    .prologue
+    .line 29
+    iput-object p1, p0, Lmyobfuscated/lp$1;->a:Lmyobfuscated/lp;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Landroid/graphics/Canvas;Landroid/graphics/RectF;FLandroid/graphics/Paint;)V
+    .locals 0
+
+    .prologue
+    .line 33
+    invoke-virtual {p1, p2, p3, p3, p4}, Landroid/graphics/Canvas;->drawRoundRect(Landroid/graphics/RectF;FFLandroid/graphics/Paint;)V
+
+    .line 34
+    return-void
+.end method

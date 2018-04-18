@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:paddingLeft="@dimen/space_x4" android:paddingTop="@dimen/space_x2_half" android:paddingRight="@dimen/space_x4" android:paddingBottom="@dimen/space_x3" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/space_x2">
+        <TextView android:id="@id/txt_title_change_email" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" android:text="@string/title_change_email" android:layout_alignParentTop="true" style="@style/TextAppearance.H5.Bold.Purple" />
+        <android.support.design.widget.TextInputLayout android:id="@id/field_email" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" android:layout_below="@id/txt_title_change_email">
+            <android.support.design.widget.TextInputEditText android:id="@id/edit_email" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hint_email" style="@style/Widget.EditText" />
+        </android.support.design.widget.TextInputLayout>
+        <Button android:enabled="false" android:id="@id/btn_change" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginBottom="@dimen/space" android:text="@string/action_change" android:layout_alignParentBottom="true" style="@style/Widget.Button.Primary" />
+    </RelativeLayout>
+</ScrollView>

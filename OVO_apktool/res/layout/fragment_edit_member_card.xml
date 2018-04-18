@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/space_x4" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputLayout android:id="@id/input_card_title" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:id="@id/field_card_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hint_card_title" android:maxLength="20" android:digits="@string/digits_alphanumeric" style="@style/Widget.EditText.Name" />
+            </android.support.design.widget.TextInputLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_half" android:layout_marginBottom="@dimen/space_x2">
+                <TextView android:textColor="@color/magenta" android:id="@id/txt_card_title_status" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/TextAppearance.Display.Regular" />
+                <TextView android:textColor="@color/dusk" android:id="@id/txt_card_title_count" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextAppearance.Display.Regular" />
+            </LinearLayout>
+            <android.support.design.widget.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" app:errorEnabled="true">
+                <EditText android:id="@id/field_card_holder_name" android:paddingTop="@dimen/space" android:paddingBottom="@dimen/space" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hint_card_holder_name_optional" android:maxLength="@integer/editTextMaxCardHolderNameLength" style="@style/TextAppearance.H5.Regular" />
+            </android.support.design.widget.TextInputLayout>
+            <TextView android:textColor="@color/dusk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hint_topup_credit_number" style="@style/TextAppearance.Display.Regular" />
+            <android.support.design.widget.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" app:hintEnabled="false" app:errorEnabled="true">
+                <EditText android:enabled="false" android:id="@id/field_card_number" android:background="@android:color/transparent" android:paddingTop="@dimen/space" android:paddingBottom="@dimen/space" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawablePadding="@dimen/space" style="@style/TextAppearance.H5.Regular" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" app:errorEnabled="true">
+                <EditText android:id="@id/field_exp" android:paddingTop="@dimen/space" android:paddingBottom="@dimen/space" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hint_expiry_date_optional" android:drawableRight="@drawable/ic_calendar" style="@style/TextAppearance.H5.Regular" />
+            </android.support.design.widget.TextInputLayout>
+            <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <Button android:id="@id/btn_save" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginBottom="@dimen/space_x2" android:text="@string/action_save" style="@style/Widget.Button.Primary" />
+            <Button android:textColor="@color/magenta" android:id="@id/btn_remove" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:text="@string/action_remove" style="@style/Widget.Button.Tertiary" />
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:id="@id/rl_loading" android:background="@color/white_alpha_50" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <me.zhanghai.android.materialprogressbar.MaterialProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_main" android:paddingLeft="@dimen/view_margin" android:paddingTop="@dimen/space_x1_half" android:paddingRight="@dimen/view_margin" android:paddingBottom="@dimen/space_half" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/txt_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space" style="@style/TextAppearance.Body.Bold" />
+    <RelativeLayout android:id="@id/ll_purchase" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space">
+        <TextView android:textSize="@dimen/display_text_size" android:textColor="@color/trans_detail_item_color" android:ellipsize="end" android:id="@id/txt_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/subtitle_purchase" android:maxLines="1" style="@style/Widget.TextView.Transaction.Title" />
+        <TextView android:textColor="@color/greeny" android:id="@id/txt_emoney_used" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" style="@style/Widget.TextView.Transaction" />
+        <TextView android:textColor="@color/purple" android:id="@id/txt_ovo_used" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/txt_emoney_used" android:layout_alignParentEnd="true" style="@style/Widget.TextView.Transaction" />
+        <TextView android:textColor="@color/purple" android:id="@id/txt_ovo_earn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/txt_ovo_used" android:layout_alignParentEnd="true" style="@style/Widget.TextView.Transaction" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_top_up" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space">
+        <TextView android:textSize="@dimen/display_text_size" android:textColor="@color/trans_detail_item_color" android:ellipsize="end" android:id="@id/txt_subtitle_top_up" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/subtitle_topup" android:maxLines="1" style="@style/Widget.TextView.Transaction.Title" />
+        <TextView android:textColor="@color/greeny" android:gravity="right" android:id="@id/txt_top_up" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.TextView.Transaction" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_bonus" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space">
+        <TextView android:textSize="@dimen/display_text_size" android:ellipsize="end" android:id="@id/txt_bonus_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/Widget.TextView.Transaction.Title" />
+        <TextView android:textColor="@color/purple" android:gravity="right" android:id="@id/txt_bonus" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.TextView.Transaction" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_bonus_emoney" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space">
+        <TextView android:textSize="@dimen/display_text_size" android:ellipsize="end" android:id="@id/txt_bonus_emoney_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/Widget.TextView.Transaction.Title" />
+        <TextView android:textColor="@color/greeny" android:gravity="end" android:id="@id/txt_bonus_emoney" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.TextView.Transaction" />
+    </LinearLayout>
+    <View android:id="@id/line" android:background="@color/light_grey" android:paddingBottom="@dimen/space_x1_half" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/space_half" />
+    <include android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_half" layout="@layout/view_loading_footer" />
+    <View android:id="@id/space_footer" android:layout_width="fill_parent" android:layout_height="@dimen/space_x8" />
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/layout_toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <android.support.v7.widget.Toolbar android:theme="@style/AppTheme.ThemeOverlay.Dark.ActionBar.White" android:id="@id/toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:layout_alignParentTop="true" app:popupTheme="@style/AppTheme.ThemeOverlay.Light" app:layout_collapseMode="pin" app:titleTextAppearance="@style/TextAppearance.H5.Regular.White" titleTextAppearance="@style/TextAppearance.H5.Regular" />
+            <include android:visibility="gone" layout="@layout/toolbar_white_search" />
+            <View android:id="@id/view_divider" android:background="@color/light_grey" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/stroke_width" android:layout_below="@id/toolbar_search" />
+        </RelativeLayout>
+        <android.support.v4.widget.NestedScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_below="@id/toolbar">
+            <FrameLayout android:id="@id/view_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

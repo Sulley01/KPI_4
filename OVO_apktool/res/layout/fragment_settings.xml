@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/ll_content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/view_margin" android:paddingTop="@dimen/space_x2_half" android:paddingRight="@dimen/view_margin" android:paddingBottom="@dimen/space_x3" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/colorPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/title_account" style="@style/TextAppearance.H5.Bold" />
+        <TextView android:id="@id/btn_edit_profile" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/menu_edit_profile" style="@style/Widget.TextView.Setting" />
+        <View android:background="#ffdee0e2" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:id="@id/btn_promo_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/menu_promo_code" style="@style/Widget.TextView.Setting" />
+        <View android:background="#ffdee0e2" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="@dimen/space_x5" />
+        <TextView android:textColor="@color/colorPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/title_security" style="@style/TextAppearance.H5.Bold" />
+        <TextView android:id="@id/btn_change_security_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/menu_change_security_code" style="@style/Widget.TextView.Setting" />
+        <View android:background="#ffdee0e2" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="@dimen/space_x5" />
+        <TextView android:textColor="@color/colorPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/title_about" style="@style/TextAppearance.H5.Bold" />
+        <TextView android:id="@id/btn_about_us" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/menu_about_us" style="@style/Widget.TextView.Setting" />
+        <View android:background="#ffdee0e2" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:id="@id/btn_privacy" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/menu_privacy_policy" style="@style/Widget.TextView.Setting" />
+        <View android:background="#ffdee0e2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:id="@id/btn_information" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/menu_information" style="@style/Widget.TextView.Setting" />
+        <View android:background="#ffdee0e2" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:id="@id/btn_faq" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/menu_faq" style="@style/Widget.TextView.Setting" />
+        <View android:background="#ffdee0e2" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:id="@id/btn_feedback" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/menu_feedback" style="@style/Widget.TextView.Setting" />
+        <View android:background="#ffdee0e2" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:id="@id/btn_contact" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/menu_contact_us" style="@style/Widget.TextView.Setting" />
+        <View android:background="#ffdee0e2" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:id="@id/txt_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space" android:layout_marginBottom="@dimen/space_x3" android:text="@string/msg_version" style="@style/TextAppearance.Display.Regular" />
+        <Button android:textColor="@color/turquoise" android:id="@id/btn_sign_out" android:background="@drawable/button_secondary" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginLeft="@dimen/space_x2" android:layout_marginRight="@dimen/space_x2" android:text="@string/action_sign_out" style="@style/Widget.Button.Primary" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/ll_content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/toolbar" layout="@layout/toolbar" />
+    <LinearLayout android:gravity="center|top" android:orientation="vertical" android:id="@id/ll_no_notification" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x13" android:layout_marginBottom="@dimen/space" android:src="@drawable/rectangle" />
+        <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_x5" android:layout_marginRight="@dimen/space_x5" android:text="@string/msg_dont_have_notification" style="@style/TextAppearance.Body.Regular" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/toolbar">
+        <android.support.v7.widget.RecyclerView android:id="@id/rv_notification" android:paddingBottom="@dimen/space_x3" android:focusable="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@android:color/transparent" android:dividerHeight="0.0dip" android:choiceMode="singleChoice" />
+    </FrameLayout>
+    <me.zhanghai.android.materialprogressbar.MaterialProgressBar android:id="@id/view_progress" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

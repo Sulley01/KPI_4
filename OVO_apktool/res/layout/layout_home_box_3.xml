@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/view_ovo_cash_invest" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/view_ovo_cash_balance_invest" android:background="@drawable/bg_primary_rounded" android:paddingTop="@dimen/space" android:paddingBottom="@dimen/space" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space">
+        <TextView android:textColor="@color/white" android:id="@id/text_cash_balance_invest" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space" android:text="@string/title_cash" android:layout_centerHorizontal="true" style="@style/TextAppearance.Display.Regular" />
+        <TextView android:textColor="@color/white" android:id="@id/text_currency" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_quarter" android:text="Rp" android:layout_toLeftOf="@id/txt_emoney_balance_invest" android:layout_below="@id/text_cash_balance_invest" style="@style/TextAppearance.Display.Regular" />
+        <TextView android:textColor="@color/white" android:id="@id/txt_emoney_balance_invest" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:layout_below="@id/text_cash_balance_invest" android:layout_centerHorizontal="true" style="@style/TextAppearance.H5.Bold" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space" android:layout_weight="1.0" layout="@layout/view_invest_balance_unlock" />
+        <include android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space" android:layout_weight="1.0" layout="@layout/view_invest_balance_empty" />
+        <include android:visibility="visible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space" android:layout_weight="1.0" layout="@layout/view_invest_balance" />
+        <LinearLayout android:orientation="vertical" android:id="@id/view_ovo_point_balance_invest" android:background="@drawable/bg_primary_rounded" android:padding="@dimen/space" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space" android:text="@string/title_ovo_balance" style="@style/TextAppearance.Display.Regular" />
+            <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/txt_ovo_point_balance" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0" style="@style/TextAppearance.H5.Bold" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

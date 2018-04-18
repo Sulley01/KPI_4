@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:autoLink="email" android:id="@id/txt_content" android:paddingLeft="@dimen/space_x2" android:paddingTop="@dimen/space_x2" android:paddingRight="@dimen/space_x2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:includeFontPadding="false" />
+    <TextView android:id="@id/txt_ovo_kiosk_location" android:background="@color/pale_grey" android:paddingLeft="@dimen/space_x2" android:paddingTop="@dimen/space" android:paddingRight="@dimen/space_x2" android:paddingBottom="@dimen/space" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/title_ovo_kiosk_location" style="@style/TextAppearance.Display.Bold" />
+</LinearLayout>

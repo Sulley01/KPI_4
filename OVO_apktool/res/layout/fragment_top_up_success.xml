@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/success" android:contentDescription="@null" />
+    <TextView android:textStyle="bold" android:layout_gravity="center_horizontal" android:id="@id/txt_money_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x4" style="@style/TextAppearance.H3.Regular" />
+    <TextView android:layout_gravity="center_horizontal" android:id="@id/txt_top_up_confirmation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space" />
+    <TextView android:textStyle="bold" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x5" android:text="@string/msg_topup_from" style="@style/TextAppearance.H4.Bold" />
+    <TextView android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@id/txt_card_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x5" android:drawableLeft="@drawable/ic_mastercard" android:drawablePadding="@dimen/space" android:drawableStart="@drawable/ic_mastercard" style="@style/TextAppearance.H5.Bold" />
+</LinearLayout>

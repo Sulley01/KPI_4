@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:id="@id/card_layout" android:layout_width="fill_parent" android:layout_height="@dimen/space_x10" android:layout_marginLeft="@dimen/space_x2" android:layout_marginTop="@dimen/space" android:layout_marginRight="@dimen/space_x2" android:layout_marginBottom="-8.0dip" app:cardElevation="@dimen/space_half" app:cardUseCompatPadding="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/layout_deal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/img_logo_deal" android:background="@drawable/shadow_border_oval" android:layout_width="@dimen/space_x5" android:layout_height="@dimen/space_x5" android:scaleType="centerCrop" android:layout_centerVertical="true" android:layout_marginStart="@dimen/space_x2" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/space" android:layout_toEndOf="@id/img_logo_deal">
+            <TextView android:ellipsize="end" android:id="@id/txt_title_deal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" style="@style/TextAppearance.Body.Regular" />
+            <RelativeLayout android:id="@id/layout_sponsored_deal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space" android:layout_below="@id/txt_title_deal" android:layout_centerVertical="true" android:layout_alignStart="@id/txt_title_deal">
+                <TextView android:ellipsize="end" android:id="@id/txt_sponsored_deal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_powered_by" android:maxLines="1" android:layout_centerVertical="true" style="@style/TextAppearance.Display.Regular" />
+                <ImageView android:id="@id/img_sponsored_deal" android:layout_width="@dimen/space_x2" android:layout_height="@dimen/space_x2" android:scaleType="centerCrop" android:layout_alignTop="@id/txt_sponsored_deal" android:layout_marginStart="@dimen/space_half" android:layout_toEndOf="@id/txt_sponsored_deal" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_redeem" android:background="@color/white_alpha_80" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/txt_deal_status" android:background="@drawable/bg_redeemed" android:paddingLeft="@dimen/space" android:paddingRight="@dimen/space" android:layout_width="wrap_content" android:layout_height="@dimen/text_redeem_height" android:text="@string/msg_redeem" android:layout_centerInParent="true" style="@style/TextAppearance.Disclaimer.Regular" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

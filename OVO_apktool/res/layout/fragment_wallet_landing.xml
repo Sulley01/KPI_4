@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/space_x4" android:paddingRight="@dimen/space_x4" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/purple" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space" android:text="@string/title_adding_your_card_is_easy" style="@style/TextAppearance.H4.Regular" />
+        <TextView android:textColor="@color/charcoal" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x4" android:text="@string/desc_adding_your_card" style="@style/TextAppearance.Body.Regular" />
+        <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <Button android:id="@id/btn_add_card" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/space_x5" android:layout_marginBottom="@dimen/space_x4" android:text="@string/action_add_more_card" style="@style/Widget.Button.Primary" />
+    </LinearLayout>
+</LinearLayout>

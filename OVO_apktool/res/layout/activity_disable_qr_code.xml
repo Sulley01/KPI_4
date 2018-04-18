@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_disable_qrcode" android:paddingLeft="@dimen/space_x4" android:paddingRight="@dimen/space_x4" android:paddingBottom="@dimen/space_x4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout_disable_qr_code" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/space_x8">
+        <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x6" android:text="@string/msg_disable_transfer_qr_code" style="@style/TextAppearance.H4.Bold.Purple" />
+        <ImageView android:id="@id/iv_disable_qrcode_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/vector_ic_art_expired" />
+        <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <Button android:id="@id/btn_disable_qrcode" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:text="@string/action_close" style="@style/Widget.Button.Primary" />
+    </LinearLayout>
+</LinearLayout>

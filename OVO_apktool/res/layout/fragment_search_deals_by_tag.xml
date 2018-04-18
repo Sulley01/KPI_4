@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ll_content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.RecyclerView android:id="@id/rv_search_deals_result" android:paddingBottom="@dimen/space_x1_half" android:focusable="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <me.zhanghai.android.materialprogressbar.MaterialProgressBar android:id="@id/pb_search_deal" android:focusable="false" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <RelativeLayout android:id="@id/view_not_found" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_empty_deal" android:layout_toEndOf="@id/search_deals_by_tag">
+        <TextView android:gravity="center" android:id="@id/txt_msg_no_deals" android:layout_width="@dimen/space_x25" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x2" android:text="@string/msg_try_another_keyword" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/graphic_art_search" android:layout_above="@id/txt_msg_no_deals" android:layout_centerHorizontal="true" style="@style/TextAppearance.Body.Regular" />
+    </RelativeLayout>
+</RelativeLayout>

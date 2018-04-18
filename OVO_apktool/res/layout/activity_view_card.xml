@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/toolbar" />
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/space_x4" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hint_topup_credit_number" style="@style/TextAppearance.Display.Regular" />
+        <android.support.design.widget.TextInputLayout android:id="@id/txt_layout_card_number" android:layout_width="fill_parent" android:layout_height="wrap_content" app:hintEnabled="false" app:errorEnabled="true">
+            <EditText android:id="@id/field_card_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawableLeft="@drawable/ic_card_default" android:drawablePadding="@dimen/space" android:inputType="number" style="@style/Widget.EditText" />
+        </android.support.design.widget.TextInputLayout>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hint_topup_exp_date" style="@style/TextAppearance.Display.Regular" />
+        <android.support.design.widget.TextInputLayout android:id="@id/txt_layout_exp" android:layout_width="fill_parent" android:layout_height="wrap_content" app:hintEnabled="false" app:errorEnabled="true">
+            <EditText android:id="@id/field_exp" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawableRight="@drawable/ic_calendar" android:inputType="datetime" android:drawableEnd="@drawable/ic_calendar" style="@style/Widget.EditText" />
+        </android.support.design.widget.TextInputLayout>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hint_topup_cvv" style="@style/TextAppearance.Display.Regular" />
+        <android.support.design.widget.TextInputLayout android:id="@id/txt_layout_cvv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/default_margins" app:hintEnabled="false" app:errorEnabled="true">
+            <EditText android:id="@id/field_cvv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLength="4" android:inputType="number" style="@style/Widget.EditText" />
+        </android.support.design.widget.TextInputLayout>
+        <Button android:enabled="false" android:id="@id/button_save" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:text="@string/action_save" style="@style/Widget.Button.Primary" />
+        <Button android:layout_gravity="center_horizontal" android:id="@id/text_remove" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginTop="@dimen/space_x2" android:text="@string/action_delete" android:textAllCaps="true" style="@style/Widget.Button.Transparent.Magenta" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/txt_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_x2" android:layout_marginTop="@dimen/space_x3" android:layout_marginBottom="@dimen/space_x2" android:text="@string/title_dialog_pick_location" style="@style/AppTheme.Text.Purple.Title" />
+    <View android:id="@id/view_divider" android:background="?android:colorButtonNormal" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/txt_title" />
+    <ListView android:id="@id/view_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@android:color/transparent" android:dividerHeight="0.0dip" android:choiceMode="singleChoice" android:layout_below="@id/view_divider" />
+</RelativeLayout>

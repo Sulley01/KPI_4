@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/ll_content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/toolbar" layout="@layout/toolbar" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/toolbar">
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/default_margins" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputLayout android:id="@id/txt_layout_email" android:layout_width="fill_parent" android:layout_height="wrap_content" app:errorEnabled="true">
+                <EditText android:enabled="false" android:textColor="#ff2d263b" android:id="@id/field_email" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hint_email" android:maxLength="@integer/editTextMaxLength200" android:inputType="textEmailAddress" style="@style/Widget.EditText" />
+            </android.support.design.widget.TextInputLayout>
+            <RadioGroup android:orientation="horizontal" android:id="@id/rg_gender" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_margin" android:layout_marginBottom="@dimen/view_margin">
+                <RadioButton android:id="@id/rb_suggestion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/radio_feedback" android:layout_weight="1.0" style="@style/MyRadioButton" />
+                <RadioButton android:id="@id/rb_problem" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:text="@string/radio_question" android:layout_weight="1.0" style="@style/MyRadioButton" />
+            </RadioGroup>
+            <android.support.design.widget.TextInputLayout android:id="@id/txt_layout_message" android:layout_width="fill_parent" android:layout_height="wrap_content" app:errorEnabled="true">
+                <EditText android:id="@id/field_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hint_message" android:singleLine="false" android:maxLength="@integer/editTextMaxLength200" android:inputType="textCapSentences|textMultiLine" style="@style/Widget.EditText.Feedback" />
+            </android.support.design.widget.TextInputLayout>
+            <TextView android:textColor="#ff6b767e" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x4" android:text="@string/feedback_will_get_back" style="@style/TextAppearance.Display.Regular" />
+            <Button android:enabled="false" android:id="@id/btn_done" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:text="@string/btn_send" style="@style/Widget.Button.Primary" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

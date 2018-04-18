@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/pale_grey" android:paddingLeft="@dimen/space_x4" android:paddingTop="@dimen/space_x1_half" android:paddingRight="@dimen/space_x4" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/txt_title_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space" android:text="@string/title_details" style="@style/TextAppearance.H5.Bold.Purple" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/view_amount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_half">
+        <TextView android:textColor="@color/dusk" android:id="@id/txt_receipt_amount_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/title_nominal_withdrawal" android:layout_weight="1.0" style="@style/TextAppearance.Body.Regular" />
+        <TextView android:gravity="right" android:id="@id/txt_receipt_amount" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/TextAppearance.Body.Regular" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/view_fee" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space">
+        <TextView android:textColor="@color/dusk" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/msg_transaction_fee" android:layout_weight="1.0" style="@style/TextAppearance.Body.Regular" />
+        <TextView android:gravity="right" android:id="@id/txt_receipt_fee" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/TextAppearance.Body.Regular" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/view_fee_card_label" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space">
+        <TextView android:textSize="@dimen/display_text_size" android:textColor="@color/dusk" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/msg_transaction_fee_from_card" style="@style/TextAppearance.Body.Regular" />
+    </LinearLayout>
+    <View android:id="@id/view_line_divider" android:background="@color/light_grey" android:layout_width="fill_parent" android:layout_height="@dimen/stroke_width" />
+</LinearLayout>

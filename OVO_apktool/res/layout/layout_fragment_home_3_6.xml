@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ll_content" android:background="@color/white_alpha_10" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@drawable/pattern" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:contentDescription="ovo logo" />
+    <ImageButton android:id="@id/btn_barcode" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_swipe_circle" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:contentDescription="barcode button" />
+    <android.support.v4.widget.SwipeRefreshLayout android:id="@id/swipe_refresh" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <android.support.v4.widget.NestedScrollView android:paddingTop="@dimen/space_x3" android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include layout="@layout/layout_home_content_3_6" />
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

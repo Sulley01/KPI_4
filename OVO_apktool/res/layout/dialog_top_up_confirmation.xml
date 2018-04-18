@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/space" android:paddingRight="@dimen/space" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/purple" android:id="@id/txt_dialog_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x2" android:layout_marginBottom="@dimen/space_x2" android:text="@string/title_confirm_top_up" style="@style/TextAppearance.H5.Bold" />
+        <TextView android:id="@id/txt_dialog_subtitle" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" android:text="@string/msg_top_up_question" style="@style/TextAppearance.Body.Regular" />
+        <TextView android:textColor="@color/charcoal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space" android:layout_marginBottom="@dimen/space_x3" android:text="@string/msg_top_up_question" style="@style/TextAppearance.Body.Regular" />
+        <android.support.design.widget.TextInputLayout android:id="@id/input_top_up_to" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" app:errorEnabled="true">
+            <EditText android:enabled="false" android:id="@id/field_top_up_to" android:background="@android:color/transparent" android:paddingTop="@dimen/space" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/msg_top_up_to" style="@style/TextAppearance.H5.Regular" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout android:id="@id/input_via" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" app:errorEnabled="true">
+            <EditText android:enabled="false" android:id="@id/field_via" android:background="@android:color/transparent" android:paddingTop="@dimen/space" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/msg_topup_from" style="@style/TextAppearance.H5.Regular" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout android:id="@id/input_amount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" app:errorEnabled="true">
+            <EditText android:enabled="false" android:id="@id/field_amount" android:background="@android:color/transparent" android:paddingTop="@dimen/space" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/msg_amount" style="@style/TextAppearance.H5.Regular" />
+        </android.support.design.widget.TextInputLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_details" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" android:text="@string/title_details" style="@style/TextAppearance.H5.Bold" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_half">
+                <TextView android:textColor="@color/dusk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_top_up_amount" style="@style/TextAppearance.Body.Regular" />
+                <TextView android:gravity="right" android:id="@id/txt_top_up_amount_detail" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/TextAppearance.Body.Regular" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space">
+                <TextView android:textColor="@color/dusk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_transaction_fee" style="@style/TextAppearance.Body.Regular" />
+                <TextView android:gravity="right" android:id="@id/txt_top_up_vat" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/TextAppearance.Body.Regular" />
+            </LinearLayout>
+            <View android:background="@color/light_grey" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="@dimen/space" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_bill_total" style="@style/TextAppearance.Body.Bold" />
+                <TextView android:gravity="right" android:id="@id/txt_total_detail" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/TextAppearance.Body.Bold" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_earn_point" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:background="@color/light_grey" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="@dimen/space" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x4">
+                    <TextView android:textColor="@color/purple" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_you_will_earn" style="@style/TextAppearance.Display.Bold" />
+                    <TextView android:textColor="@color/purple" android:gravity="right" android:id="@id/txt_ovo_point_earn" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/TextAppearance.Display.Bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <Button android:id="@id/btn_confirm" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginBottom="@dimen/space" android:text="@string/action_confirm" style="@style/Widget.Button.Primary" />
+        <Button android:id="@id/btn_cancel" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginBottom="@dimen/space_x2" android:text="@string/action_cancel" style="@style/Widget.Button.Tertiary" />
+    </LinearLayout>
+</ScrollView>

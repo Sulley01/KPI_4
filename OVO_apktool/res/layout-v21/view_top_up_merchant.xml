@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/view_top_up_merchant" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x4">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <View android:background="@drawable/bg_purple_oval" android:layout_width="@dimen/bullet_size" android:layout_height="@dimen/bullet_size" />
+            <View android:layout_gravity="center_horizontal" android:background="@color/turquoise" android:layout_width="2.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_half" android:layout_marginBottom="@dimen/space_half" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/space_x2">
+            <TextView android:textColor="@color/charcoal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" android:text="@string/msg_topup_merchant_step_1" style="@style/TextAppearance.Body.Regular" />
+            <android.support.v7.widget.RecyclerView android:id="@id/rv_merchant" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space" android:nestedScrollingEnabled="false" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <View android:background="@drawable/bg_purple_oval" android:layout_width="@dimen/bullet_size" android:layout_height="@dimen/bullet_size" />
+            <View android:layout_gravity="center_horizontal" android:background="@color/turquoise" android:layout_width="2.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_half" android:layout_marginBottom="@dimen/space_half" />
+        </LinearLayout>
+        <TextView android:textColor="@color/charcoal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x4" android:text="@string/msg_topup_merchant_step_2" android:layout_marginStart="@dimen/space_x2" style="@style/TextAppearance.Body.Regular" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <View android:background="@drawable/bg_purple_oval" android:layout_width="@dimen/bullet_size" android:layout_height="@dimen/bullet_size" />
+            <View android:layout_gravity="center_horizontal" android:background="@color/turquoise" android:layout_width="2.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_half" android:layout_marginBottom="@dimen/space_half" />
+        </LinearLayout>
+        <TextView android:textColor="@color/charcoal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" android:text="@string/msg_topup_merchant_step_3" android:layout_marginStart="@dimen/space_x2" style="@style/TextAppearance.Body.Regular" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <View android:background="@drawable/bg_purple_oval" android:layout_width="@dimen/bullet_size" android:layout_height="@dimen/bullet_size" />
+            <View android:layout_gravity="center_horizontal" android:background="@color/turquoise" android:layout_width="2.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_half" android:layout_marginBottom="@dimen/space_half" />
+        </LinearLayout>
+        <TextView android:textColor="@color/charcoal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" android:text="@string/msg_topup_merchant_step_4" android:layout_marginStart="@dimen/space_x2" style="@style/TextAppearance.Body.Regular" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@drawable/bg_purple_oval" android:layout_width="@dimen/bullet_size" android:layout_height="@dimen/bullet_size" />
+        <TextView android:textColor="@color/charcoal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x4" android:text="@string/msg_topup_merchant_step_5" android:layout_marginStart="@dimen/space_x2" style="@style/TextAppearance.Body.Regular" />
+    </LinearLayout>
+    <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <Button android:id="@id/btn_top_up_merchant_done" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginBottom="@dimen/space_x4" android:text="@string/action_done" style="@style/Widget.Button.Primary" />
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/space_x2" android:paddingTop="@dimen/space_x2_half" android:paddingRight="@dimen/space_x2" android:paddingBottom="@dimen/space_x2_half" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x3" app:srcCompat="@drawable/ic_art_graphic_sand_clock" />
+    <TextView android:textColor="@color/colorPrimary" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space" android:text="@string/title_application_process" android:textAllCaps="true" style="@style/TextAppearance.H5.Bold" />
+    <TextView android:textColor="@color/charcoal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" android:text="@string/msg_application_process" android:textAlignment="center" style="@style/TextAppearance.Body.Regular" />
+    <TextView android:textColor="@color/colorPrimary" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space" android:text="@string/call_center" style="@style/TextAppearance.Body.Bold" />
+    <TextView android:textColor="@color/charcoal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space" android:text="@string/call_center_number" style="@style/TextAppearance.H3.Regular" />
+    <TextView android:textColor="@color/dusk" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x3" android:text="@string/call_center_hour" style="@style/TextAppearance.Display.Regular" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:gravity="end" android:id="@id/img_call" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space" android:layout_weight="1.0" app:srcCompat="@drawable/ic_call" />
+        <ImageView android:id="@id/img_email" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space" android:layout_weight="1.0" app:srcCompat="@drawable/ic_email" />
+    </LinearLayout>
+</LinearLayout>

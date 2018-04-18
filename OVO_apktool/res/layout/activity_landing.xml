@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/view_landing" android:background="@drawable/image_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x2" android:layout_marginBottom="@dimen/space_x2" app:srcCompat="@drawable/vector_logo_ovo" />
+    <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_bottom" android:paddingLeft="@dimen/space_x4" android:paddingTop="@dimen/space_x2" android:paddingRight="@dimen/space_x4" android:paddingBottom="@dimen/space_x2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x4">
+                <ImageView android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space" android:src="@drawable/ic_sign_in_copy_2" />
+                <android.support.design.widget.TextInputLayout android:textColorHint="@color/white" android:id="@id/input_account" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hint_mobile_number" app:hintTextAppearance="@style/TextAppearance.Display.Regular.White">
+                    <EditText android:id="@id/field_account" android:background="@drawable/background_edit_text_white" android:paddingBottom="@dimen/space" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Widget.EditText.Login.Mobile" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+            <Button android:enabled="false" android:id="@id/btn_sign_in" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginBottom="@dimen/space_x3" android:text="@string/action_sign_in" android:onClick="signIn" style="@style/Widget.Button.Secondary2" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:background="@android:color/white" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_marginRight="@dimen/space" android:layout_weight="1.0" />
+                <TextView android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_or" style="@style/TextAppearance.Display.Regular" />
+                <View android:background="@android:color/white" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/space" android:layout_weight="1.0" />
+            </LinearLayout>
+            <Button android:id="@id/btn_join" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginTop="@dimen/space_x3" android:layout_marginBottom="@dimen/space_x2" android:text="@string/btn_join_now" android:onClick="register" style="@style/Widget.Button.Primary" />
+        </LinearLayout>
+        <me.zhanghai.android.materialprogressbar.MaterialProgressBar android:id="@id/progressbar" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

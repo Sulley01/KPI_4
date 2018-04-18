@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_upgrade_user" android:paddingLeft="@dimen/space_x4" android:paddingRight="@dimen/space_x4" android:paddingBottom="@dimen/space_x4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout_upgrade_account" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/space_x8">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space" android:text="@string/title_upgrade_premier" style="@style/TextAppearance.H4.Bold.Purple" />
+        <TextView android:id="@id/txt_msg_upgrade" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" android:text="@string/msg_unlock_transfer_to_friend" android:textAlignment="center" style="@style/TextAppearance.H5.Regular" />
+        <ImageView android:id="@id/iv_upgrade_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/graphic_art_budget" />
+        <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <Button android:id="@id/btn_upgrade_transfer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:text="@string/action_upgrade_now" style="@style/Widget.Button.Primary" />
+        <Button android:textColor="@color/turquoise" android:id="@id/btn_upgrade_finance" android:background="@drawable/button_secondary" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:text="@string/action_upgrade_now" style="@style/Widget.Button.Primary" />
+        <Button android:textColor="@color/turquoise" android:id="@id/btn_upgrade_withdrawal" android:background="@drawable/button_secondary" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:text="@string/action_upgrade" style="@style/Widget.Button.Primary" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:paddingLeft="@dimen/space" android:paddingTop="@dimen/space_x3" android:paddingRight="@dimen/space" android:paddingBottom="@dimen/space_x3" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:id="@id/txt_transfer_confirmation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_transfer_confirmation" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/TextAppearance.H5.Bold.Purple" />
+        <TextView android:id="@id/txt_title_nominal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x3" android:text="@string/nominal" android:layout_below="@id/txt_transfer_confirmation" style="@style/TextAppearance.Display.Regular" />
+        <TextView android:id="@id/txt_nominal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/txt_title_nominal" style="@style/TextAppearance.H4.Regular" />
+        <TextView android:id="@id/txt_title_to" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x3" android:layout_marginBottom="@dimen/space_half" android:text="@string/title_to" android:layout_below="@id/txt_nominal" style="@style/TextAppearance.Display.Regular" />
+        <ImageView android:id="@id/img_profile" android:layout_width="@dimen/space_x5" android:layout_height="@dimen/space_x5" android:layout_marginRight="@dimen/space" android:layout_below="@id/txt_title_to" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/img_profile" android:layout_below="@id/txt_title_to" android:layout_alignTop="@id/img_profile">
+            <TextView android:id="@id/txt_receiver_name" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextAppearance.H5.Regular" />
+            <TextView android:id="@id/txt_destination_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space" style="@style/TextAppearance.Display.Regular" />
+        </LinearLayout>
+        <TextView android:id="@id/txt_title_from" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x3" android:text="@string/title_from" android:layout_below="@id/img_profile" style="@style/TextAppearance.Display.Regular" />
+        <TextView android:id="@id/txt_from" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/txt_title_from" style="@style/TextAppearance.H4.Regular" />
+        <TextView android:id="@id/txt_title_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x3" android:text="@string/title_message" android:layout_below="@id/txt_from" style="@style/TextAppearance.Display.Regular" />
+        <TextView android:id="@id/txt_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="false" android:layout_below="@id/txt_title_message" style="@style/TextAppearance.H4.Regular" />
+        <Button android:id="@id/btn_confirmation" android:layout_width="fill_parent" android:layout_height="@dimen/space_x5" android:layout_marginTop="@dimen/space_x4" android:text="@string/action_confirm" android:layout_below="@id/txt_message" />
+        <Button android:id="@id/btn_cancel" android:layout_width="fill_parent" android:layout_height="@dimen/space_x5" android:layout_marginTop="@dimen/space" android:text="@string/action_cancel" android:layout_below="@id/btn_confirmation" style="@style/Widget.Button.Tertiary" />
+    </RelativeLayout>
+</ScrollView>

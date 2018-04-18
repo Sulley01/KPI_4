@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/space_x3" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/colorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x3" android:layout_marginBottom="@dimen/space_x2" android:text="@string/title_sell_information" style="@style/TextAppearance.H5.Bold" />
+    <TextView android:textColor="@color/dusk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_quarter" android:text="@string/nominal" style="@style/TextAppearance.Display.Regular" />
+    <TextView android:textColor="@color/charcoal" android:id="@id/txt_amount_redeem" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" style="@style/TextAppearance.H5.Regular" />
+    <TextView android:textColor="@color/dusk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_quarter" android:text="@string/title_redeemed_unit" style="@style/TextAppearance.Display.Regular" />
+    <TextView android:textColor="@color/charcoal" android:id="@id/txt_unit_redeem" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x4" style="@style/TextAppearance.H5.Regular" />
+    <Button android:id="@id/btn_confirmation" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space" android:text="@string/action_confirm" />
+    <Button android:id="@id/btn_cancel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/action_cancel" style="@style/Widget.Button.Tertiary" />
+</LinearLayout>

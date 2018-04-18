@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/purple_alpha_50" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ll_bottom" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/default_margins" android:paddingTop="@dimen/space_x5" android:paddingRight="@dimen/default_margins" android:paddingBottom="@dimen/space_x5" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/txt_level_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/space" style="@style/TextAppearance.H4.Bold" />
+            <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/txt_congratulation_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space" android:lineSpacingExtra="@dimen/space" style="@style/TextAppearance.H5.Regular" />
+            <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/txt_level_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space" android:lineSpacingExtra="@dimen/space" style="@style/TextAppearance.Display.Regular" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/img_coin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margins" app:srcCompat="@drawable/vector_ovo_gold_unlocked" />
+            <TextView android:layout_gravity="center" android:id="@id/txt_info" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x7" style="@style/TextAppearance.H5.Regular.White" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_bottom" android:padding="@dimen/default_margins" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:textColor="@color/white" android:id="@id/btn_view_new_benefits" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginBottom="@dimen/space_x2" android:text="@string/action_view_my_new_benefits" style="@style/Widget.Button.Primary" />
+        <Button android:id="@id/btn_awesome" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:text="@string/action_awesome" style="@style/Widget.Button.Primary" />
+    </LinearLayout>
+</RelativeLayout>

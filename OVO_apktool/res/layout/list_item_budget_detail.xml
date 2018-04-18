@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/view_budget_detail" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout_loading" android:background="@color/white_alpha_80" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <me.zhanghai.android.materialprogressbar.MaterialProgressBar android:layout_width="@dimen/space_x5" android:layout_height="@dimen/space_x5" android:layout_marginTop="@dimen/space_x17" android:indeterminate="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/space_x4" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout_spent_current_month" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/charcoal" android:layout_gravity="center_horizontal" android:id="@id/txt_spent" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextAppearance.H3.Regular" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/charcoal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_spent_this_month" style="@style/TextAppearance.Body.Regular" />
+        </LinearLayout>
+        <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/layout_category" android:layout_width="160.0dip" android:layout_height="160.0dip" android:layout_below="@id/layout_spent_current_month" android:layout_centerHorizontal="true">
+            <ovo.id.loyalty.widgets.CircularSpentView android:id="@id/circular_spent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/space_x4" android:layout_centerInParent="true" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/img_category" android:layout_width="@dimen/space_x7" android:layout_height="@dimen/space_x7" android:src="@drawable/ic_add_cat" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/dusk" android:layout_gravity="center_horizontal" android:id="@id/txt_category" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_select_category" style="@style/TextAppearance.H5.Regular" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/layout_spent_budget" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x2" android:layout_marginBottom="@dimen/space_half" android:layout_below="@id/layout_category" android:layout_centerHorizontal="true">
+            <TextView android:textColor="@color/charcoal" android:id="@id/txt_budget" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space" android:layout_marginBottom="@dimen/space_half" android:layout_centerHorizontal="true" style="@style/TextAppearance.H5.Bold" />
+            <ImageView android:background="@drawable/ic_edit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/txt_budget" android:layout_alignTop="@id/txt_budget" />
+            <TextView android:textColor="@color/dusk" android:id="@id/txt_budget_remaining" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="@dimen/space" android:layout_below="@id/txt_budget" android:layout_centerHorizontal="true" style="@style/TextAppearance.H5.Regular" />
+        </RelativeLayout>
+        <TextView android:textColor="@color/turquoise" android:layout_gravity="center_horizontal" android:id="@id/txt_set_budget" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x4" android:text="@string/action_set_budget" style="@style/TextAppearance.H5.Regular" />
+        <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_amount" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x3_half" android:layout_marginBottom="@dimen/space_x4">
+            <TextView android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space" android:text="@string/msg_amount" style="@style/TextAppearance.Display.Regular" />
+            <ovo.id.loyalty.widgets.PrefixEditText android:id="@id/field_amount" android:tag="Rp" android:background="@drawable/background_edit_text_error" android:paddingBottom="@dimen/space" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLength="@integer/editTextMaxLengthTransferAmount" android:digits="@string/digits_numbers" android:inputType="number" android:textIsSelectable="false" style="@style/TextAppearance.H5.Regular" />
+        </LinearLayout>
+        <Button android:enabled="false" android:id="@id/btn_save_budget" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:text="@string/save_budget" style="@style/Widget.Button.Primary" />
+    </LinearLayout>
+</FrameLayout>

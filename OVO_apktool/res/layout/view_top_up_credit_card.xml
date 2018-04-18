@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/view_top_up_credit_card" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@color/dusk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x4" android:layout_marginBottom="@dimen/space_half" android:text="@string/msg_amount" style="@style/TextAppearance.Display.Regular" />
+    <ovo.id.loyalty.widgets.PrefixEditText android:id="@id/txt_money_amount" android:tag="Rp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLength="@integer/editTextMaxLengthTransferAmount" android:digits="@string/digits_numbers" android:inputType="number" android:textIsSelectable="false" style="@style/TextAppearance.H5.Regular" />
+    <TextView android:textColor="@color/charcoal" android:id="@id/txt_maximum_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_half" android:layout_marginBottom="@dimen/space_x4" style="@style/TextAppearance.Display.Regular" />
+    <TextView android:textColor="@color/purple" android:id="@id/txt_desc_ovo_points" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x4" android:text="@string/desc_ovo_points" android:drawableLeft="@drawable/ic_exclamation" android:drawablePadding="@dimen/space" style="@style/TextAppearance.Disclaimer.Regular" />
+    <TextView android:textColor="@color/purple" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" android:text="@string/msg_topup_card_detail" style="@style/TextAppearance.H5.Bold" />
+    <android.support.design.widget.TextInputLayout android:id="@id/view_holder_name" android:layout_width="fill_parent" android:layout_height="wrap_content" app:errorEnabled="true">
+        <EditText android:id="@id/field_holder_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hint_card_holder_name" android:inputType="textCapWords" style="@style/TextAppearance.H5.Regular" />
+    </android.support.design.widget.TextInputLayout>
+    <TextView android:textColor="@color/dusk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_half" android:text="@string/hint_topup_credit_number" style="@style/TextAppearance.Display.Regular" />
+    <android.support.design.widget.TextInputLayout android:id="@id/view_card_number" android:layout_width="fill_parent" android:layout_height="wrap_content" app:hintEnabled="false" app:errorEnabled="true" app:errorTextAppearance="@style/AppTheme.Text.Error">
+        <EditText android:id="@id/txt_card_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawableLeft="@drawable/ic_card_default" android:drawablePadding="@dimen/space" android:inputType="number" android:drawableStart="@drawable/ic_card_default" style="@style/TextAppearance.H5.Regular" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:hintEnabled="true" app:errorEnabled="true">
+        <EditText android:id="@id/txt_exp" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hint_topup_exp_date" android:drawableRight="@drawable/ic_calendar" android:inputType="datetime" android:drawableEnd="@drawable/ic_calendar" style="@style/TextAppearance.H5.Regular" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout android:id="@id/view_cvv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_quarter" app:errorEnabled="false">
+        <EditText android:id="@id/txt_cvv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hint_topup_cvv" android:maxLength="4" android:inputType="numberPassword" style="@style/TextAppearance.H5.Regular" />
+    </android.support.design.widget.TextInputLayout>
+    <TextView android:textColor="@color/dusk" android:id="@id/txt_security_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" android:text="@string/msg_cvv_length" style="@style/TextAppearance.Display.Regular" />
+    <CheckBox android:textAppearance="@style/TextAppearance.Disclaimer.Regular" android:textColor="@color/dusk" android:id="@id/cb_save_card" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" android:text="@string/msg_save_card" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_card_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2">
+        <android.support.design.widget.TextInputLayout android:id="@id/input_card_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_quarter" app:errorEnabled="false">
+            <EditText android:id="@id/field_card_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hint_card_title" android:maxLength="@integer/editTextMaxLengthAddress" android:digits="@string/digits_alphanumeric" style="@style/Widget.EditText" />
+        </android.support.design.widget.TextInputLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2">
+            <TextView android:textColor="@color/magenta" android:layout_gravity="left" android:id="@id/txt_title_error" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/TextAppearance.Display.Regular" />
+            <TextView android:textColor="@color/dusk" android:layout_gravity="right" android:id="@id/txt_max_length" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextAppearance.Display.Regular" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:enabled="false" android:id="@id/btn_topup" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginTop="@dimen/space_x2" android:layout_marginBottom="@dimen/space_x4" android:text="@string/action_topup" style="@style/Widget.Button.Primary" />
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <stroke android:width="@dimen/stroke_width" android:color="@color/turquoise_alpha_50" />
+            <solid android:color="@color/transparent" />
+            <corners android:radius="@dimen/button_corner_radius" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/button_secondary_ripple" />
+</selector>

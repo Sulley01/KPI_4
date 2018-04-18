@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/layout_spending_budget" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ovo.id.loyalty.widgets.HalfCircularSpentView android:id="@id/circular_spent_view" android:layout_width="wrap_content" android:layout_height="@dimen/space_x14" android:layout_marginTop="@dimen/space_x3" />
+        <TextView android:textColor="@color/charcoal" android:gravity="center_horizontal" android:id="@id/txt_spending_compare_budget" android:layout_width="@dimen/text_compare_budget_width" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_x3" android:layout_marginTop="@dimen/space_x9_half" android:layout_marginRight="@dimen/space_x3" android:text="@string/msg_spending_compare_budget" android:maxLines="1" android:layout_above="@id/txt_compare_budget" android:layout_alignLeft="@id/circular_spent_view" android:layout_alignRight="@id/circular_spent_view" android:layout_centerHorizontal="true" style="@style/TextAppearance.Display.Regular" />
+        <TextView android:gravity="center_horizontal" android:id="@id/txt_compare_budget" android:layout_width="@dimen/text_compare_budget_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space" android:text="@string/msg_budget_amount" android:maxLines="4" android:layout_alignBottom="@id/circular_spent_view" android:layout_centerHorizontal="true" style="@style/TextAppearance.Body.Regular" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_no_budget_set" android:paddingBottom="@dimen/space_half" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/img_no_budget" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x1_half" android:layout_centerHorizontal="true" app:srcCompat="@drawable/vector_ic_no_budget_set" />
+        <TextView android:textColor="@color/charcoal" android:gravity="center" android:id="@id/txt_no_budget" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/msg_no_budget_set" android:layout_below="@id/img_no_budget" android:layout_centerHorizontal="true" style="@style/TextAppearance.Display.Regular" />
+    </RelativeLayout>
+</RelativeLayout>

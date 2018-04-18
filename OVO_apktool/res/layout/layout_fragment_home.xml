@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ll_content" android:background="@color/white_alpha_10" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@drawable/pattern" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <ImageButton android:id="@id/btn_barcode" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_swipe_circle" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <android.support.v4.widget.SwipeRefreshLayout android:id="@id/swipe_refresh" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <android.support.v4.widget.NestedScrollView android:paddingTop="@dimen/space_x4" android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/rl_image" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center_horizontal" android:id="@id/image_user" android:background="@drawable/ic_default_avatar" android:layout_width="60.0dip" android:layout_height="60.0dip" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+                    <ImageView android:layout_gravity="center_horizontal" android:id="@id/image_level" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="-20.0dip" android:src="@drawable/ovo_level_background" android:layout_toRightOf="@id/image_user" android:layout_alignBottom="@id/image_user" />
+                </RelativeLayout>
+                <TextView android:gravity="center_horizontal" android:id="@id/text_full_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space" android:text="" android:layout_below="@id/rl_image" style="@style/TextAppearance.H4.Regular" />
+                <TextView android:textColor="@color/dusk" android:gravity="center_horizontal" android:id="@id/text_ovo_id" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="@dimen/space_x3" android:text="" android:layout_below="@id/text_full_name" style="@style/TextAppearance.Display.Regular" />
+                <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/space_x2" android:paddingRight="@dimen/space_x2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/text_ovo_id">
+                    <include layout="@layout/layout_home_box" />
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x4" android:layout_marginBottom="@dimen/space_x9" android:weightSum="4.0">
+                        <TextView android:textColor="@color/btn_home_txt_color" android:gravity="center" android:id="@id/text_top_up" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/title_top_up" android:drawableTop="@drawable/ic_isi_saldo_copy" android:drawablePadding="@dimen/space" android:layout_weight="1.0" style="@style/TextAppearance.Display.Regular" />
+                        <TextView android:textColor="@color/btn_home_txt_color" android:gravity="center" android:id="@id/text_scan_qr" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/scan_qr_uppercase" android:drawableTop="@drawable/ic_scan_copy" android:drawablePadding="@dimen/space" android:layout_weight="1.0" style="@style/TextAppearance.Display.Regular" />
+                        <TextView android:textColor="@color/btn_home_txt_color" android:gravity="center" android:id="@id/text_transfer" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/transfer" android:drawableTop="@drawable/btn_home_transfer_new" android:drawablePadding="@dimen/space" android:layout_weight="1.0" style="@style/TextAppearance.Display.Regular" />
+                        <TextView android:textColor="@color/btn_home_txt_color" android:gravity="center" android:id="@id/text_paybill" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/title_pay_bill" android:drawableTop="@drawable/ic_paybill" android:drawablePadding="@dimen/space" android:layout_weight="1.0" style="@style/TextAppearance.Display.Regular" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

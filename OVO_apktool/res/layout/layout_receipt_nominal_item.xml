@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/pale_grey" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2_half"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img_theme" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_alignTop="@id/ll_receipt_nominal" android:layout_alignBottom="@id/ll_receipt_nominal" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_receipt_nominal" android:paddingLeft="@dimen/space_x2" android:paddingTop="@dimen/space_x2_half" android:paddingRight="@dimen/space_x2" android:paddingBottom="@dimen/space_x2_half" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/txt_title_nominal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_half" android:text="@string/nominal" style="@style/TextAppearance.Display.Regular" />
+        <TextView android:id="@id/txt_nominal" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextAppearance.H3.Regular" />
+    </LinearLayout>
+</RelativeLayout>

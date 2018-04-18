@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/btn_add_card" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/space_x5" android:layout_marginLeft="@dimen/space_x4" android:layout_marginRight="@dimen/space_x4" android:layout_marginBottom="@dimen/space_x3" android:text="@string/action_add_more_card" style="@style/Widget.Button.Primary" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_credit_card" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/charcoal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_x2" android:layout_marginRight="@dimen/space_x2" android:layout_marginBottom="@dimen/space_x2" android:text="@string/credit_card_plural" style="@style/TextAppearance.H5.Bold" />
+        <android.support.v7.widget.RecyclerView android:id="@id/rv_credit_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x3" />
+        <View android:background="@color/light_grey" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_membership" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/charcoal" android:paddingLeft="@dimen/space_x2" android:paddingTop="@dimen/space" android:paddingRight="@dimen/space_x2" android:paddingBottom="@dimen/space" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/title_membership_card" android:layout_weight="1.0" style="@style/TextAppearance.H5.Bold" />
+            <TextView android:textColor="@color/turquoise" android:id="@id/btn_see_all" android:paddingLeft="@dimen/space_x2" android:paddingTop="@dimen/space" android:paddingRight="@dimen/space_x2" android:paddingBottom="@dimen/space" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_see_all" android:textAllCaps="true" style="@style/TextAppearance.H5.Bold" />
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView android:id="@id/rv_membership" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" />
+    </LinearLayout>
+</LinearLayout>

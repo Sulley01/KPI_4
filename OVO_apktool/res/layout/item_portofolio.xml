@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:id="@id/card_menu_invest" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/space_half" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <TextView android:gravity="center" android:id="@id/txt_portofolio_name" android:background="@drawable/bg_turquoise_corner_top" android:paddingTop="@dimen/space" android:paddingBottom="@dimen/space" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:textAllCaps="true" style="@style/TextAppearance.Display.Regular" />
+        <View android:background="@color/gainsboro" android:layout_width="fill_parent" android:layout_height="@dimen/stroke_width" android:layout_marginBottom="@dimen/space_x2" />
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:paddingLeft="@dimen/space_x1_half" android:paddingRight="@dimen/space_x1_half" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2_half">
+            <android.support.design.widget.TextInputLayout android:textColorHint="@color/charcoal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/unit_nab" android:layout_weight="1.0">
+                <EditText android:enabled="false" android:textSize="@dimen/h4_text_size" android:ellipsize="end" android:id="@id/txt_nav_unit" android:background="@drawable/background_edit_text_white" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/txt_title_nav" />
+            </android.support.design.widget.TextInputLayout>
+            <ImageView android:id="@id/img_portofolio" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:paddingLeft="@dimen/space_x1_half" android:paddingRight="@dimen/space_x1_half" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space">
+            <TextView android:id="@id/textView" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/title_unit_owned" android:layout_weight="1.0" style="@style/TextAppearance.Display.Bold" />
+            <TextView android:gravity="right" android:id="@id/txt_unit_owned" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/TextAppearance.Body.Regular" />
+        </LinearLayout>
+        <View android:background="@color/light_grey" android:layout_width="fill_parent" android:layout_height="@dimen/stroke_width" android:layout_marginLeft="@dimen/space_x1_half" android:layout_marginRight="@dimen/space_x1_half" android:layout_marginBottom="@dimen/space" />
+        <LinearLayout android:gravity="center" android:paddingLeft="@dimen/space_x1_half" android:paddingRight="@dimen/space_x1_half" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space">
+            <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/title_investment_value" android:layout_weight="1.0" style="@style/TextAppearance.Display.Bold" />
+            <TextView android:gravity="right" android:id="@id/txt_investment_value" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/TextAppearance.Body.Regular" />
+        </LinearLayout>
+        <View android:background="@color/light_grey" android:layout_width="fill_parent" android:layout_height="@dimen/stroke_width" android:layout_marginLeft="@dimen/space_x1_half" android:layout_marginRight="@dimen/space_x1_half" android:layout_marginBottom="@dimen/space" />
+        <LinearLayout android:gravity="center" android:paddingLeft="@dimen/space_x1_half" android:paddingRight="@dimen/space_x1_half" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space">
+            <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/title_investment_growth" android:layout_weight="1.0" style="@style/TextAppearance.Display.Bold" />
+            <TextView android:textColor="@color/greeny" android:gravity="center" android:id="@id/txt_investment_growth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/ic_growth_green" style="@style/TextAppearance.Body.Regular" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

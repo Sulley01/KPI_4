@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/view_contact_not_found" android:paddingLeft="@dimen/space_x4" android:paddingTop="@dimen/space_x4" android:paddingRight="@dimen/space_x4" android:paddingBottom="@dimen/space_x4" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/img_search_not_found" android:background="@drawable/graphic_art_search" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textColor="@color/dusk" android:gravity="center_horizontal" android:id="@id/txt_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space" android:layout_marginBottom="@dimen/space_x6" android:text="@string/msg_contact_not_found" style="@style/TextAppearance.Body.Regular" />
+        <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <Button android:enabled="false" android:id="@id/btn_send_payment_anyway" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:text="@string/action_transfer" style="@style/Widget.Button.Primary" />
+    </LinearLayout>
+</ScrollView>

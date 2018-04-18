@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" android:text="@string/title_premier_benefit" style="@style/TextAppearance.Body.Regular" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2">
+        <ImageView android:layout_width="@dimen/space_x3" android:layout_height="@dimen/space_x3" android:layout_marginRight="@dimen/space" android:src="@drawable/ic_cash_balance" />
+        <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/benefit_premier_ovo_cash" style="@style/TextAppearance.Body.Regular" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2">
+        <ImageView android:layout_width="@dimen/space_x3" android:layout_height="@dimen/space_x3" android:layout_marginRight="@dimen/space" android:src="@drawable/ic_financial" />
+        <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/benefit_premier_budget" style="@style/TextAppearance.Body.Regular" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2">
+        <ImageView android:layout_width="@dimen/space_x3" android:layout_height="@dimen/space_x3" android:layout_marginRight="@dimen/space" android:src="@drawable/ic_wallet_fab_copy_11" />
+        <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/benefit_premier_transfer" style="@style/TextAppearance.Body.Regular" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/view_top_up_ovo_cash" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/dusk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_half" android:text="@string/msg_amount" style="@style/TextAppearance.Display.Regular" />
+    <ovo.id.loyalty.widgets.PrefixEditText android:id="@id/txt_money_amount_ovocash" android:tag="Rp" android:background="@drawable/background_edit_text_error" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_half" android:maxLength="@integer/editTextMaxLengthTransferAmount" android:digits="@string/digits_numbers" android:inputType="number" android:textIsSelectable="false" style="@style/TextAppearance.H5.Regular" />
+    <TextView android:textColor="@color/magenta" android:id="@id/txt_ovo_cash_status" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x3" android:text="@string/error_insufficient_balance" style="@style/TextAppearance.Display.Regular" />
+    <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <Button android:enabled="false" android:id="@id/btn_topup_ovocash" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginBottom="@dimen/space_x4" android:text="@string/action_topup" style="@style/Widget.Button.Primary" />
+</LinearLayout>

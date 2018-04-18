@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/txt_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x3" android:layout_marginBottom="@dimen/space_x3" android:layout_marginStart="@dimen/space_x2" style="@style/TextAppearance.H4.Bold.Purple" />
+    <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x2" android:layout_marginBottom="@dimen/space_x2" android:drawSelectorOnTop="true" android:divider="@color/light_grey" android:dividerHeight="2.0dip" android:choiceMode="singleChoice" />
+</LinearLayout>

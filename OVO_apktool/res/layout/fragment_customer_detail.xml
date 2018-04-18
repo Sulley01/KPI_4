@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/space_x4" android:paddingTop="@dimen/space_x3" android:paddingRight="@dimen/space_x4" android:paddingBottom="@dimen/space_x5" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" android:text="@string/title_detail_information" style="@style/TextAppearance.H5.Bold.Purple" />
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/image_ktp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2_half" app:srcCompat="@drawable/ic_camera_box" />
+    <android.support.design.widget.TextInputLayout android:id="@id/field_ktp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x4" android:hint="@string/hint_ktp_number">
+        <android.support.design.widget.TextInputEditText android:enabled="false" android:textColor="@color/charcoal" android:id="@id/edit_ktp" android:background="@drawable/background_edit_text_white" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Widget.EditText" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout android:id="@id/field_fullname" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x4" android:hint="@string/hint_full_name">
+        <android.support.design.widget.TextInputEditText android:enabled="false" android:textColor="@color/charcoal" android:id="@id/edit_fullname" android:background="@drawable/background_edit_text_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLength="@integer/editTextMaxLengthFullName" style="@style/Widget.EditText" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout android:id="@id/field_mobile_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x4" android:hint="@string/hint_mobile_number">
+        <android.support.design.widget.TextInputEditText android:enabled="false" android:textColor="@color/charcoal" android:id="@id/edit_mobile_number" android:background="@drawable/background_edit_text_white" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Widget.EditText" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout android:id="@id/field_email" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x4" android:hint="@string/hint_email_address">
+        <android.support.design.widget.TextInputEditText android:enabled="false" android:textColor="@color/charcoal" android:id="@id/edit_email" android:background="@drawable/background_edit_text_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="false" android:maxLength="@integer/editTextMaxLength200" style="@style/Widget.EditText" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout android:id="@id/field_gender" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x4" android:hint="@string/hint_customer_gender">
+        <AutoCompleteTextView android:textColor="@color/charcoal" android:id="@id/edit_gender" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Widget.EditText.NoLineDisable" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout android:id="@id/field_birth_place" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x4" android:hint="@string/hint_birth_place">
+        <android.support.design.widget.TextInputEditText android:enabled="false" android:textColor="@color/charcoal" android:id="@id/edit_birth_place" android:background="@drawable/background_edit_text_white" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Widget.EditText" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout android:id="@id/field_date_of_birth" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x4" android:hint="@string/hint_date_of_birth">
+        <android.support.design.widget.TextInputEditText android:enabled="false" android:textColor="@color/charcoal" android:id="@id/edit_date_of_birth" android:background="@drawable/background_edit_text_white" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Widget.EditText" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout android:id="@id/field_ktp_address" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x4" android:hint="@string/hint_ktp_address">
+        <android.support.design.widget.TextInputEditText android:textColor="@color/charcoal" android:id="@id/edit_ktp_address" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="false" android:maxLength="@integer/editTextMaxLength200" style="@style/Widget.EditText.NoLineDisable" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout android:id="@id/field_province" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x4" android:hint="@string/hint_province">
+        <AutoCompleteTextView android:textColor="@color/charcoal" android:id="@id/edit_province" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/hint_choose" style="@style/Widget.EditText.NoLineDisable" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout android:id="@id/field_city" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x4" android:hint="@string/hint_city">
+        <AutoCompleteTextView android:textColor="@color/charcoal" android:id="@id/edit_city" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/hint_choose" style="@style/Widget.EditText.NoLineDisable" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout android:id="@id/field_district" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x4" android:hint="@string/hint_district">
+        <android.support.design.widget.TextInputEditText android:textColor="@color/charcoal" android:id="@id/edit_district" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" style="@style/Widget.EditText.NoLineDisable" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout android:id="@id/field_village" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x4" android:hint="@string/hint_village">
+        <android.support.design.widget.TextInputEditText android:textColor="@color/charcoal" android:id="@id/edit_village" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" style="@style/Widget.EditText.NoLineDisable" />
+    </android.support.design.widget.TextInputLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x4">
+        <android.support.design.widget.TextInputLayout android:id="@id/field_rt" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_half" android:hint="@string/hint_rt" android:layout_weight="1.0">
+            <android.support.design.widget.TextInputEditText android:textColor="@color/charcoal" android:id="@id/edit_rt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLength="@integer/editTextMaxLengthRtRw" android:inputType="number" style="@style/Widget.EditText.NoLineDisable" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout android:id="@id/field_rw" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_half" android:hint="@string/hint_rw" android:layout_weight="1.0">
+            <android.support.design.widget.TextInputEditText android:textColor="@color/charcoal" android:id="@id/edit_rw" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLength="@integer/editTextMaxLengthRtRw" android:inputType="number" style="@style/Widget.EditText.NoLineDisable" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+    <android.support.design.widget.TextInputLayout android:id="@id/field_postal_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x4" android:hint="@string/hint_postal_code">
+        <android.support.design.widget.TextInputEditText android:textColor="@color/charcoal" android:id="@id/edit_postal_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLength="@integer/editTextMaxLengthPostcode" android:inputType="number" style="@style/Widget.EditText.NoLineDisable" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout android:id="@id/field_religion" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x4" android:hint="@string/hint_religion">
+        <AutoCompleteTextView android:textColor="@color/charcoal" android:id="@id/edit_religion" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Widget.EditText.NoLineDisable" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout android:id="@id/field_marital_status" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x4" android:hint="@string/hint_marital_status">
+        <AutoCompleteTextView android:textColor="@color/charcoal" android:id="@id/edit_marital_status" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Widget.EditText.NoLineDisable" />
+    </android.support.design.widget.TextInputLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_edit_ktp_exp_date" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space" android:text="@string/hint_ktp_expiration" />
+        <RadioGroup android:orientation="horizontal" android:id="@id/rg_expiration" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x4" android:checkedButton="@id/rb_lifetime">
+            <RadioButton android:id="@id/rb_lifetime" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="-5.0dip" android:text="Seumur Hidup" android:layout_weight="1.0" />
+            <RadioButton android:id="@id/rb_temporary" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="-5.0dip" android:text="Sementara" android:layout_weight="1.0" />
+        </RadioGroup>
+        <android.support.design.widget.TextInputLayout android:id="@id/field_ktp_expiration_calendar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:hintTextAppearance="@style/TextAppearance.Display.Regular" app:errorEnabled="true">
+            <EditText android:id="@id/edit_ktp_expiration_calendar" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hint_ktp_expiration" android:maxLength="@integer/editTextMaxLength200" android:drawableRight="@drawable/ic_calendar" style="@style/Widget.EditText" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+    <android.support.design.widget.TextInputLayout android:id="@id/field_ktp_expiration" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x4" android:hint="@string/hint_ktp_expiration">
+        <android.support.design.widget.TextInputEditText android:textColor="@color/charcoal" android:id="@id/edit_ktp_expiration" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Widget.EditText.NoLineDisable" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout android:id="@id/field_mother_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x5" android:hint="@string/hint_mother_name">
+        <android.support.design.widget.TextInputEditText android:textColor="@color/charcoal" android:id="@id/edit_mother_name" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Widget.EditText.NoLineDisable" />
+    </android.support.design.widget.TextInputLayout>
+    <Button android:enabled="false" android:textColor="@color/button_tertiary_text" android:id="@id/btn_next" android:layout_width="fill_parent" android:layout_height="@dimen/space_x5" android:text="@string/action_next" style="@style/Widget.Button.Secondary" />
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/root_view" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/view_margin" android:paddingTop="@dimen/space_x2_half" android:paddingRight="@dimen/view_margin" android:paddingBottom="@dimen/space_x3" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_x4" android:layout_marginTop="@dimen/space_x2" android:layout_marginRight="@dimen/space_x4">
+                <TextView android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space" android:text="@string/sub_title_promo_code" style="@style/TextAppearance.H5.Bold.Purple" />
+                <android.support.design.widget.TextInputLayout android:id="@id/txt_promo_code" android:layout_width="fill_parent" android:layout_height="wrap_content" app:hintTextAppearance="@style/TextAppearance.Display.Regular" app:errorEnabled="true">
+                    <EditText android:textSize="@dimen/h5_text_size" android:textColor="@color/charcoal" android:id="@id/field_promo_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/title_promo_code" android:maxLength="@integer/editTextMaxPromoCodeLength" android:digits="@string/digits_alphanumeric_only" android:inputType="textVisiblePassword|textNoSuggestions" android:imeOptions="actionSend" android:imeActionLabel="@string/action_next" style="@style/Widget.EditText" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/layout_exclamation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x5_half">
+                <ImageView android:id="@id/img_exclamation" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_exclamation" />
+                <TextView android:textColor="@color/purple" android:gravity="fill" android:id="@id/txt_promo_code_exclamation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_promo_code_exclamation" android:maxLines="3" android:layout_marginStart="@dimen/space" android:layout_marginEnd="@dimen/space_x1_half" android:layout_toEndOf="@id/img_exclamation" style="@style/TextAppearance.Display.Regular" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/view_loading" android:background="@color/white_alpha_50" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <me.zhanghai.android.materialprogressbar.MaterialProgressBar android:id="@id/progress_loading" android:background="@color/white_alpha_50" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="@dimen/space_x22" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <Space android:id="@id/view_space" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <Button android:id="@id/btn_redeem" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginTop="@dimen/space_x4" android:text="@string/action_redeem" style="@style/Widget.Button.Primary" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/frame_notification" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </RelativeLayout>
+</ScrollView>

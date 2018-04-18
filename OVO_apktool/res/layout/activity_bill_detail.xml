@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/toolbar" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/colorPrimary" android:padding="@dimen/space" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/img_provider" android:background="@drawable/bg_circle_light_grey" android:layout_width="@dimen/space_x5" android:layout_height="@dimen/space_x5" android:layout_marginRight="@dimen/space" />
+        <TextView android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/txt_provider_name" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/TextAppearance.H4.Regular" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/frame_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

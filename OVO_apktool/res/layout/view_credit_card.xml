@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_card" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/ghost_grey" android:layout_width="fill_parent" android:layout_height="@dimen/space_x14" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_x6" android:layout_marginTop="@dimen/space_x4" android:layout_marginRight="@dimen/space_x6" android:layout_marginBottom="@dimen/space_x2" android:layout_centerHorizontal="true">
+        <ovo.id.loyalty.widgets.CardImageView android:background="@drawable/shadow_border_rectangle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space" />
+        <ovo.id.loyalty.widgets.CardImageView android:id="@id/img_bg" android:background="@drawable/bg_rounded_blue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/pattern_visa_b" android:scaleType="fitXY" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_x2" android:layout_marginTop="@dimen/space_x2" android:layout_marginRight="@dimen/space_x2">
+            <ImageView android:id="@id/img_logo" android:layout_width="wrap_content" android:layout_height="@dimen/space_x4" android:layout_marginBottom="@dimen/space_x2" android:src="@drawable/logo_visa" />
+            <TextView android:textColor="@color/white" android:id="@id/txt_card_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_quarter" style="@style/TextAppearance.H5.Regular" />
+            <TextView android:textColor="@color/white" android:ellipsize="end" android:id="@id/txt_card_holder_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" android:maxLines="2" android:textAllCaps="true" style="@style/TextAppearance.H5.Regular" />
+            <TextView android:textColor="@color/white" android:id="@id/txt_title_expired" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_quarter" android:text="@string/expired" android:textAllCaps="true" style="@style/TextAppearance.Disclaimer.Regular" />
+            <TextView android:textColor="@color/white" android:gravity="bottom" android:layout_gravity="bottom" android:id="@id/txt_expired" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextAppearance.H5.Regular" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

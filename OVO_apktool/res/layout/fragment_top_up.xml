@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ll_content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/main" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/FragmentTopLevelContainer">
+        <android.support.design.widget.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x3" app:hintEnabled="true" app:errorEnabled="false" app:hintAnimationEnabled="false">
+            <AutoCompleteTextView android:id="@id/txt_top_up_to" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/msg_topup_select_account" android:hint="@string/hint_topup_to" style="@style/Widget.AutoCompleteTextView" />
+        </android.support.design.widget.TextInputLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@id/rl_remaining_balance" android:background="@drawable/bg_ghost_grey_rounded" android:padding="@dimen/space" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space">
+            <TextView android:id="@id/txt_title_balance" android:paddingTop="@dimen/space" android:paddingBottom="@dimen/space" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/title_remaining_balance" android:layout_weight="1.0" style="@style/TextAppearance.Disclaimer.Dusk" />
+            <TextView android:id="@id/txt_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextAppearance.Body.Bold" />
+        </LinearLayout>
+        <TextView android:textColor="@color/charcoal" android:layout_gravity="center_horizontal" android:id="@id/txt_maximum_balance_transfer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_half" style="@style/TextAppearance.Display.Regular" />
+        <android.support.design.widget.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x2" app:hintEnabled="true" app:errorEnabled="false">
+            <AutoCompleteTextView android:id="@id/txt_top_up_via" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/msg_topup_select_method" android:hint="@string/msg_topup_from" style="@style/Widget.AutoCompleteTextView" />
+        </android.support.design.widget.TextInputLayout>
+        <TextView android:textColor="@color/dusk" android:id="@id/txt_available_balance_ovo_cash" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_half" android:layout_marginBottom="@dimen/space_x3" style="@style/TextAppearance.Display.Regular" />
+        <include android:visibility="gone" layout="@layout/view_top_up_atm" />
+        <include android:visibility="gone" layout="@layout/view_top_up_merchant" />
+        <include android:visibility="gone" layout="@layout/view_top_up_ovo_cash" />
+        <include android:visibility="gone" layout="@layout/layout_topup_nobu" />
+        <include android:visibility="gone" layout="@layout/view_top_up_debit_card" />
+    </LinearLayout>
+</RelativeLayout>

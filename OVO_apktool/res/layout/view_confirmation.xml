@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/space_x3"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/txt_title_dialog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x3" android:text="@string/title_confirm_transfer" style="@style/AppTheme.Text.Purple.Title" />
+    <TextView android:id="@id/txt_message_dialog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_confirm_transfer" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/item_confirm_transfer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x2">
+                <LinearLayout android:gravity="left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center_horizontal" android:id="@id/image_user" android:background="@drawable/ic_default_avatar" android:layout_width="60.0dip" android:layout_height="60.0dip" android:scaleType="centerCrop" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="@dimen/space">
+                        <TextView android:id="@id/txt_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_half" style="@style/TextAppearance.H5.Regular" />
+                        <TextView android:id="@id/txt_phone_number" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextAppearance.Display.Regular" />
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x4" android:layout_marginBottom="@dimen/space" android:text="@string/title_from" style="@style/TextAppearance.Display.Regular" />
+                <TextView android:id="@id/text_account_from" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ovo_cash" style="@style/TextAppearance.H5.Regular" />
+                <TextView android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x3_half" android:layout_marginBottom="@dimen/space" android:text="@string/msg_amount" style="@style/TextAppearance.Display.Regular" />
+                <TextView android:id="@id/txt_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space" style="@style/TextAppearance.H5.Regular" />
+                <TextView android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x3_half" android:layout_marginBottom="@dimen/space" android:text="@string/hint_message" style="@style/TextAppearance.Display.Regular" />
+                <TextView android:id="@id/txt_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space" style="@style/TextAppearance.H5.Regular" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_confirm_combine" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+    <Button android:id="@id/btn_confirm" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginLeft="@dimen/space_x4" android:layout_marginTop="@dimen/space_x3" android:layout_marginRight="@dimen/space_x4" android:layout_marginBottom="@dimen/space_x2" android:text="@string/action_confirm" style="@style/Widget.Button.Primary" />
+    <Button android:id="@id/btn_cancel" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginLeft="@dimen/space_x2" android:layout_marginRight="@dimen/space_x2" android:layout_marginBottom="@dimen/space" android:text="@string/action_cancel" style="@style/Widget.Button.Tertiary" />
+</LinearLayout>

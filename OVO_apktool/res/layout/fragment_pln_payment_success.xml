@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_transaction_bill_success" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/space_x2">
+        <android.support.design.widget.TextInputLayout android:id="@id/field_ref_id" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x3">
+            <EditText android:enabled="false" android:id="@id/edit_ref_num" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/title_ref_number" style="@style/Widget.EditText" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout android:id="@id/field_ref_pln" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x3">
+            <EditText android:enabled="false" android:id="@id/edit_ref_num_pln" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/title_pln_ref_number" style="@style/Widget.EditText" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout android:id="@id/field_time_date" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x3">
+            <EditText android:enabled="false" android:id="@id/edit_time_date_pln" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/title_date_time" style="@style/Widget.EditText" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout android:id="@id/field_cust_id" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x3">
+            <EditText android:enabled="false" android:id="@id/edit_cust_id" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/customer_id" style="@style/Widget.EditText" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout android:id="@id/field_cust_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x3">
+            <EditText android:enabled="false" android:id="@id/edit_cust_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/msg_customer_name" style="@style/Widget.EditText" />
+        </android.support.design.widget.TextInputLayout>
+        <RelativeLayout android:id="@id/field_stroom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2">
+            <TextView android:id="@id/txt_label_stroom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_half" android:text="@string/msg_stroom_token" style="@style/TextAppearance.Display.Regular" />
+            <TextView android:textColor="@color/turquoise" android:gravity="right" android:id="@id/txt_label_copy" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/msg_copy" android:layout_toRightOf="@id/txt_label_stroom" android:layout_toEndOf="@id/txt_label_stroom" style="@style/TextAppearance.Display.Regular" />
+            <EditText android:enabled="false" android:id="@id/edit_stroom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/txt_label_stroom" style="@style/Widget.EditText" />
+        </RelativeLayout>
+        <android.support.design.widget.TextInputLayout android:id="@id/field_fare" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space" android:layout_marginBottom="@dimen/space_x3">
+            <EditText android:enabled="false" android:id="@id/edit_fare" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/msg_fare_electrical_power" style="@style/Widget.EditText" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout android:id="@id/field_total_kwh" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x3">
+            <EditText android:enabled="false" android:id="@id/edit_total_kwh" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/msg_total_kwh" style="@style/Widget.EditText" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout android:id="@id/field_payment_method" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x3">
+            <EditText android:enabled="false" android:id="@id/edit_payment_method_pln" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/msg_payment_method" style="@style/Widget.EditText" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+</RelativeLayout>

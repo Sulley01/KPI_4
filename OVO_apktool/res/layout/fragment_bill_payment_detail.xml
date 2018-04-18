@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v4.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+            <RelativeLayout android:padding="@dimen/space_x4" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <android.support.design.widget.TextInputLayout android:id="@id/field_mobile_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_half" app:errorEnabled="true">
+                    <EditText android:id="@id/edit_mobile_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hint_mobile_number" android:maxLength="@integer/editTextMaxLengthMobile" android:digits="@string/digits_mobile" android:drawableRight="@drawable/ic_contact_list" android:inputType="number" />
+                </android.support.design.widget.TextInputLayout>
+                <RadioGroup android:orientation="horizontal" android:id="@id/rg_bill_type" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/field_mobile_number" android:layout_alignParentStart="true">
+                    <RadioButton android:textSize="@dimen/body_text_size" android:textColor="@color/text_charcoal_dust" android:id="@id/rb_prepaid" android:padding="0.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:checked="true" android:text="@string/prepaid" android:layout_weight="1.0" style="@style/MyRadioButton" />
+                    <RadioButton android:textSize="@dimen/body_text_size" android:textColor="@color/text_charcoal_dust" android:id="@id/rb_postpaid" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/postpaid" android:layout_weight="1.0" style="@style/MyRadioButton" />
+                </RadioGroup>
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_amount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space" android:layout_below="@id/rg_bill_type" android:layout_alignStart="@id/rg_bill_type">
+                    <TextView android:textColor="@color/dusk" android:id="@id/txt_label_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/msg_amount" android:layout_alignParentStart="true" style="@style/TextAppearance.Body.Regular" />
+                    <TextView android:textColor="@color/charcoal" android:textColorHint="@color/charcoal" android:ellipsize="end" android:id="@id/edit_amount" android:background="@drawable/background_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/msg_select_amount" android:maxLines="1" android:drawableRight="@drawable/ic_expand" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_payment_method" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x3" android:layout_below="@id/layout_amount" android:layout_alignStart="@id/rg_bill_type">
+                    <TextView android:textColor="@color/dusk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/msg_payment_method" android:layout_alignParentStart="true" style="@style/TextAppearance.Body.Regular" />
+                    <TextView android:textColor="@color/colors_edittext_charcoal" android:textColorHint="@color/charcoal" android:ellipsize="end" android:id="@id/field_payment_method" android:background="@drawable/background_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:drawableEnd="@drawable/ic_expand" />
+                    <TextView android:textColor="@color/dark_gray" android:id="@id/txt_available_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_half" android:text="@string/msg_available_ovo_cash" style="@style/TextAppearance.Body.Regular" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/ll_payment_method">
+                    <include android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/view_bill_detail" />
+                    <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                    <Button android:enabled="false" android:id="@id/btn_next" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginTop="@dimen/space_x4" android:text="@string/action_next" style="@style/Widget.Button.Primary" />
+                </LinearLayout>
+            </RelativeLayout>
+        </android.support.v4.widget.NestedScrollView>
+        <include layout="@layout/fragment_fragment_loading" />
+    </FrameLayout>
+</LinearLayout>

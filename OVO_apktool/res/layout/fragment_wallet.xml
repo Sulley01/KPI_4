@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/view_ovo_card" />
+        <TextView android:textColor="@color/purple" android:gravity="center" android:id="@id/txt_no_card_linked" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_half" style="@style/TextAppearance.Disclaimer.Bold" />
+        <TextView android:textColor="@color/dusk" android:gravity="center" android:paddingLeft="@dimen/space_x4" android:paddingRight="@dimen/space_x4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x5" android:text="@string/msg_tap_the_card_to_see_details" style="@style/TextAppearance.Display.Regular" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <FrameLayout android:id="@id/frame_wallet" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <me.zhanghai.android.materialprogressbar.MaterialProgressBar android:id="@id/progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

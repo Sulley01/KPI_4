@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/space_x4" android:paddingRight="@dimen/space_x4" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@color/purple" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x2" android:layout_marginBottom="@dimen/space_x3" android:text="@string/title_confirm_payment" style="@style/TextAppearance.H5.Bold" />
+    <android.support.design.widget.TextInputLayout android:id="@id/input_top_up_to" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" app:errorEnabled="true">
+        <EditText android:enabled="false" android:id="@id/field_top_up_to" android:background="@android:color/transparent" android:paddingTop="@dimen/space" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/msg_top_up_to" style="@style/TextAppearance.H5.Regular" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout android:id="@id/input_via" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" app:errorEnabled="true">
+        <EditText android:enabled="false" android:id="@id/field_via" android:background="@android:color/transparent" android:paddingTop="@dimen/space" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/msg_topup_from" style="@style/TextAppearance.H5.Regular" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" app:errorEnabled="true">
+        <EditText android:enabled="false" android:id="@id/field_amount" android:background="@android:color/transparent" android:paddingTop="@dimen/space" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/msg_amount" style="@style/TextAppearance.H5.Regular" />
+    </android.support.design.widget.TextInputLayout>
+    <Button android:id="@id/btn_confirm" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginBottom="@dimen/space_x2" android:text="@string/action_confirm" style="@style/Widget.Button.Primary" />
+</LinearLayout>

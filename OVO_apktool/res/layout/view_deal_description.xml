@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/space_x2" android:paddingRight="@dimen/space_x2" android:paddingBottom="@dimen/space_x4" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/space_x5"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@color/charcoal" android:id="@id/txt_deal_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" style="@style/TextAppearance.H5.Bold" />
+    <TextView android:id="@id/txt_deal_end" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" style="@style/TextAppearance.Display.Regular" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2">
+        <LinearLayout android:orientation="horizontal" android:id="@id/view_remaining_voucher" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/space_x3" android:layout_height="@dimen/space_x3" app:srcCompat="@drawable/vector_ic_voucher" />
+            <TextView android:layout_gravity="center_vertical" android:id="@id/txt_remaining_voucher" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/space_half" style="@style/TextAppearance.Body.Regular" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/layout_sponsored_deal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+            <TextView android:textSize="@dimen/barcode_text_size_barcode" android:ellipsize="end" android:id="@id/txt_sponsored_deal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_powered_by" android:maxLines="1" android:layout_centerVertical="true" style="@style/TextAppearance.Display.Regular" />
+            <ImageView android:id="@id/img_sponsored_deal" android:layout_width="@dimen/space_x3" android:layout_height="@dimen/space_x3" android:scaleType="centerCrop" android:layout_alignTop="@id/txt_sponsored_deal" android:layout_marginStart="@dimen/space_half" android:layout_toEndOf="@id/txt_sponsored_deal" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:background="@color/dusk" android:layout_width="fill_parent" android:layout_height="@dimen/stroke_width" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x2" android:layout_marginBottom="@dimen/space_x2" android:text="@string/title_details" style="@style/TextAppearance.H5.Bold" />
+    <TextView android:textColor="@color/charcoal" android:id="@id/txt_deal_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space" android:lineSpacingExtra="@dimen/space_half" style="@style/TextAppearance.Body.Regular" />
+    <View android:background="@color/light_grey" android:layout_width="fill_parent" android:layout_height="@dimen/stroke_width" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_tnc" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space">
+        <LinearLayout android:orientation="horizontal" android:id="@id/layout_tnc_title" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/charcoal" android:id="@id/txt_tnc_title" android:paddingTop="@dimen/space_x2" android:paddingBottom="@dimen/space_x2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" android:text="@string/terms_conditions" android:layout_weight="1.0" style="@style/TextAppearance.H5.Bold" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/img_tnc_expand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_expand" />
+        </LinearLayout>
+        <TextView android:textColor="@color/charcoal" android:id="@id/txt_tnc" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space" />
+        <View android:background="@color/light_grey" android:layout_width="fill_parent" android:layout_height="@dimen/stroke_width" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_location" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/layout_location_title" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/charcoal" android:id="@id/txt_location_title" android:paddingTop="@dimen/space_x2" android:paddingBottom="@dimen/space_x2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/title_redeem_location" android:layout_weight="1.0" style="@style/TextAppearance.H5.Bold" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/img_location_expand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_expand" />
+        </LinearLayout>
+        <TextView android:textColor="@color/charcoal" android:id="@id/txt_location" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space" />
+        <View android:background="@color/light_grey" android:layout_width="fill_parent" android:layout_height="@dimen/stroke_width" android:layout_marginBottom="@dimen/space_x7" />
+    </LinearLayout>
+    <android.support.v4.widget.Space android:layout_width="fill_parent" android:layout_height="@dimen/button_height" />
+</LinearLayout>

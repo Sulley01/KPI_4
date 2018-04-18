@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:background="@drawable/ovo_card_front" android:paddingLeft="@dimen/space_x3" android:paddingTop="@dimen/space_x8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_x5_half" android:layout_marginTop="@dimen/space_x5" android:layout_marginRight="@dimen/space_x5_half">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/white" android:id="@id/txt_ovo_card_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_half" style="@style/TextAppearance.Body.Regular" />
+            <TextView android:textColor="@color/white" android:ellipsize="end" android:id="@id/txt_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_x3" android:maxLines="1" android:textAllCaps="true" style="@style/TextAppearance.Display.Bold" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="vertical" android:paddingLeft="@dimen/space" android:paddingRight="@dimen/space" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/img_barcode" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textColor="@color/dusk" android:layout_gravity="center_horizontal" android:id="@id/txt_barcode" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextAppearance.H5.Regular" />
+    </LinearLayout>
+</LinearLayout>

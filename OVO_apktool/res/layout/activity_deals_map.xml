@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_tools" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/toolbar" />
+        <fragment android:id="@id/map" android:layout_width="fill_parent" android:layout_height="fill_parent" class="com.google.android.gms.maps.SupportMapFragment" />
+    </LinearLayout>
+    <fragment android:id="@id/deal_list" android:layout_width="fill_parent" android:layout_height="fill_parent" class="ovo.id.loyalty.fragment.deal.FragmentDealListOnMap" />
+</FrameLayout>

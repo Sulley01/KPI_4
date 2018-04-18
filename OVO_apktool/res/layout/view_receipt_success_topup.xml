@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/topup_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/space_x4" android:paddingTop="@dimen/space_x2" android:paddingRight="@dimen/space_x4" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputLayout android:id="@id/field_transaction_type_topup" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x3">
+            <EditText android:enabled="false" android:id="@id/edit_transaction_type_topup" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/title_transaction_type" style="@style/Widget.EditText" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout android:id="@id/field_topup_to" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x3">
+            <EditText android:enabled="false" android:id="@id/edit_topup_to" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/title_to" style="@style/Widget.EditText" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout android:id="@id/field_topup_from" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x3">
+            <EditText android:enabled="false" android:id="@id/edit_topup_from" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/title_from" android:maxLines="2" android:singleLine="false" style="@style/Widget.EditText" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout android:id="@id/field_ref_no_topup" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x3">
+            <EditText android:enabled="false" android:id="@id/edit_ref_no_topup" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/title_ref_number" style="@style/Widget.EditText" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout android:id="@id/field_date_time_topup" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x3">
+            <EditText android:enabled="false" android:id="@id/edit_date_and_time_topup" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/title_date_time" style="@style/Widget.EditText" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/pale_grey" android:paddingLeft="@dimen/space_x4" android:paddingTop="@dimen/space_x2_half" android:paddingRight="@dimen/space_x4" android:paddingBottom="@dimen/space_x2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space" android:text="@string/title_details" style="@style/TextAppearance.H5.Bold.Purple" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_half">
+            <TextView android:textColor="@color/dusk" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/msg_amount" android:layout_weight="1.0" style="@style/TextAppearance.Body.Regular" />
+            <TextView android:gravity="right" android:id="@id/txt_receipt_amount_topup" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/TextAppearance.Body.Regular" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space">
+            <TextView android:textColor="@color/dusk" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/msg_transaction_fee" android:layout_weight="1.0" style="@style/TextAppearance.Body.Regular" />
+            <TextView android:gravity="right" android:id="@id/txt_receipt_fee_topup" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/TextAppearance.Body.Regular" />
+        </LinearLayout>
+        <View android:background="@color/light_grey" android:layout_width="fill_parent" android:layout_height="@dimen/stroke_width" android:layout_marginBottom="@dimen/space" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/msg_bill_total" android:layout_weight="1.0" style="@style/TextAppearance.Body.Bold" />
+            <TextView android:gravity="right" android:id="@id/txt_total_topup" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

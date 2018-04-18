@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/linear_content_contact_info" android:background="@color/white" android:paddingLeft="@dimen/space_x4" android:paddingTop="@dimen/space_x3" android:paddingRight="@dimen/space_x4" android:paddingBottom="@dimen/space_x5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" android:text="@string/title_contact_info" style="@style/TextAppearance.H5.Bold.Purple" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" android:text="@string/msg_correspondence_address" style="@style/TextAppearance.H5.Regular.Dusk" />
+    <RadioGroup android:orientation="horizontal" android:id="@id/rg_user_id" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x4">
+        <RadioButton android:id="@id/rb_ktp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/title_ktp_id" android:layout_weight="1.0" android:textAllCaps="true" style="@style/Widget.AppCompat.CompoundButton.RadioButton" />
+        <RadioButton android:id="@id/rb_others" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/title_others_in" android:layout_weight="1.0" android:textAllCaps="true" style="@style/Widget.AppCompat.CompoundButton.RadioButton" />
+    </RadioGroup>
+    <android.support.design.widget.TextInputLayout android:id="@id/field_address" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x4" android:hint="@string/hint_correspondence_address">
+        <android.support.design.widget.TextInputEditText android:id="@id/edit_address" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLength="@integer/editTextMaxOfficeAddress" style="@style/Widget.EditText" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x4" android:hint="@string/hint_province">
+        <AutoCompleteTextView android:textSize="@dimen/body_text_size" android:id="@id/edit_province" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/hint_choose" android:drawableRight="@drawable/ic_search" style="@style/Widget.AutoCompleteTextView" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout android:id="@id/field_city" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x4" android:hint="@string/hint_city">
+        <AutoCompleteTextView android:textSize="@dimen/body_text_size" android:id="@id/edit_city" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/hint_choose" android:drawableRight="@drawable/ic_search" style="@style/Widget.AutoCompleteTextView" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout android:id="@id/field_district" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x4" android:hint="@string/hint_district">
+        <android.support.design.widget.TextInputEditText android:id="@id/edit_district" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Widget.EditText" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout android:id="@id/field_village" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x4" android:hint="@string/hint_village">
+        <android.support.design.widget.TextInputEditText android:id="@id/edit_village" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Widget.EditText" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout android:id="@id/field_postal_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x4" android:hint="@string/hint_postal_code">
+        <android.support.design.widget.TextInputEditText android:id="@id/edit_postal_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLength="5" android:digits="\ 0123456789" android:inputType="phone" android:imeOptions="actionDone" android:imeActionLabel="@string/action_done" style="@style/Widget.EditText" />
+    </android.support.design.widget.TextInputLayout>
+    <Button android:enabled="false" android:textColor="@color/button_tertiary_text" android:id="@id/btn_next" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:text="@string/action_next_in" style="@style/Widget.Button.Secondary" />
+</LinearLayout>

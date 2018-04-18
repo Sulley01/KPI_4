@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/view_credit_card" />
+        <TextView android:textColor="@color/charcoal" android:layout_gravity="center_horizontal" android:id="@id/btn_edit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" android:drawablePadding="@dimen/space" android:drawableEnd="@drawable/ic_edit" style="@style/TextAppearance.Body.Regular" />
+        <TextView android:textColor="@color/light_dusk" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/desc_add_credit_card" style="@style/TextAppearance.Body.Regular" />
+    </LinearLayout>
+</ScrollView>

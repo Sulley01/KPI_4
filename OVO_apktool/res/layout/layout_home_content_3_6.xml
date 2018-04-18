@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingBottom="@dimen/space_x9" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/space_x2" android:paddingEnd="@dimen/space_x2"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/image_user" android:background="@drawable/ic_default_avatar" android:layout_width="@dimen/space_x7_half" android:layout_height="@dimen/space_x7_half" android:scaleType="centerCrop" android:layout_centerHorizontal="true" android:contentDescription="user profile picture" />
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/image_level" android:layout_width="@dimen/space_x3" android:layout_height="@dimen/space_x3" android:src="@drawable/ovo_level_background" android:layout_alignBottom="@id/image_user" android:contentDescription="user level" android:layout_marginStart="-20.0dip" android:layout_toEndOf="@id/image_user" />
+    <TextView android:gravity="center_horizontal" android:id="@id/text_full_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space" android:text="" android:layout_below="@id/image_user" style="@style/TextAppearance.H4.Regular" />
+    <include android:id="@id/box" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x2" android:layout_below="@id/text_full_name" layout="@layout/layout_home_box_3" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x2" android:layout_below="@id/box" layout="@layout/layout_home_button_6" />
+</RelativeLayout>

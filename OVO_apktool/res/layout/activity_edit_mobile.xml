@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/toolbar" layout="@layout/toolbar" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:id="@id/sv_content" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+            <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/space_x4" android:paddingTop="@dimen/space_x2_half" android:paddingRight="@dimen/space_x4" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_change_mobile_number" style="@style/TextAppearance.H5.Bold.Purple" />
+                <android.support.design.widget.TextInputLayout android:id="@id/input_mobile_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x2" app:hintTextAppearance="@style/TextAppearance.Display.Regular" app:errorEnabled="true">
+                    <EditText android:enabled="false" android:textSize="@dimen/h5_text_size" android:ellipsize="end" android:id="@id/field_current_mobile" android:background="@drawable/background_edit_text_white" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/msg_current_mobile_number" android:maxLines="1" android:maxLength="@integer/editTextMaxLengthRegistration" style="@style/Widget.EditText" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout android:id="@id/txt_layout_new_mobile" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x2" app:hintTextAppearance="@style/TextAppearance.Display.Regular" app:errorEnabled="true">
+                    <EditText android:textSize="@dimen/h5_text_size" android:ellipsize="end" android:id="@id/field_new_mobile" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hint_new_mobile_number" android:maxLines="1" android:maxLength="@integer/editTextMaxLengthRegistration" style="@style/Widget.EditText.Mobile" />
+                </android.support.design.widget.TextInputLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x2" android:text="@string/title_instruction" style="@style/TextAppearance.H5.Bold" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x3">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                        <View android:background="@drawable/bg_purple_oval" android:layout_width="@dimen/bullet_size" android:layout_height="@dimen/bullet_size" />
+                        <View android:layout_gravity="center_horizontal" android:background="@color/turquoise" android:layout_width="2.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_half" android:layout_marginBottom="@dimen/space_half" />
+                    </LinearLayout>
+                    <TextView android:textColor="@color/charcoal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x4" android:text="@string/msg_change_mobile_number_and_log_out" android:layout_marginStart="@dimen/space_x2" style="@style/TextAppearance.Body.Regular" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:background="@drawable/bg_purple_oval" android:layout_width="@dimen/bullet_size" android:layout_height="@dimen/bullet_size" />
+                    <TextView android:textColor="@color/charcoal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x4" android:text="@string/msg_re_login" android:layout_marginStart="@dimen/space_x2" style="@style/TextAppearance.Body.Regular" />
+                </LinearLayout>
+                <Space android:id="@id/view_space" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                <Button android:enabled="false" android:id="@id/btn_save" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginTop="@dimen/space_x6" android:layout_marginBottom="@dimen/space_x4" android:text="@string/action_save" style="@style/Widget.Button.Primary" />
+            </LinearLayout>
+        </ScrollView>
+        <RelativeLayout android:id="@id/rl_loading" android:background="@color/white_alpha_50" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <me.zhanghai.android.materialprogressbar.MaterialProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

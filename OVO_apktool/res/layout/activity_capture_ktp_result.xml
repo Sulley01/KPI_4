@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/toolbar" layout="@layout/toolbar" />
+    <ImageView android:id="@id/img_ktp_placeholder" android:layout_width="fill_parent" android:layout_height="@dimen/space_x32_half" android:scaleType="fitXY" android:layout_below="@id/toolbar" />
+    <ImageView android:id="@id/img_account_placeholder" android:visibility="visible" android:layout_width="@dimen/space_x37" android:layout_height="@dimen/space_x38" android:scaleType="fitXY" android:layout_below="@id/toolbar" android:layout_centerHorizontal="true" />
+    <TextView android:textColor="@color/dusk" android:gravity="center_horizontal" android:id="@id/txt_msg_account" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space" android:text="@string/msg_example_screen" android:layout_below="@id/img_account_placeholder" style="@style/TextAppearance.Body.Regular" />
+    <Button android:id="@id/btn_use_this_image" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginLeft="@dimen/space_x4" android:layout_marginRight="@dimen/space_x4" android:text="@string/action_use_this_image" android:layout_above="@id/btn_retake" style="@style/Widget.Button.Primary" />
+    <Button android:id="@id/btn_retake" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginBottom="@dimen/space_x6" android:text="@string/action_retake_capture_ktp" android:layout_alignParentBottom="true" style="@style/Widget.Button.Tertiary" />
+</RelativeLayout>

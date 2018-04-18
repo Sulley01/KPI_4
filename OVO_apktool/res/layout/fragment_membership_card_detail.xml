@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/sv_main" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:visibility="gone" layout="@layout/view_credit_card" />
+        <android.support.v4.view.ViewPager android:id="@id/vp_card" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_bullet" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" />
+        <TextView android:layout_gravity="center_horizontal" android:id="@id/txt_card_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space" style="@style/TextAppearance.Body.Bold.Purple" />
+        <TextView android:textColor="@color/charcoal" android:layout_gravity="center_horizontal" android:id="@id/btn_edit" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x4" android:drawablePadding="@dimen/space" android:drawableEnd="@drawable/ic_edit" style="@style/TextAppearance.Body.Regular" />
+        <TextView android:layout_gravity="center_horizontal" android:id="@id/txt_privilege" android:paddingLeft="@dimen/space_x2" android:paddingTop="@dimen/space_x2" android:paddingRight="@dimen/space_x2" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextAppearance.Body.Regular" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_progress" android:background="@color/ghost_grey" android:paddingTop="@dimen/space_x2" android:paddingBottom="@dimen/space_x2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/charcoal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" android:text="@string/msg_progress" style="@style/TextAppearance.Body.Regular" />
+            <TextView android:textColor="@color/charcoal" android:layout_gravity="center_horizontal" android:id="@id/txt_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextAppearance.H5.Bold" />
+        </LinearLayout>
+        <TextView android:layout_gravity="center_horizontal" android:id="@id/txt_benefit" android:paddingLeft="@dimen/space_x2" android:paddingRight="@dimen/space_x2" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextAppearance.Body.Regular" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="4.0">
+        <TextView android:textColor="@color/btn_home_txt_color" android:gravity="center" android:id="@id/text_top_up" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/title_top_up" android:drawableTop="@drawable/ic_isi_saldo_copy" android:drawablePadding="@dimen/space" android:layout_weight="1.0" style="@style/TextAppearance.Display.Regular" />
+        <TextView android:textColor="@color/btn_home_txt_color" android:gravity="center" android:id="@id/text_scan_qr" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/scan_qr_uppercase" android:drawableTop="@drawable/ic_scan_copy" android:drawablePadding="@dimen/space" android:layout_weight="1.0" style="@style/TextAppearance.Display.Regular" />
+        <TextView android:textColor="@color/btn_home_txt_color" android:gravity="center" android:id="@id/text_transfer" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/transfer" android:drawableTop="@drawable/btn_home_transfer_new" android:drawablePadding="@dimen/space" android:layout_weight="1.0" style="@style/TextAppearance.Display.Regular" />
+        <TextView android:textColor="@color/btn_home_txt_color" android:gravity="center" android:id="@id/text_paybill" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/title_pay_bill" android:drawableTop="@drawable/ic_paybill" android:drawablePadding="@dimen/space" android:layout_weight="1.0" style="@style/TextAppearance.Display.Regular" />
+    </LinearLayout>
+</LinearLayout>

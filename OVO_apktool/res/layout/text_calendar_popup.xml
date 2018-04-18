@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/text_size_calendar" android:textColor="@color/colors_date_text" android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/txt_calendar_popup" android:background="@drawable/background_date_calendar" android:padding="@dimen/space_half" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_half" android:layout_marginTop="@dimen/space" android:layout_marginRight="@dimen/space_half" android:layout_marginBottom="@dimen/space_x2"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

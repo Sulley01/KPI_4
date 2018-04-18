@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/linear_content_risk_profile" android:background="@color/white" android:paddingLeft="@dimen/space_x4" android:paddingTop="@dimen/space_x2" android:paddingRight="@dimen/space_x4" android:paddingBottom="@dimen/space_x5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/fragment_npwp" />
+    <android.support.design.widget.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" android:hint="@string/hint_education">
+        <AutoCompleteTextView android:id="@id/edit_education" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawableRight="@drawable/ic_expand" style="@style/Widget.AutoCompleteTextView" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" android:hint="@string/hint_investment_purpose">
+        <AutoCompleteTextView android:id="@id/edit_invest_purpose" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawableRight="@drawable/ic_expand" style="@style/Widget.AutoCompleteTextView" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x6" android:hint="@string/hint_risk_profile">
+        <AutoCompleteTextView android:id="@id/edit_risk" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawableRight="@drawable/ic_expand" style="@style/Widget.AutoCompleteTextView" />
+    </android.support.design.widget.TextInputLayout>
+    <TextView android:textColor="@color/charcoal" android:id="@id/txt_invest_profile_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x3" style="@style/TextAppearance.Body.Bold" />
+    <TextView android:textColor="@color/charcoal" android:id="@id/txt_invest_profile" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" style="@style/TextAppearance.Body.Bold" />
+</LinearLayout>

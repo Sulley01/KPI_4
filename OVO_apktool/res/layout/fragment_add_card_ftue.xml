@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/space_x4" android:paddingRight="@dimen/space_x4" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x3" android:layout_marginBottom="@dimen/space_x3" android:src="@drawable/graphic_art_ktp" />
+        <TextView android:textColor="@color/charcoal" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" android:text="@string/ftue_cc_1" android:drawableLeft="@drawable/ic_capture_card" android:drawablePadding="@dimen/space_x2" style="@style/TextAppearance.Body.Regular" />
+        <TextView android:textColor="@color/charcoal" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" android:text="@string/ftue_cc_2" android:drawableLeft="@drawable/ic_recheck_info" android:drawablePadding="@dimen/space_x2" style="@style/TextAppearance.Body.Regular" />
+        <TextView android:textColor="@color/charcoal" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" android:text="@string/ftue_cc_3" android:drawableLeft="@drawable/ic_upgrade_acc_copy_2" android:drawablePadding="@dimen/space_x2" style="@style/TextAppearance.Body.Regular" />
+        <TextView android:textColor="@color/charcoal" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x3" android:text="@string/ftue_cc_4" android:drawableLeft="@drawable/ic_upgrade_acc" android:drawablePadding="@dimen/space_x2" style="@style/TextAppearance.Body.Regular" />
+        <TextView android:textColor="@color/purple" android:gravity="center_vertical" android:id="@id/txt_desc_ftue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x4" android:text="@string/desc_ftue_cc" style="@style/TextAppearance.Display.Regular" />
+        <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <Button android:id="@id/btn_start" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginBottom="@dimen/space_x4" android:text="@string/action_lets_start" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/view_top_up_debit_card" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x4" app:hintEnabled="true" app:errorEnabled="false">
+        <AutoCompleteTextView android:id="@id/txt_top_up_amount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/msg_topup_select_amount" android:hint="@string/msg_amount" style="@style/Widget.AutoCompleteTextView" />
+    </android.support.design.widget.TextInputLayout>
+    <TextView android:textColor="@color/charcoal" android:id="@id/txt_maximum_balance_debit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_half" android:layout_marginBottom="@dimen/space_x4" style="@style/TextAppearance.Display.Regular" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2">
+        <TextView android:textColor="@color/purple" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/msg_topup_card_detail" android:layout_weight="1.0" style="@style/TextAppearance.H5.Bold" />
+        <ImageView android:id="@id/btn_information" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_question_mark" />
+    </LinearLayout>
+    <TextView android:textColor="@color/charcoal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x3" android:text="@string/desc_topup_debit" style="@style/TextAppearance.Body.Regular" />
+    <TextView android:textColor="@color/dusk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_half" android:text="@string/hint_topup_credit_number" style="@style/TextAppearance.Display.Regular" />
+    <android.support.design.widget.TextInputLayout android:id="@id/view_card_number_debit" android:layout_width="fill_parent" android:layout_height="wrap_content" app:hintEnabled="false" app:errorEnabled="true" app:errorTextAppearance="@style/AppTheme.Text.Error">
+        <EditText android:id="@id/txt_card_number_debit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawableLeft="@drawable/ic_card_default" android:drawablePadding="@dimen/space" android:inputType="number" android:drawableStart="@drawable/ic_card_default" style="@style/TextAppearance.H5.Regular" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:hintEnabled="true" app:errorEnabled="true">
+        <EditText android:id="@id/txt_exp_debit" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hint_topup_exp_date" android:drawableRight="@drawable/ic_calendar" android:inputType="datetime" android:drawableEnd="@drawable/ic_calendar" style="@style/TextAppearance.H5.Regular" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout android:id="@id/view_cvv_debit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_quarter" app:errorEnabled="false">
+        <EditText android:id="@id/txt_cvv_debit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hint_topup_cvv" android:maxLength="4" android:inputType="numberPassword" style="@style/TextAppearance.H5.Regular" />
+    </android.support.design.widget.TextInputLayout>
+    <TextView android:textColor="@color/dusk" android:id="@id/txt_security_number_debit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" android:text="@string/msg_cvv_length" style="@style/TextAppearance.Display.Regular" />
+    <Button android:enabled="false" android:id="@id/btn_topup_debit" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginTop="@dimen/space_x2" android:layout_marginBottom="@dimen/space_x4" android:text="@string/action_topup" style="@style/Widget.Button.Primary" />
+</LinearLayout>

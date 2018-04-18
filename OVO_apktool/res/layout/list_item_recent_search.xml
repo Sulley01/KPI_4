@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/view_recent_search" android:paddingLeft="@dimen/space_x2" android:paddingRight="@dimen/space_x2" android:paddingBottom="@dimen/space" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:ellipsize="end" android:id="@id/txt_recent_search" android:paddingBottom="@dimen/space" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_centerVertical="true" android:layout_toEndOf="@id/img_history_dark" style="@style/TextAppearance.Display.Regular" />
+    <ImageView android:id="@id/img_history_dark" android:paddingBottom="@dimen/space" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/space_half" android:src="@drawable/ic_history_dark" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+</RelativeLayout>

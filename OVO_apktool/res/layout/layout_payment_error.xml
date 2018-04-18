@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_error_payment" android:paddingTop="@dimen/space_x3" android:paddingBottom="@dimen/space_x4" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x2"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@id/txt_not_enough_payment" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/space_half" style="@style/TextAppearance.H4.Regular" />
+    <TextView android:textSize="@dimen/body_text_size" android:gravity="center" android:id="@id/txt_not_enough_payment_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/msg_not_enough_balance" style="@style/TextAppearance.Display.Regular" />
+</LinearLayout>

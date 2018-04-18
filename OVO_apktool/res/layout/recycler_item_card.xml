@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space" android:layout_marginRight="@dimen/space"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_content" android:background="@drawable/shadow_border_rectangle" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ovo.id.loyalty.widgets.CardImageView android:id="@id/img_card" android:background="@drawable/bg_rounded_blue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/pattern_visa" android:scaleType="fitXY" />
+        <ImageView android:id="@id/img_logo" android:layout_width="wrap_content" android:layout_height="@dimen/space_x2" android:layout_marginLeft="@dimen/space" android:layout_marginTop="@dimen/space" android:layout_marginBottom="@dimen/space_x2" android:src="@drawable/logo_visa_s" />
+        <TextView android:textColor="@android:color/white" android:id="@id/txt_card_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space" android:layout_marginBottom="@dimen/space_half" android:layout_below="@id/img_logo" style="@style/TextAppearance.Disclaimer.Regular" />
+        <TextView android:textColor="@android:color/white" android:ellipsize="end" android:id="@id/txt_card_holder_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space" android:layout_marginRight="@dimen/space_x2" android:maxLines="2" android:layout_below="@id/txt_card_number" android:textAllCaps="true" style="@style/TextAppearance.Disclaimer.Regular" />
+    </RelativeLayout>
+    <TextView android:textColor="@color/charcoal" android:gravity="center" android:id="@id/txt_card_name" android:paddingLeft="@dimen/space_x2" android:paddingRight="@dimen/space_x2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space" android:minLines="2" style="@style/TextAppearance.Display.Regular" />
+</LinearLayout>

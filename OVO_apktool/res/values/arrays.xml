@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="arr_banker_location">
+        <item>Cibubur Junction</item>
+        <item>FX Senayan</item>
+        <item>Lippo Mall Kemang</item>
+        <item>Semanggi Mall</item>
+        <item>Gandaria City</item>
+    </string-array>
+    <string-array name="arr_purchase_deal_filter">
+        <item>All Deals Purchased</item>
+        <item>Redeemed</item>
+        <item>Not Redeemed</item>
+    </string-array>
+    <string-array name="array_budget_category">
+        <item>@string/title_health</item>
+        <item>@string/title_entertainment</item>
+        <item>@string/title_f_and_b</item>
+        <item>@string/title_shopping</item>
+        <item>@string/title_utilities</item>
+        <item>@string/title_others</item>
+        <item>@string/title_groceries</item>
+        <item>@string/title_transport</item>
+        <item>@string/title_cash_budget</item>
+        <item>@string/title_education</item>
+        <item>@string/title_gift</item>
+        <item>@string/title_personal</item>
+    </string-array>
+    <string-array name="array_child_menu_invest">
+        <item>@string/profile_customer_invest</item>
+    </string-array>
+    <string-array name="array_dialog_menu_invest">
+        <item>@string/action_sell</item>
+        <item>@string/action_buy</item>
+        <item>@string/msg_see_detail</item>
+    </string-array>
+    <string-array name="array_invest_filter_by">
+        <item>@string/msg_ovo_cash_and_ovo_dollar</item>
+        <item>@string/msg_ovo_invest</item>
+    </string-array>
+    <string-array name="array_main_menu_invest">
+        <item>@string/title_my_portfolio</item>
+        <item>@string/title_list_invest</item>
+    </string-array>
+    <string-array name="array_main_menu_subtitle_invest">
+        <item>@string/subtitle_my_portfolio</item>
+        <item>@string/subtitle_list_invest</item>
+    </string-array>
+    <array name="array_onboarding_drawable">
+        <item>@drawable/vector_ic_graphic_art_banker</item>
+        <item>@drawable/vector_ic_graphicart_ob_02</item>
+        <item>@drawable/vector_ic_graphicart_ob_03</item>
+        <item>@drawable/vector_ic_graphicart_ob_04</item>
+        <item>@drawable/vector_ic_graphicart_ob_05</item>
+    </array>
+    <string-array name="array_onboarding_ga">
+        <item>@string/ga_welcome_to_ovo</item>
+        <item>@string/ga_earn_and_use_ovo_points</item>
+        <item>@string/ga_get_amazing_deals</item>
+        <item>@string/ga_send_money_easily</item>
+        <item>@string/ga_manage_all_your_financial</item>
+    </string-array>
+    <string-array name="array_onboarding_subtitle">
+        <item>@string/sub_title_welcome_to_ovo</item>
+        <item>@string/sub_title_earn_and_use_ovo_points</item>
+        <item>@string/sub_title_get_amazing_deals</item>
+        <item>@string/sub_title_send_money_easily</item>
+        <item>@string/sub_title_manage_all_your_financial</item>
+    </string-array>
+    <string-array name="array_onboarding_title">
+        <item>@string/title_welcome_to_ovo</item>
+        <item>@string/title_earn_and_use_ovo_points</item>
+        <item>@string/title_get_amazing_deals</item>
+        <item>@string/title_send_money_easily</item>
+        <item>@string/title_manage_all_your_financial</item>
+    </string-array>
+    <string-array name="array_sub_child_menu_invest">
+        <item>@string/about_ovo_invest</item>
+        <item>@string/faq_ovo_invest</item>
+    </string-array>
+    <string-array name="array_tab">
+        <item>Home</item>
+        <item>Deals</item>
+        <item>Finance</item>
+        <item>Wallet</item>
+        <item>History</item>
+    </string-array>
+    <string-array name="array_title_info_menu_invest">
+        <item>@string/title_info_settings_invest</item>
+        <item>@string/title_info_others_invest</item>
+    </string-array>
+    <string-array name="array_transaction_details_category">
+        <item>@string/title_health</item>
+        <item>@string/title_entertainment</item>
+        <item>@string/title_food_and_beverage</item>
+        <item>@string/title_shopping</item>
+        <item>@string/title_utilities</item>
+        <item>@string/title_others</item>
+        <item>@string/title_groceries</item>
+        <item>@string/title_transport</item>
+        <item>@string/title_cash_budget</item>
+        <item>@string/title_education</item>
+        <item>@string/title_gift</item>
+        <item>@string/title_personal</item>
+    </string-array>
+    <string-array name="menu_ovo_invest">
+        <item>@string/title_view_fund_fuct_sheet</item>
+        <item>@string/title_view_prospectus</item>
+        <item>@string/profile_customer_invest</item>
+        <item>@string/about_ovo_invest</item>
+        <item>@string/menu_faq</item>
+    </string-array>
+    <string-array name="menu_upgrade_ovo_invest">
+        <item>@string/title_view_fund_fuct_sheet</item>
+        <item>@string/title_view_prospectus</item>
+        <item>@string/about_ovo_invest</item>
+        <item>@string/menu_faq</item>
+    </string-array>
+    <string-array name="payment_method">
+        <item>@string/action_cash</item>
+        <item>@string/msg_payment_credit</item>
+        <item>@string/msg_payment_debit</item>
+    </string-array>
+</resources>

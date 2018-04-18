@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:padding="@dimen/space_x2" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/charcoal" android:padding="@dimen/space_half" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_estimation_investment_value" style="@style/TextAppearance.Display.Regular" />
+    <TextView android:id="@id/txt_investment_value" android:padding="@dimen/space_half" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextAppearance.H4.Bold.Purple" />
+    <TextView android:id="@id/txt_date" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextAppearance.Display.Regular" />
+</LinearLayout>

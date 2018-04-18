@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_content" android:paddingLeft="@dimen/space_x1_half" android:paddingTop="@dimen/space_x2_half" android:paddingRight="@dimen/space_x1_half" android:paddingBottom="@dimen/space_x4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_x2" android:layout_marginRight="@dimen/space_x2" android:layout_marginBottom="@dimen/space" android:text="@string/msg_complete_your_application" android:textAlignment="center" style="@style/TextAppearance.H4.Bold.Purple" />
+    <ImageView android:id="@id/iv_art_banker" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x3" android:layout_marginBottom="@dimen/space_x3" app:srcCompat="@drawable/vector_ic_graphic_art_banker" />
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/space_x2_half" android:paddingRight="@dimen/space_x2_half" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:id="@id/txt_location_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x3" android:layout_marginBottom="@dimen/space" style="@style/TextAppearance.H5.Regular" />
+        <android.support.design.widget.TextInputLayout android:id="@id/txt_input_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x3" app:hintTextAppearance="@style/TextAppearance.Display.Regular" app:errorEnabled="true">
+            <AutoCompleteTextView android:id="@id/txt_kiosk_select" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space" android:text="@string/msg_select" android:hint="@string/msg_choose_location" style="@style/Widget.AutoCompleteTextView" />
+        </android.support.design.widget.TextInputLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:id="@id/txt_location_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/space_half" style="@style/TextAppearance.Display.Regular" />
+                <TextView android:textColor="@color/charcoal" android:id="@id/txt_location_hour" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_half" style="@style/TextAppearance.Display.Regular" />
+            </LinearLayout>
+            <ImageView android:id="@id/btn_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_phone" />
+            <ImageView android:id="@id/btn_location" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_x2" android:src="@drawable/ic_location" />
+        </LinearLayout>
+        <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <Button android:textColor="@color/turquoise" android:id="@id/btn_back" android:background="@drawable/button_secondary" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:text="@string/action_back_to_home" style="@style/Widget.Button.Primary" />
+    </LinearLayout>
+</LinearLayout>

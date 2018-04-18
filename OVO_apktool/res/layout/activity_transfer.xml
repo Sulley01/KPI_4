@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/toolbar" />
+        <include android:visibility="gone" layout="@layout/toolbar_white_search" />
+        <FrameLayout android:id="@id/frame_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar" />
+        <include android:visibility="gone" layout="@layout/activity_loading_check" />
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

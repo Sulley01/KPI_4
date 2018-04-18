@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/view_not_found" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/light_grey" android:layout_width="fill_parent" android:layout_height="@dimen/stroke_width" />
+    <TextView android:gravity="center" android:id="@id/txt_msg_no_deals" android:layout_width="@dimen/space_x25" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x2" android:text="@string/msg_try_another_keyword" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/graphic_art_search" android:layout_above="@id/txt_msg_no_deals" android:layout_centerHorizontal="true" style="@style/TextAppearance.Body.Regular" />
+</RelativeLayout>

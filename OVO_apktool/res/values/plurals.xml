@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="redeem_location_outlet">
+        <item quantity="other">Can be redeemed at %d locations:</item>
+        <item quantity="one">Can be redeemed at %d location:</item>
+    </plurals>
+</resources>

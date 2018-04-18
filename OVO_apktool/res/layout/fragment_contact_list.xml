@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_search" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:background="@color/ghost_grey" android:paddingLeft="@dimen/space_x2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/edit_search" android:background="@null" android:focusable="false" android:layout_width="0.0dip" android:layout_height="@dimen/space_x7" android:hint="@string/hint_search_transfer" android:maxLength="@integer/editTextMaxLength200" android:digits="@string/digits_email" android:layout_weight="1.0" />
+            <ImageButton android:layout_gravity="center" android:id="@id/btn_clear" android:background="@null" android:paddingRight="@dimen/space_x2" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_search" />
+        </LinearLayout>
+        <View android:background="@color/light_grey" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+    <include layout="@layout/item_scan_contact" />
+    <ListView android:id="@id/list" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/divider_contacts_list_item" android:dividerHeight="1.0dip" android:fastScrollEnabled="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_transfer_anyway" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@color/light_grey" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <Button android:id="@id/btn_transfer_anyway" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginLeft="@dimen/space_x4" android:layout_marginTop="@dimen/space_x3" android:layout_marginRight="@dimen/space_x4" android:layout_marginBottom="@dimen/space_x4" android:text="@string/action_transfer" style="@style/Widget.Button.Primary" />
+    </LinearLayout>
+    <include layout="@layout/view_transfer_no_contact_found" />
+</LinearLayout>

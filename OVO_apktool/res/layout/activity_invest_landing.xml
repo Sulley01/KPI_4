@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/toolbar" />
+        <ScrollView android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <RelativeLayout android:paddingTop="@dimen/space_quarter" android:paddingBottom="@dimen/space_x2" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <RelativeLayout android:id="@id/rl_chart" android:background="@color/ghost_grey" android:padding="@dimen/space_x2" android:layout_width="wrap_content" android:layout_height="@dimen/space_x36" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+                        <TextView android:textColor="@color/charcoal" android:id="@id/txt_title_investment_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_investment_value" android:layout_alignParentStart="true" style="@style/TextAppearance.Disclaimer.Regular" />
+                        <TextView android:id="@id/txt_investment_value" android:paddingTop="@dimen/space_half" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x3" android:text="Rp-" android:layout_below="@id/txt_title_investment_value" android:layout_alignParentStart="true" style="@style/TextAppearance.H4.Bold" />
+                        <TextView android:id="@id/txt_chart_month" android:paddingLeft="@dimen/space_half" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/chart_invest" android:layout_alignParentEnd="true" style="@style/TextAppearance.Display.Regular" />
+                        <com.github.mikephil.charting.charts.LineChart android:id="@id/chart_invest" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/txt_investment_value" android:layout_alignParentBottom="true" />
+                    </RelativeLayout>
+                    <LinearLayout android:id="@id/view_title_nav" android:background="@color/ghost_grey" android:paddingLeft="@dimen/space_x2" android:paddingTop="@dimen/space_half" android:paddingRight="@dimen/space_x2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/rl_chart">
+                        <TextView android:textColor="@color/dark_gray" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/title_nav_unit" android:layout_weight="1.0" style="@style/TextAppearance.Display.Regular" />
+                        <TextView android:textColor="@color/dark_gray" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/title_profit_per_year" android:layout_weight="1.0" style="@style/TextAppearance.Display.Regular" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/view_nav_value" android:background="@color/ghost_grey" android:paddingLeft="@dimen/space_x2" android:paddingTop="@dimen/space_half" android:paddingRight="@dimen/space_x2" android:paddingBottom="@dimen/space_half" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/view_title_nav">
+                        <TextView android:textColor="@color/turquoise" android:gravity="center" android:id="@id/txt_nav_unit" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Rp-" android:layout_weight="1.0" style="@style/TextAppearance.H4.Regular" />
+                        <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textColor="@color/greeny" android:id="@id/txt_investment_growth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" style="@style/TextAppearance.H4.Regular" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/view_subtitle" android:background="@color/ghost_grey" android:paddingLeft="@dimen/space_x2" android:paddingTop="@dimen/space_half" android:paddingRight="@dimen/space_x2" android:paddingBottom="@dimen/space_x1_half" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/view_nav_value">
+                        <TextView android:textColor="@color/dusk" android:gravity="center" android:id="@id/txt_as_per_date" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/TextAppearance.Disclaimer.Regular" />
+                        <TextView android:textColor="@color/dusk" android:gravity="center" android:id="@id/txt_subtitle_gain_per_year" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/msg_growth_per_month" android:layout_weight="1.0" style="@style/TextAppearance.Disclaimer.Regular" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/view_unit_owned" android:paddingLeft="@dimen/space_x2" android:paddingTop="@dimen/space_x2" android:paddingRight="@dimen/space_x2" android:paddingBottom="@dimen/space" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/view_subtitle">
+                        <TextView android:gravity="left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/title_unit_owned" android:layout_weight="1.0" style="@style/TextAppearance.Display.Bold" />
+                        <TextView android:gravity="right" android:id="@id/txt_unit_owned" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="-" android:layout_weight="1.0" />
+                    </LinearLayout>
+                    <View android:id="@id/stroke_unit_owned" android:background="@color/light_grey" android:layout_width="fill_parent" android:layout_height="@dimen/stroke_width" android:layout_marginLeft="@dimen/space_x2" android:layout_marginRight="@dimen/space_x2" android:layout_marginBottom="@dimen/space" android:layout_below="@id/view_unit_owned" />
+                    <TextView android:textColor="@color/purple" android:id="@id/txt_message_transaction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_x2" android:layout_marginRight="@dimen/space_x2" android:text="@string/msg_buy_ovo_transaction_completed" android:layout_below="@id/stroke_unit_owned" style="@style/TextAppearance.Display.Regular" />
+                    <Button android:id="@id/btn_buy" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginLeft="@dimen/space_x4" android:layout_marginTop="@dimen/space_x4" android:layout_marginRight="@dimen/space_x4" android:text="@string/action_buy" android:drawablePadding="@dimen/space_half" android:layout_below="@id/txt_message_transaction" />
+                    <Button android:id="@id/btn_sell" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginLeft="@dimen/space_x4" android:layout_marginTop="@dimen/space" android:layout_marginRight="@dimen/space_x4" android:text="@string/action_sell" android:layout_below="@id/btn_buy" style="@style/Widget.Button.Tertiary" />
+                </RelativeLayout>
+                <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/fragment_fragment_loading" />
+            </FrameLayout>
+        </ScrollView>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

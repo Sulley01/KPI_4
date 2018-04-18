@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="redeem_location_outlet">
+        <item quantity="other">Dapat ditukarkan di %d lokasi berikut:</item>
+    </plurals>
+</resources>

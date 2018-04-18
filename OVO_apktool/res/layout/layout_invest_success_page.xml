@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/img_success" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x3" android:layout_marginBottom="@dimen/space" android:layout_centerHorizontal="true" app:srcCompat="@drawable/ic_success_pin_copy" />
+        <TextView android:textColor="@color/dusk" android:id="@id/txt_msg_success" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" android:text="@string/msg_success" android:layout_below="@id/img_success" android:layout_centerHorizontal="true" style="@style/TextAppearance.H5.Bold" />
+        <include android:id="@id/view_success_buy" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/txt_msg_success" layout="@layout/view_invest_buy_success" />
+        <include android:id="@id/view_success_sell" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/txt_msg_success" layout="@layout/view_invest_sell_success" />
+        <Button android:layout_gravity="end" android:id="@id/btn_done" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/space_x4" android:text="@string/action_done" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</ScrollView>

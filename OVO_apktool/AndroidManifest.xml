@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="ovo.id" platformBuildVersionCode="27" platformBuildVersionName="8.1.0">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <permission android:name="ovo.id.permission.WRITE_SECURE_SETTINGS" android:protectionLevel="signature"/>
+    <uses-permission android:name="ovo.id.permission.WRITE_SECURE_SETTINGS"/>
+    <permission android:name="ovo.id.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="ovo.id.permission.C2D_MESSAGE"/>
+    <permission android:name="ovo.id.permission.MAPS_RECEIVE" android:protectionLevel="signature"/>
+    <uses-permission android:name="ovo.id.permission.MAPS_RECEIVE"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <application android:allowBackup="false" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="ovo.id.loyalty.app.Ovo" android:supportsRtl="true" android:theme="@style/Theme.AppTheme">
+        <provider android:authorities="ovo.id.provider" android:exported="false" android:grantUriPermissions="true" android:name="android.support.v4.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_path"/>
+        </provider>
+        <receiver android:exported="true" android:name="com.appsflyer.SingleInstallBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="ovo.id.loyalty.activity.LandingActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppTheme.Landing" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <meta-data android:name="android.app.shortcuts" android:resource="@xml/shortcuts"/>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="main" android:scheme="ovo"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="ovo.id.loyalty.activity.ActStartup" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:name="ovo.id.loyalty.activity.ActMain" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="INVEST_ACCOUNT_FAIL"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="INVEST_ACCOUNT_SUCCESS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="OPEN_CONGRATULATION_SCREEN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="ovo.id.intent.action.SPLASH_INFO"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="ovo.id.intent.action.OPEN_TRANSACTION_DETAIL"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="history" android:scheme="ovo"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="ovo.id.loyalty.activity.ActDealDetail" android:parentActivityName="ovo.id.loyalty.activity.ActMain" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="deals" android:pathPrefix="/" android:scheme="ovo"/>
+                <data android:host="www.ovo.id" android:pathPrefix="/deals/view" android:scheme="https"/>
+                <data android:host="ovo.id" android:pathPrefix="/deals/view" android:scheme="https"/>
+            </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="ovo.id.loyalty.activity.ActMain"/>
+        </activity>
+        <activity android:exported="false" android:name="ovo.id.loyalty.activity.ActUnlocked" android:parentActivityName="ovo.id.loyalty.activity.ActMain" android:screenOrientation="unspecified" android:theme="@style/Theme.FullscreenTheme.Transparent">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="ovo.id.loyalty.activity.ActMain"/>
+        </activity>
+        <activity android:name="ovo.id.loyalty.activity.ActFeedback" android:screenOrientation="portrait"/>
+        <activity android:name="ovo.id.loyalty.activity.ActTopUp" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="topup" android:scheme="ovo"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="ovo.id.loyalty.activity.ActQrScanner" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="scan" android:scheme="ovo"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="ovo.id.loyalty.activity.ActDisableQrCode" android:screenOrientation="portrait"/>
+        <activity android:name="ovo.id.loyalty.activity.ActTransactionHistory" android:screenOrientation="portrait"/>
+        <activity android:name="ovo.id.loyalty.activity.ActBoardingPassSummary" android:screenOrientation="portrait"/>
+        <activity android:name="ovo.id.loyalty.activity.ActUpdateAccount" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="ovo.id.loyalty.activity.ActSettings" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="ovo.id.loyalty.libs.cropimage.CropImageActivity"/>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="ovo.id.loyalty.activity.ActSmsEntry" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="email" android:scheme="ovo"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="ovo.id.loyalty.activity.ActCodeEntry" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="ovo.id.loyalty.activity.ActTransfer" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="transfer" android:scheme="ovo"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="ovo.id.loyalty.activity.ActContactList" android:screenOrientation="portrait"/>
+        <activity android:name="ovo.id.loyalty.activity.ActLoadingCheck" android:screenOrientation="portrait"/>
+        <activity android:name="ovo.id.loyalty.activity.ActMeetBanker" android:screenOrientation="portrait"/>
+        <activity android:name="ovo.id.loyalty.activity.ActViewCard" android:screenOrientation="portrait"/>
+        <activity android:name="ovo.id.loyalty.activity.ActTransparentScreen" android:screenOrientation="portrait" android:theme="@style/Theme.FullscreenTheme.Transparent"/>
+        <activity android:name="ovo.id.loyalty.activity.ActSecurityCode" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="ovo.id.loyalty.activity.ActUnlockScreen" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="ovo.id.loyalty.activity.ActFailedScreen" android:screenOrientation="portrait"/>
+        <activity android:name="ovo.id.loyalty.activity.ActDealAndPromo" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:launchMode="singleTop" android:name="ovo.id.loyalty.activity.ActMyVoucher" android:parentActivityName="ovo.id.loyalty.activity.ActMain" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="mydeal" android:scheme="ovo"/>
+            </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="ovo.id.loyalty.activity.ActMain"/>
+        </activity>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="@string/map_key"/>
+        <meta-data android:name="net.hockeyapp.android.appIdentifier" android:value="c9591c09ceb04a80b8b09ad8a4767fc8"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:name="ovo.id.loyalty.activity.ActListSelection" android:screenOrientation="portrait"/>
+        <activity android:name="ovo.id.loyalty.activity.ActProcessFailed" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="ovo.id.loyalty.activity.ActChallengeCode" android:screenOrientation="portrait"/>
+        <activity android:name="ovo.id.loyalty.activity.ActTransferDone" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="ovo.id.loyalty.activity.ActPendingTimeOutTransaction" android:screenOrientation="portrait"/>
+        <activity android:name="ovo.id.loyalty.activity.ActMyProfile" android:screenOrientation="portrait"/>
+        <activity android:name="ovo.id.loyalty.activity.ActNotification" android:parentActivityName="ovo.id.loyalty.activity.ActMain" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="ovo.id.loyalty.activity.ActMain"/>
+        </activity>
+        <activity android:name="ovo.id.loyalty.activity.ActUpgradeLevel" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="upgrade" android:scheme="ovo"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="ovo.id.loyalty.activity.ActivityStartingApplication" android:screenOrientation="portrait"/>
+        <activity android:name="ovo.id.loyalty.activity.ActCaptureKtp" android:screenOrientation="portrait"/>
+        <activity android:name="ovo.id.loyalty.activity.ActCaptureKtpResult" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="ovo.id.loyalty.activity.ActCompleteApplication" android:parentActivityName="ovo.id.loyalty.activity.ActMain" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="OPEN_KIOSK_LOCATION"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="ovo.id.loyalty.activity.ActMain"/>
+        </activity>
+        <activity android:name="ovo.id.loyalty.activity.ActBudgetDetail" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:label="@string/title_transaction_detail" android:name="ovo.id.loyalty.activity.ActTransactionDetail" android:parentActivityName="ovo.id.loyalty.activity.ActMain" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="ovo.id.intent.action.OPEN_WITHDRAWAL_SUMMARY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="ovo.id.intent.action.OPEN_ACT_TRANSFER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="ovo.id.loyalty.activity.ActMain"/>
+        </activity>
+        <activity android:name="ovo.id.loyalty.activity.ActDealsMap" android:screenOrientation="portrait"/>
+        <activity android:name="ovo.id.loyalty.activity.ActSearchDeals" android:screenOrientation="portrait"/>
+        <activity android:name="ovo.id.loyalty.activity.ActBill" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="paybill" android:scheme="ovo"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="ovo.id.loyalty.activity.ActSearchDealsResult" android:screenOrientation="portrait"/>
+        <activity android:name="ovo.id.loyalty.activity.billpayment.ActBillPrepaidSuccessPage" android:screenOrientation="portrait"/>
+        <activity android:name="ovo.id.loyalty.activity.ActCodeError" android:screenOrientation="portrait"/>
+        <activity android:name="ovo.id.loyalty.activity.ActListKioskSelection" android:screenOrientation="portrait"/>
+        <activity android:name="ovo.id.loyalty.activity.ActContactPhone" android:screenOrientation="portrait"/>
+        <activity android:name="ovo.id.loyalty.activity.ActOnboarding" android:screenOrientation="portrait"/>
+        <activity android:name="ovo.id.loyalty.activity.ActBillDetail" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="biller" android:pathPrefix="/" android:scheme="ovo"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="ovo.id.loyalty.activity.billpayment.ActBillPostpaidSuccessPage" android:screenOrientation="portrait"/>
+        <activity android:name="ovo.id.loyalty.activity.ActEditEmail" android:screenOrientation="portrait"/>
+        <activity android:name="ovo.id.loyalty.activity.ActEditMobileNumber" android:screenOrientation="portrait"/>
+        <activity android:name="ovo.id.loyalty.activity.ActBudgetSummary" android:screenOrientation="portrait"/>
+        <activity android:name="ovo.id.loyalty.activity.ActCardDetail" android:screenOrientation="portrait"/>
+        <activity android:name="ovo.id.loyalty.activity.ActAddCardLanding" android:screenOrientation="portrait"/>
+        <activity android:name="ovo.id.loyalty.activity.ActCardList" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_add_card" android:name="ovo.id.loyalty.activity.ActAddCard" android:screenOrientation="portrait"/>
+        <activity android:name="ovo.id.loyalty.activity.ActOvoDetail" android:screenOrientation="portrait"/>
+        <activity android:name="ovo.id.loyalty.activity.ActError" android:parentActivityName="ovo.id.loyalty.activity.ActMain" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="ovo.id.loyalty.activity.ActMain"/>
+        </activity>
+        <activity android:name="ovo.id.loyalty.activity.ActWebView" android:parentActivityName="ovo.id.loyalty.activity.ActMain" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="OPEN_ACT_ANNOUNCEMENT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="ovo.id.loyalty.activity.ActMain"/>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:name="ovo.id.loyalty.activity.ActWithdrawal" android:screenOrientation="sensor"/>
+        <activity android:name="ovo.id.loyalty.activity.ActReceipt" android:parentActivityName="ovo.id.loyalty.activity.ActMain" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="ovo.id.loyalty.activity.ActMain"/>
+        </activity>
+        <activity android:name="ovo.id.loyalty.activity.invest.ActUpgradeInvest" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="ovo.id.loyalty.activity.invest.ActInvestLanding" android:screenOrientation="portrait"/>
+        <activity android:name="ovo.id.loyalty.activity.invest.ActInvestBuy" android:screenOrientation="portrait"/>
+        <activity android:name="ovo.id.loyalty.activity.invest.ActInvestSell" android:screenOrientation="portrait"/>
+        <activity android:name="ovo.id.loyalty.activity.invest.ActInvestInformation" android:screenOrientation="portrait"/>
+        <activity android:name="ovo.id.loyalty.activity.invest.ActListSelectionWithSearchBar" android:screenOrientation="portrait"/>
+        <activity android:name="ovo.id.loyalty.activity.invest.ActInvestMenu" android:screenOrientation="portrait"/>
+        <activity android:name="ovo.id.loyalty.activity.invest.ActInvestProfile" android:screenOrientation="portrait"/>
+        <activity android:name="ovo.id.loyalty.activity.invest.ActInvestAbout" android:screenOrientation="portrait"/>
+        <activity android:name="ovo.id.loyalty.activity.invest.ActInvestAddAccount" android:screenOrientation="portrait"/>
+        <activity android:name="ovo.id.loyalty.activity.invest.ActUpgradeProcess" android:screenOrientation="portrait"/>
+        <activity android:name="ovo.id.loyalty.activity.ActSkyparkingPayment" android:parentActivityName="ovo.id.loyalty.activity.ActMain" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="ovo.id.loyalty.activity.ActMain"/>
+        </activity>
+        <activity android:name="ovo.id.loyalty.activity.ActSeeAllDealsAndSeeAllPromo" android:screenOrientation="portrait"/>
+        <activity android:name="ovo.id.loyalty.activity.ActDealNearMe" android:screenOrientation="portrait"/>
+        <activity android:name="ovo.id.loyalty.activity.ActMallAndMerchant" android:screenOrientation="portrait"/>
+        <activity android:name="ovo.id.loyalty.activity.ActDetailMallAndMerchant" android:screenOrientation="portrait"/>
+        <activity android:name="ovo.id.loyalty.activity.ActManualInput" android:screenOrientation="portrait"/>
+        <activity android:name="ovo.id.loyalty.activity.ActBoardingPass" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="ovo.id.loyalty.activity.ActSearchAirport" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="ovo.id.loyalty.activity.payment.PaymentSummaryActivity" android:parentActivityName="ovo.id.loyalty.activity.ActMain" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="OPEN_ACT_ORDER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="ovo.id.loyalty.activity.ActMain"/>
+        </activity>
+        <activity android:exported="false" android:name="ovo.id.loyalty.activity.deal.VoucherDetailActivity" android:parentActivityName="ovo.id.loyalty.activity.ActMain" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="ovo.id.intent.action.OPEN_VOUCHER_DETAIL"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="ovo.id.loyalty.activity.ActMain"/>
+        </activity>
+        <service android:name="ovo.id.loyalty.fcm.OvoMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name="ovo.id.loyalty.fcm.OvoInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="ovo.id.loyalty.service.SmsBroadcastReceiver" android:permission="android.permission.BROADCAST_SMS">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/colorPrimary"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/ic_notification_status_bar"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:name="net.hockeyapp.android.UpdateActivity"/>
+        <activity android:name="net.hockeyapp.android.FeedbackActivity" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:name="net.hockeyapp.android.PaintActivity"/>
+        <activity android:name="net.hockeyapp.android.LoginActivity"/>
+        <activity android:name="net.hockeyapp.android.ExpiryInfoActivity"/>
+        <provider android:authorities="ovo.id.lifecycle-trojan" android:exported="false" android:multiprocess="true" android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="ovo.id"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="ovo.id.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+    </application>
+</manifest>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/FragmentTopLevelContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x15" android:src="@drawable/graphic_art" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/h4_text_size" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/txt_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x4" android:text="@string/msg_thanks_for_interest" android:layout_below="@id/img_logo" style="@style/TextAppearance.Body.Bold" />
+    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/txt_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space" android:text="@string/msg_invitation_only" android:layout_below="@id/txt_title" style="@style/TextAppearance.Body.Regular" />
+    <Button android:id="@id/btn_ok" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginBottom="@dimen/space_x4" android:text="@android:string/ok" android:layout_alignParentBottom="true" style="@style/Widget.Button.Primary" />
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/view_preview_container" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ovo.id.loyalty.widgets.CameraPreviewSurfaceView android:id="@id/view_camera_preview" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/txt_preview_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_x6" android:layout_marginTop="@dimen/space_x7" android:layout_marginRight="@dimen/space_x6" android:text="@string/msg_capture_ktp" android:layout_marginStart="@dimen/space_x6" android:layout_marginEnd="@dimen/space_x6" style="@style/TextAppearance.H3.Regular" />
+    <ImageView android:id="@id/view_frame" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:srcCompat="@drawable/vector_frame" />
+    <com.dd.morphingbutton.MorphingButton android:id="@id/btn_capture" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginLeft="@dimen/default_margins" android:layout_marginRight="@dimen/default_margins" android:layout_marginBottom="@dimen/space_x2" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_marginStart="@dimen/default_margins" android:layout_marginEnd="@dimen/default_margins" style="@style/Widget.Button.Primary" />
+</RelativeLayout>

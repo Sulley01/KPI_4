@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/ghost_grey" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/view_withdrawal" android:padding="@dimen/space_x3" android:animationCache="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="false">
+        <TextView android:id="@id/txt_withdrawal_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space" android:text="@string/title_withdrawal_code" android:layout_centerHorizontal="true" style="@style/TextAppearance.H5.Bold.Purple" />
+        <TextView android:gravity="center" android:id="@id/txt_withdrawal_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_withdrawal_code" android:layout_below="@id/txt_withdrawal_title" style="@style/TextAppearance.Body.Regular" />
+        <RelativeLayout android:gravity="center" android:id="@id/view_counter" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/txt_withdrawal_subtitle">
+            <ovo.id.loyalty.widgets.CircularSpentView android:id="@id/img_circular_counter" android:layout_width="@dimen/space_x8" android:layout_height="@dimen/space_x8" android:layout_margin="@dimen/space_x2" />
+            <TextView android:gravity="center" android:id="@id/txt_counter" android:layout_width="@dimen/space_x8" android:layout_height="@dimen/space_x8" android:layout_margin="@dimen/space_x2" android:text="30" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/view_barcode" android:background="@drawable/bg_white_stroke_grey" android:padding="@dimen/space" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space" android:layout_below="@id/view_counter">
+            <ImageView android:layout_gravity="end" android:id="@id/img_zoom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_half" app:srcCompat="@drawable/ic_zoom" />
+            <ImageView android:id="@id/img_barcode" android:layout_width="wrap_content" android:layout_height="@dimen/space_x7" />
+            <TextView android:id="@id/txt_barcode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_x2" android:layout_marginBottom="@dimen/space" style="@style/TextAppearance.H4.Regular" />
+        </LinearLayout>
+        <Button android:id="@id/btn_close" android:layout_width="fill_parent" android:layout_height="@dimen/space_x5" android:text="@string/action_close" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</ScrollView>

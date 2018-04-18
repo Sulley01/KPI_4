@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/view_empty_portofolio" android:padding="@dimen/space_x3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_x2" app:srcCompat="@drawable/vector_ic_art_myportfolio_gray" />
+        <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Saat ini Anda tidak memiliki portofolio investasi. Mulai berinvestasi sekarang" style="@style/TextAppearance.Body.Regular" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/rv_potofolio" android:paddingBottom="@dimen/space" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

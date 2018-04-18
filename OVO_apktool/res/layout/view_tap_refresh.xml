@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/view_tap_refresh" android:paddingTop="@dimen/space_x5" android:paddingBottom="@dimen/space_x5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_fail_to_load" />
+    <Button android:layout_gravity="center" android:id="@id/btn_try_again" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_try_again" android:drawablePadding="@dimen/space" android:textAllCaps="false" android:drawableStart="@drawable/btn_refresh_blue" style="@style/Widget.Button.Tertiary" />
+</LinearLayout>

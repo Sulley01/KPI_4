@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/view_filter_history" android:background="@color/jet_black" android:paddingLeft="@dimen/space_x2" android:paddingRight="@dimen/space_x2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/space_x6"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img_expand_history" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_expand_white" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    <TextView android:textColor="@color/white" android:id="@id/txt_title_filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_filter_by" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/space_x2" style="@style/TextAppearance.Display.Regular" />
+    <TextView android:textColor="@color/white" android:ellipsize="end" android:gravity="end" android:id="@id/txt_filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_ovo_cash_and_ovo_dollar" android:maxLines="1" android:layout_centerVertical="true" android:layout_toStartOf="@id/img_expand_history" android:layout_toEndOf="@id/txt_title_filter" style="@style/TextAppearance.Display.Regular" />
+</RelativeLayout>

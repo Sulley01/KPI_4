@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:id="@id/coordinator_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:apps="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout android:id="@id/appbar" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/space_x27">
+        <android.support.design.widget.CollapsingToolbarLayout android:id="@id/collapsing_toolbar_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" apps:layout_scrollFlags="enterAlways|scroll">
+            <android.support.v7.widget.RecyclerView android:orientation="horizontal" android:id="@id/list_hot_promo" android:paddingLeft="@dimen/space" android:paddingRight="@dimen/space" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="@dimen/space_x16" apps:layout_collapseMode="parallax" />
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/layout_try_again" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:id="@id/txt_failed_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_fail_to_load" style="@style/TextAppearance.Body.Regular" />
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_half">
+                    <ImageView android:layout_width="@dimen/space_x3" android:layout_height="@dimen/space_x3" android:layout_below="@id/txt_failed_msg" android:layout_centerHorizontal="true" apps:srcCompat="@drawable/vector_ic_refresh" />
+                    <TextView android:textColor="@color/turquoise" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_half" android:text="@string/msg_try_again" style="@style/TextAppearance.Body.Regular" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.design.widget.CollapsingToolbarLayout>
+        <android.support.design.widget.TabLayout android:gravity="bottom" android:id="@id/tab_deal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/space_x11" android:layout_marginLeft="@dimen/space_x2" android:layout_marginRight="@dimen/space_x2" apps:layout_collapseMode="pin" apps:tabIndicatorHeight="2.0dip" apps:tabMode="fixed" />
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.view.ViewPager android:id="@id/pager_deal" android:layout_width="fill_parent" android:layout_height="fill_parent" apps:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</android.support.design.widget.CoordinatorLayout>

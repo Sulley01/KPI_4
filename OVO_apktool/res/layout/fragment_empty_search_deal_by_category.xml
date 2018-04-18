@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_deal_icon" android:layout_width="@dimen/space_x8" android:layout_height="@dimen/space_x8" android:layout_marginBottom="@dimen/space_x4" />
+    <TextView android:textColor="@color/dusk" android:gravity="center" android:id="@id/txt_empty_deal_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextAppearance.Body.Regular" />
+</LinearLayout>
